@@ -1,0 +1,42 @@
+{
+  "pool_name": "predator_pool_v4",
+  "created_at": "2025-10-13T22:00:18.007859",
+  "models": [
+    {
+      "name": "PPO_predator_v4",
+      "path": "PPO_predator_v4.zip",
+      "algorithm": "PPO",
+      "training_steps": 500,
+      "trained_against": "MIX_prey_pool_v1",
+      "added_at": "2025-10-13T22:00:18.007872",
+      "eval_metrics": {}
+    },
+    {
+      "name": "A2C_predator_v4",
+      "path": "A2C_predator_v4.zip",
+      "algorithm": "A2C",
+      "training_steps": 500,
+      "trained_against": "MIX_prey_pool_v1",
+      "added_at": "2025-10-13T22:03:27.290303",
+      "eval_metrics": {}
+    },
+    {
+      "name": "SAC_predator_v4",
+      "path": "SAC_predator_v4.zip",
+      "algorithm": "SAC",
+      "training_steps": 500,
+      "trained_against": "MIX_prey_pool_v1",
+      "added_at": "2025-10-13T22:06:33.006539",
+      "eval_metrics": {}
+    },
+    {
+      "name": "TD3_predator_v4",
+      "path": "TD3_predator_v4.zip",
+      "algorithm": "TD3",
+      "training_steps": 500,
+      "trained_against": "MIX_prey_pool_v1",
+      "added_at": "2025-10-13T22:09:40.265561",
+      "eval_metrics": {}
+    }
+  ]
+}

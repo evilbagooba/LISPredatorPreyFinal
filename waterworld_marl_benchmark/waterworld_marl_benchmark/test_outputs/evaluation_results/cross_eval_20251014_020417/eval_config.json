@@ -1,0 +1,28 @@
+{
+  "mode": "test",
+  "algorithms": [
+    "PPO",
+    "A2C",
+    "SAC",
+    "TD3",
+    "RANDOM"
+  ],
+  "n_episodes": 1,
+  "timestamp": "20251014_020417",
+  "model_paths": {
+    "predators": {
+      "PPO": "outputs/saved_models/stage1.3_coevolution/Gen_18/PPO_predator_v18_vs_MIX_prey_pool_v1_20251014_014931.zip",
+      "A2C": "outputs/saved_models/stage1.3_coevolution/Gen_18/A2C_predator_v18_vs_MIX_prey_pool_v1_20251014_015241.zip",
+      "SAC": "outputs/saved_models/stage1.3_coevolution/Gen_18/SAC_predator_v18_vs_MIX_prey_pool_v1_20251014_015552.zip",
+      "TD3": "outputs/saved_models/stage1.3_coevolution/Gen_18/TD3_predator_v18_vs_MIX_prey_pool_v1_20251014_015902.zip",
+      "RANDOM": null
+    },
+    "preys": {
+      "PPO": "outputs/saved_models/stage1.3_coevolution/Gen_17/PPO_prey_v17_vs_MIX_predator_pool_v1_20251014_013258.zip",
+      "A2C": "outputs/saved_models/stage1.3_coevolution/Gen_17/A2C_prey_v17_vs_MIX_predator_pool_v1_20251014_013604.zip",
+      "SAC": "outputs/saved_models/stage1.3_coevolution/Gen_17/SAC_prey_v17_vs_MIX_predator_pool_v1_20251014_013908.zip",
+      "TD3": "outputs/saved_models/stage1.3_coevolution/Gen_17/TD3_prey_v17_vs_MIX_predator_pool_v1_20251014_014211.zip",
+      "RANDOM": null
+    }
+  }
+}

@@ -1,0 +1,84 @@
+# ============================================================================
+# Stage 1.3: 共进化训练配置
+# ============================================================================
+
+stage:
+  name: "stage1.3_coevolution"
+  description: "Predator和Prey交替训练，共同进化"
+
+# 共进化特定配置
+coevolution:
+  max_generations: 4                # 最多20代
+  start_generation: 2                # 从第2代开始（0,1已在stage1.1和1.2完成）
+  
+  # 奇偶代交替规则
+  alternation:
+    even_gen: "predator"             # 偶数代训练predator
+    odd_gen: "prey"                  # 奇数代训练prey
+  
+  # 收敛条件
+  convergence:
+    enabled: true
+    check_last_n_gens: 5             # 检查最近5代
+    performance_change_threshold: 0.03  # 性能变化<3%
+    balance_threshold: 0.05          # CatchRate接近0.5±0.05
+  
+  # 初始对手池
+  initial_pools:
+    prey_pool: "outputs/fixed_pools/prey_pool_v1"
+    predator_pool: "outputs/fixed_pools/predator_pool_v1"
+
+algorithms_to_train:
+  - "PPO"
+  - "A2C"
+  - "SAC"
+  - "TD3"
+
+# 每代的对手配置（动态）
+opponent:
+  type: "mixed_pool"
+  mix_strategy:
+    fixed_ratio: 0.7
+    random_ratio: 0.3
+  sampling: "uniform"
+  freeze: true
+
+environment_config: "configs/environments/waterworld_standard.yaml"
+
+# 每代的训练配置
+training:
+  prod:
+    total_timesteps: 400000          # 每代40万步（总共20代=800万步）
+    eval_freq: 50000
+    checkpoint_freq: 100000
+  
+  dryrun:
+    total_timesteps: 20000           # 每代2万步
+    eval_freq: 5000
+    checkpoint_freq: 10000
+
+# 冻结条件（每代）
+freeze_on_success:
+  enabled: true
+  criteria:
+    # Prey
+    prey:
+      survival_rate: 0.45            # 共进化阶段标准可以更宽松
+      avg_reward: 1.0
+      min_eval_episodes: 50
+    # Predator
+    predator:
+      catch_rate: 0.45
+      avg_reward: 1.0
+      min_eval_episodes: 50
+  
+  # 动态池管理
+  pool_management:
+    max_versions_per_algo: 5         # 每个算法最多5个版本
+    auto_prune: true                 # 自动淘汰相似版本
+
+output:
+  save_models: true
+  save_tensorboard: true
+  save_config_snapshot: true
+  per_generation_subfolder: true     # 每代一个子文件夹

@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-10-13T17:28:31.146911",
+  "config": {
+    "run_mode": "dryrun",
+    "train_side": "prey",
+    "train_algo": "RANDOM",
+    "opponent_config": {
+      "type": "algorithm",
+      "side": "predator",
+      "algorithm": "RANDOM",
+      "freeze": true
+    },
+    "experiment_name": "random_baseline_stage1.1",
+    "stage_name": "baseline_stage1.1",
+    "generation": 0,
+    "version": "baseline",
+    "device": "cpu",
+    "seed": null,
+    "notes": "",
+    "env_config": {
+      "environment": {
+        "name": "waterworld_v4",
+        "n_predators": 5,
+        "n_preys": 10,
+        "n_evaders": 90,
+        "n_poisons": 10,
+        "n_obstacles": 2,
+        "obstacle_coord": [
+          [
+            0.2,
+            0.2
+          ],
+          [
+            0.8,
+            0.2
+          ]
+        ],
+        "predator_speed": 0.06,
+        "prey_speed": 0.001,
+        "evader_speed": 0.01,
+        "poison_speed": 0.01,
+        "sensor_range": 0.8,
+        "thrust_penalty": 0.0,
+        "local_ratio": 0.5,
+        "max_cycles": 3000,
+        "static_food": true,
+        "static_poison": true,
+        "render_mode": null
+      },
+      "observation_space": {
+        "type": "Box",
+        "shape": [
+          212
+        ],
+        "dtype": "float32"
+      },
+      "action_space": {
+        "type": "Box",
+        "shape": [
+          2
+        ],
+        "low": -1.0,
+        "high": 1.0,
+        "dtype": "float32"
+      }
+    },
+    "algo_config": {
+      "algorithm": {
+        "name": "RANDOM",
+        "class": "custom"
+      },
+      "hyperparameters": {},
+      "device": "cpu",
+      "seed": null
+    },
+    "training_config": {
+      "total_timesteps": 50000,
+      "n_envs": 4,
+      "eval_freq": 10000,
+      "checkpoint_freq": 20000,
+      "n_eval_episodes": 10,
+      "save_checkpoints": true,
+      "save_final_model": true,
+      "tensorboard_enabled": true,
+      "verbose": 1,
+      "deterministic_eval": true,
+      "show_progress": true,
+      "check_freeze": false
+    },
+    "mode_config": {
+      "total_timesteps": 50000,
+      "n_envs": 4,
+      "n_eval_episodes": 10,
+      "save_checkpoints": true,
+      "save_final_model": true,
+      "checkpoint_freq": 20000,
+      "eval_freq": 10000,
+      "tensorboard_enabled": true,
+      "log_level": "INFO",
+      "verbose": 1,
+      "output_base_dir": "dryrun_outputs",
+      "auto_cleanup": true,
+      "max_runs": 3,
+      "filename_prefix": "DRYRUN_",
+      "deterministic_eval": true,
+      "seed": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_name": "SAC_prey_warmup",
+  "stage_name": "stage1.1_prey_warmup",
+  "train_side": "prey",
+  "train_algo": "SAC",
+  "version": "v1",
+  "generation": 0,
+  "run_mode": "test",
+  "opponent": "RANDOM_pred",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 75.70020174980164,
+  "final_model_path": "outputs/saved_models/stage1.1_prey_warmup/SAC_prey_v1_vs_RANDOM_pred_20251013_201039.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T20:10:39.592334"
+}

@@ -1,0 +1,193 @@
+# ============================================================================
+# 运行模式配置
+# ============================================================================
+# 三种模式：debug（快速调试）、dryrun（流程预演）、prod（正式实验）
+
+debug:
+  # 训练配置
+  total_timesteps: 1000              # 只训练1000步
+  n_envs: 1                          # 单环境
+  n_eval_episodes: 3                 # 评估时只跑3个episode
+  
+  # 保存配置
+  save_checkpoints: false            # 不保存检查点
+  save_final_model: false            # 不保存最终模型
+  checkpoint_freq: -1                # 禁用检查点
+  
+  # 评估配置
+  eval_freq: -1                      # 禁用定期评估
+  
+  # 日志配置
+  tensorboard_enabled: false         # 关闭TensorBoard（可选true写入debug目录）
+  log_level: "DEBUG"                 # 详细日志
+  verbose: 2                         # SB3详细输出
+  
+  # 输出管理
+  output_base_dir: "debug_outputs/current"
+  clear_on_start: true               # 启动时清空目录
+  archive_on_exit: true              # 退出时归档到archive/
+  max_archives: 5                    # 最多保留5个历史归档
+  
+  # 文件命名
+  filename_prefix: "DEBUG_"          # 文件名前缀
+  
+  # 其他
+  deterministic_eval: true           # 评估时使用确定性策略
+  seed: 42                           # 固定随机种子（便于调试）
+
+
+dryrun:
+  # 训练配置
+  total_timesteps: 50000             # 5万步快速验证
+  n_envs: 4                          # 4个并行环境
+  n_eval_episodes: 10                # 评估10个episode
+  
+  # 保存配置
+  save_checkpoints: true             # 保存检查点（但标记为dryrun）
+  save_final_model: true             # 保存最终模型
+  checkpoint_freq: 20000             # 每2万步保存
+  
+  # 评估配置
+  eval_freq: 10000                   # 每1万步评估
+  
+  # 日志配置
+  tensorboard_enabled: true          # 启用TensorBoard
+  log_level: "INFO"                  # 标准日志
+  verbose: 1                         # SB3适中输出
+  
+  # 输出管理
+  output_base_dir: "dryrun_outputs"  # 会自动添加时间戳子目录
+  auto_cleanup: true                 # 自动清理旧数据
+  max_runs: 3                        # 最多保留3次运行
+  
+  # 文件命名
+  filename_prefix: "DRYRUN_"
+  
+  # 其他
+  deterministic_eval: true
+  seed: null                         # 不固定随机种子（更真实）
+
+
+prod:
+  # 训练配置
+  total_timesteps: 1000000           # 完整训练（1M步，各阶段可覆盖）
+  n_envs: 8                          # 8个并行环境
+  n_eval_episodes: 100               # 评估100个episode
+  
+  # 保存配置
+  save_checkpoints: true             # 保存检查点
+  save_final_model: true             # 保存最终模型
+  checkpoint_freq: 100000            # 每10万步保存
+  
+  # 评估配置
+  eval_freq: 50000                   # 每5万步评估
+  
+  # 日志配置
+  tensorboard_enabled: true          # 启用TensorBoard
+  log_level: "INFO"                  # 标准日志
+  verbose: 1                         # SB3适中输出
+  
+  # 输出管理
+  output_base_dir: "outputs"         # 正式输出目录
+  require_confirmation: true         # 启动前需要确认
+  auto_backup: false                 # 不自动清理（手动管理）
+  
+  # 文件命名
+  filename_prefix: ""                # 无前缀
+  
+  # 其他
+  deterministic_eval: true           # 评估时确定性
+  seed: null                         # 不固定种子（更鲁棒）
+# ============================================================================
+# TEST MODE - 快速流程测试（10000步完整流程）
+# ============================================================================
+test:
+  # 训练配置 - 极短步数，测试完整流程
+  total_timesteps: 500             # 只训练500步
+  n_envs: 4                          # 4个并行环境（加快速度）
+  n_eval_episodes: 2                 # 评估2个episode
+  
+  # 保存配置
+  save_checkpoints: true             # 测试保存逻辑
+  save_final_model: true             # 测试模型保存
+  checkpoint_freq: 500               # 每100步保存（测试检查点）
+  
+  # 评估配置
+  eval_freq: 500                     # 每100步评估（测试评估）
+
+  # 日志配置
+  tensorboard_enabled: true          # 测试TensorBoard
+  log_level: "INFO"
+  verbose: 1
+  
+  # 输出管理
+  output_base_dir: "test_outputs"    # 专门的测试输出目录
+  clear_on_start: true               # 每次测试前清空
+  auto_cleanup: false                # 不自动清理（便于检查）
+  
+  # 文件命名
+  filename_prefix: "TEST_"
+  
+  # 其他
+  deterministic_eval: true
+  seed: 42                           # 固定种子（便于复现）
+  require_confirmation: false        # 不需要确认（快速启动）
+
+
+# 更新验证规则，添加test模式
+validation:
+  prod:
+    min_timesteps: 500000
+    forbidden_keywords:
+      - "test"
+      - "debug"
+      - "tmp"
+    require_notes: false
+  
+  debug:
+    max_timesteps: 10000
+    warn_if_exceed: true
+  
+  test:  # 新增
+    max_timesteps: 50000             # 测试模式最多5万步
+    warn_if_exceed: true
+
+# ============================================================================
+# 模式验证规则
+# ============================================================================
+validation:
+  prod:
+    min_timesteps: 500000            # 生产模式最少50万步
+    forbidden_keywords:              # 实验名称不能包含这些词
+      - "test"
+      - "debug"
+      - "tmp"
+    require_notes: false             # 是否要求填写实验备注
+  
+  debug:
+    max_timesteps: 10000             # 调试模式最多1万步（警告）
+    warn_if_exceed: true
+
+
+# ============================================================================
+# 冻结条件（什么时候将模型加入固定池）
+# ============================================================================
+freeze_criteria:
+  prey:
+    min_survival_rate: 0.65          # 最低生存率
+    min_avg_reward: 2.0              # 最低平均奖励
+    min_episodes: 100                # 至少评估100个episode
+    
+  predator:
+    min_catch_rate: 0.55             # 最低捕获率
+    min_avg_reward: 2.0              # 最低平均奖励
+    min_episodes: 100
+
+
+# ============================================================================
+# 固定池管理
+# ============================================================================
+fixed_pool:
+  max_versions: 5                    # 每个算法最多保留5个版本
+  similarity_threshold: 0.8          # KL散度>0.8认为相似，替换旧版本
+  auto_maintain: true                # 自动维护池大小

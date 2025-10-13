@@ -1,0 +1,35 @@
+# ============================================================================
+# Waterworld MARL Benchmark - Python Dependencies
+# ============================================================================
+
+# Core RL Libraries
+stable-baselines3==2.3.2
+pettingzoo==1.24.3
+gymnasium==0.29.1
+
+# Deep Learning
+torch>=2.0.0
+numpy>=1.24.0
+
+# Visualization & Logging
+tensorboard>=2.15.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# Data Processing
+pandas>=2.0.0
+scipy>=1.11.0
+
+# Configuration
+pyyaml>=6.0
+
+# Video Recording
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# Utilities
+tqdm>=4.66.0
+colorama>=0.4.6
+
+# Optional: For better performance
+# gymnasium[box2d]  # If needed for other environments

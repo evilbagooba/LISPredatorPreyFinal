@@ -1,0 +1,28 @@
+{
+  "experiment_name": "SAC_prey_coevo",
+  "stage_name": "stage1.3_coevolution/Gen_7",
+  "train_side": "prey",
+  "train_algo": "SAC",
+  "version": "v7",
+  "generation": 7,
+  "run_mode": "test",
+  "opponent": "MIX_predator_pool_v1",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 76.79652547836304,
+  "final_model_path": "outputs/saved_models/stage1.3_coevolution/Gen_7/SAC_prey_v7_vs_MIX_predator_pool_v1_20251013_225514.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T22:55:14.823764"
+}

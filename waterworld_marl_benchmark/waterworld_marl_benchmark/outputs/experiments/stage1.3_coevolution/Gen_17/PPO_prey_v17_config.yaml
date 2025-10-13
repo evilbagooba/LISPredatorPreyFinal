@@ -1,0 +1,117 @@
+config:
+  algo_config:
+    algorithm:
+      class: stable_baselines3.PPO
+      name: PPO
+    device: auto
+    hyperparameters:
+      batch_size: 64
+      clip_range: 0.2
+      clip_range_vf: null
+      ent_coef: 0.01
+      gae_lambda: 0.95
+      gamma: 0.99
+      learning_rate: 0.0003
+      max_grad_norm: 0.5
+      n_epochs: 10
+      n_steps: 2048
+      normalize_advantage: true
+      policy: MlpPolicy
+      policy_kwargs:
+        activation_fn: torch.nn.ReLU
+        net_arch:
+          pi:
+          - 256
+          - 256
+          vf:
+          - 256
+          - 256
+      target_kl: null
+      vf_coef: 0.5
+    seed: null
+  device: auto
+  env_config:
+    action_space:
+      dtype: float32
+      high: 1.0
+      low: -1.0
+      shape:
+      - 2
+      type: Box
+    environment:
+      evader_speed: 0.01
+      local_ratio: 0.5
+      max_cycles: 500
+      n_evaders: 90
+      n_obstacles: 2
+      n_poisons: 10
+      n_predators: 5
+      n_preys: 10
+      name: waterworld_v4
+      obstacle_coord:
+      - - 0.2
+        - 0.2
+      - - 0.8
+        - 0.2
+      poison_speed: 0.01
+      predator_speed: 0.06
+      prey_speed: 0.001
+      render_mode: null
+      sensor_range: 0.8
+      static_food: true
+      static_poison: true
+      thrust_penalty: 0.0
+    observation_space:
+      dtype: float32
+      shape:
+      - 212
+      type: Box
+  experiment_name: PPO_prey_coevo
+  generation: 17
+  mode_config:
+    auto_cleanup: false
+    checkpoint_freq: 500
+    clear_on_start: true
+    deterministic_eval: true
+    eval_freq: 500
+    filename_prefix: TEST_
+    log_level: INFO
+    n_envs: 4
+    n_eval_episodes: 2
+    output_base_dir: test_outputs
+    require_confirmation: false
+    save_checkpoints: true
+    save_final_model: true
+    seed: 42
+    tensorboard_enabled: true
+    total_timesteps: 500
+    verbose: 1
+  notes: ''
+  opponent_config:
+    freeze: true
+    mix_strategy:
+      fixed_ratio: 0.7
+      sampling: uniform
+    pool_path: outputs/fixed_pools/predator_pool_v1
+    side: predator
+    type: mixed_pool
+  run_mode: test
+  seed: null
+  stage_name: stage1.3_coevolution/Gen_17
+  train_algo: PPO
+  train_side: prey
+  training_config:
+    check_freeze: false
+    checkpoint_freq: 500
+    deterministic_eval: true
+    eval_freq: 500
+    n_envs: 4
+    n_eval_episodes: 2
+    save_checkpoints: true
+    save_final_model: true
+    show_progress: true
+    tensorboard_enabled: true
+    total_timesteps: 500
+    verbose: 1
+  version: v17
+timestamp: '2025-10-14T01:25:50.507483'

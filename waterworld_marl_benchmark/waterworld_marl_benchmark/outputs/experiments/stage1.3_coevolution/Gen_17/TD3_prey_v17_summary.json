@@ -1,0 +1,28 @@
+{
+  "experiment_name": "TD3_prey_coevo",
+  "stage_name": "stage1.3_coevolution/Gen_17",
+  "train_side": "prey",
+  "train_algo": "TD3",
+  "version": "v17",
+  "generation": 17,
+  "run_mode": "test",
+  "opponent": "MIX_predator_pool_v1",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 78.31664705276489,
+  "final_model_path": "outputs/saved_models/stage1.3_coevolution/Gen_17/TD3_prey_v17_vs_MIX_predator_pool_v1_20251014_014211.zip",
+  "notes": "",
+  "saved_at": "2025-10-14T01:42:11.081111"
+}

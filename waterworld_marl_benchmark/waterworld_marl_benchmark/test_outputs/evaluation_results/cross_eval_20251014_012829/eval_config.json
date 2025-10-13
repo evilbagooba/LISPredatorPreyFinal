@@ -1,0 +1,16 @@
+{
+  "mode": "test",
+  "algorithms": [
+    "RANDOM"
+  ],
+  "n_episodes": 1,
+  "timestamp": "20251014_012829",
+  "model_paths": {
+    "predators": {
+      "RANDOM": null
+    },
+    "preys": {
+      "RANDOM": null
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# ============================================================================
+# Stage 1.3: 共进化训练配置 - TEST版本（仅用于快速测试流程）
+# ============================================================================
+
+stage:
+  name: "stage1.3_coevolution"
+  description: "Predator和Prey交替训练，共同进化 - 测试版本"
+
+# ✅ 测试版本：只跑1代
+coevolution:
+  max_generations: 2                # start=2, max=2 → 只跑1代
+  start_generation: 2
+  
+  alternation:
+    even_gen: "predator"
+    odd_gen: "prey"
+  
+  convergence:
+    enabled: false                  # 测试时不检查收敛
+  
+  initial_pools:
+    prey_pool: "outputs/fixed_pools/prey_pool_v1"
+    predator_pool: "outputs/fixed_pools/predator_pool_v1"
+
+# ✅ 测试时可以只跑1-2个算法加快速度
+algorithms_to_train:
+  - "PPO"
+  - "A2C"
+  # 测试时注释掉 SAC 和 TD3 以加快速度
+  # - "SAC"
+  # - "TD3"
+
+opponent:
+  type: "mixed_pool"
+  mix_strategy:
+    fixed_ratio: 0.7
+    random_ratio: 0.3
+  sampling: "uniform"
+  freeze: true
+
+environment_config: "configs/environments/waterworld_standard.yaml"
+
+# ✅ 测试配置（极短步数）
+training:
+  test:
+    total_timesteps: 500            # 每代只跑500步
+    eval_freq: 500
+    checkpoint_freq: 500
+  
+  # 不需要其他模式的配置
+
+freeze_on_success:
+  enabled: false                    # 测试时不检查冻结条件
+  
+output:
+  save_models: true
+  save_tensorboard: true
+  save_config_snapshot: true
+  per_generation_subfolder: true

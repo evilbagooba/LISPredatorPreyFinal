@@ -1,0 +1,28 @@
+{
+  "experiment_name": "A2C_predator_coevo",
+  "stage_name": "stage1.3_coevolution/Gen_2",
+  "train_side": "predator",
+  "train_algo": "A2C",
+  "version": "v2",
+  "generation": 2,
+  "run_mode": "test",
+  "opponent": "MIX_prey_pool_v1",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 81.89349865913391,
+  "final_model_path": "outputs/saved_models/stage1.3_coevolution/Gen_2/A2C_predator_v2_vs_MIX_prey_pool_v1_20251013_232822.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T23:28:22.144073"
+}

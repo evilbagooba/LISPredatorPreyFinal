@@ -1,0 +1,28 @@
+{
+  "experiment_name": "TD3_prey_warmup",
+  "stage_name": "stage1.1_prey_warmup",
+  "train_side": "prey",
+  "train_algo": "TD3",
+  "version": "v1",
+  "generation": 0,
+  "run_mode": "debug",
+  "opponent": "RANDOM_pred",
+  "training_config": {
+    "total_timesteps": 1000,
+    "n_envs": 1,
+    "eval_freq": -1,
+    "checkpoint_freq": -1,
+    "n_eval_episodes": 3,
+    "save_checkpoints": false,
+    "save_final_model": false,
+    "tensorboard_enabled": false,
+    "verbose": 2,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 50.15316414833069,
+  "final_model_path": null,
+  "notes": "",
+  "saved_at": "2025-10-13T20:03:11.734266"
+}

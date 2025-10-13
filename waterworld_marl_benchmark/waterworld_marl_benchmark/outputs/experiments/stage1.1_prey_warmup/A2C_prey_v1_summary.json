@@ -1,0 +1,28 @@
+{
+  "experiment_name": "A2C_prey_warmup",
+  "stage_name": "stage1.1_prey_warmup",
+  "train_side": "prey",
+  "train_algo": "A2C",
+  "version": "v1",
+  "generation": 0,
+  "run_mode": "test",
+  "opponent": "RANDOM_pred",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 76.95752429962158,
+  "final_model_path": "outputs/saved_models/stage1.1_prey_warmup/A2C_prey_v1_vs_RANDOM_pred_20251013_200742.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T20:07:42.679191"
+}

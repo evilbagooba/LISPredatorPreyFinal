@@ -1,0 +1,53 @@
+# ============================================================================
+# Stage 1.2: Predator 引导训练配置
+# ============================================================================
+
+stage:
+  name: "stage1.2_pred_guided"
+  description: "训练Predator对抗固定的Prey池v1"
+  generation: 1
+
+train_side: "predator"
+
+algorithms_to_train:
+  - "PPO"
+  - "A2C"
+  - "SAC"
+  - "TD3"
+
+# 对手配置：从固定池采样
+opponent:
+  side: "prey"
+  type: "mixed_pool"                 # 混合池模式
+  pool_path: "outputs/fixed_pools/prey_pool_v1"
+  mix_strategy:
+    fixed_ratio: 0.7                 # 70%从固定池
+    random_ratio: 0.3                # 30%用RANDOM
+  sampling: "uniform"                # uniform / weighted（按性能加权）
+  freeze: true
+
+environment_config: "configs/environments/waterworld_standard.yaml"
+
+training:
+  prod:
+    total_timesteps: 1000000
+    eval_freq: 50000
+    checkpoint_freq: 100000
+  
+  dryrun:
+    total_timesteps: 50000
+    eval_freq: 10000
+    checkpoint_freq: 20000
+
+freeze_on_success:
+  enabled: true
+  criteria:
+    catch_rate: 0.55
+    avg_reward: 2.0
+    min_eval_episodes: 100
+  save_to_pool: "predator_pool_v1"
+
+output:
+  save_models: true
+  save_tensorboard: true
+  save_config_snapshot: true

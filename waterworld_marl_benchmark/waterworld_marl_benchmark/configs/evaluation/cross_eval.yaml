@@ -1,0 +1,139 @@
+# ============================================================================
+# 交叉评估配置（Cross-Evaluation Configuration）
+# ============================================================================
+
+evaluation:
+  # 评估模式
+  mode: "test"  # test / dryrun / prod
+  
+  # 模型池路径（根据模式自动选择）
+  model_pools:
+    test:
+      predator_pool: "outputs/fixed_pools/predator_pool_v1"
+      prey_pool: "outputs/fixed_pools/prey_pool_v1"
+      saved_models_base: "outputs/saved_models"
+    
+    dryrun:
+      predator_pool: "dryrun_outputs/fixed_pools/predator_pool_v1"
+      prey_pool: "dryrun_outputs/fixed_pools/prey_pool_v1"
+      saved_models_base: "dryrun_outputs/saved_models"
+    
+    prod:
+      predator_pool: "outputs/fixed_pools/predator_pool_v1"
+      prey_pool: "outputs/fixed_pools/prey_pool_v1"
+      saved_models_base: "outputs/saved_models"
+  
+  # 评估参数
+  n_eval_episodes: 20            # 每个组合评估的episode数
+  deterministic: true            # 使用确定性策略
+  
+  # 环境配置
+  env_config: "waterworld_fast"  # 使用快速环境加速评估
+  
+  # 要评估的算法
+  algorithms:
+    - "PPO"
+    - "A2C"
+    - "SAC"
+    - "TD3"
+    - "RANDOM"
+  
+  # 输出配置
+  output_dir: "evaluation_results"
+  save_raw_results: true
+  save_processed_results: true
+  
+  # 指标配置
+  metrics:
+    predator:
+      - "catch_rate"
+      - "avg_reward"
+      - "energy_efficiency"
+      - "first_catch_time"
+      - "avg_episode_length"
+    
+    prey:
+      - "survival_rate"
+      - "avg_reward"
+      - "escape_success"
+      - "avg_lifespan"
+      - "avg_episode_length"
+    
+    matchup:
+      - "reward_gap"
+      - "balance_score"
+      - "episode_length"
+
+# ============================================================================
+# 可视化配置
+# ============================================================================
+visualization:
+  # 热力图
+  heatmap:
+    figsize: [10, 8]
+    cmap: "RdYlGn"
+    annot: true
+    fmt: ".3f"
+    
+  # 泛化曲线
+  generalization_curve:
+    figsize: [10, 6]
+    show_std: true
+    
+  # 雷达图
+  radar_chart:
+    figsize: [8, 8]
+    metrics:
+      - "adaptability_score"
+      - "avg_performance"
+      - "ood_performance"
+      - "stability"
+
+# ============================================================================
+# 分析配置
+# ============================================================================
+analysis:
+  # 自适应性计算
+  adaptability:
+    method: "performance_ratio"  # performance_ratio / performance_drop
+    include_random: false         # 是否包含RANDOM在OOD计算中
+  
+  # 统计检验
+  statistical_tests:
+    method: "wilcoxon"           # wilcoxon / ttest / mannwhitneyu
+    significance_level: 0.05
+  
+  # 策略距离估算（用于泛化曲线）
+  policy_distance:
+    # 预设的算法间距离（基于架构相似度）
+    distances:
+      PPO:
+        PPO: 0.0
+        A2C: 0.3
+        SAC: 0.8
+        TD3: 0.6
+        RANDOM: 1.0
+      A2C:
+        PPO: 0.3
+        A2C: 0.0
+        SAC: 0.7
+        TD3: 0.5
+        RANDOM: 1.0
+      SAC:
+        PPO: 0.8
+        A2C: 0.7
+        SAC: 0.0
+        TD3: 0.4
+        RANDOM: 1.0
+      TD3:
+        PPO: 0.6
+        A2C: 0.5
+        SAC: 0.4
+        TD3: 0.0
+        RANDOM: 1.0
+      RANDOM:
+        PPO: 1.0
+        A2C: 1.0
+        SAC: 1.0
+        TD3: 1.0
+        RANDOM: 0.5

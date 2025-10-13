@@ -1,0 +1,31 @@
+# ============================================================================
+# A2C 算法配置
+# ============================================================================
+
+algorithm:
+  name: "A2C"
+  class: "stable_baselines3.A2C"
+
+hyperparameters:
+  learning_rate: 7.0e-4              # A2C通常需要更高学习率
+  
+  policy: "MlpPolicy"
+  policy_kwargs:
+    net_arch:
+      pi: [256, 256]
+      vf: [256, 256]
+    activation_fn: "torch.nn.ReLU"
+  
+  n_steps: 5                         # A2C每5步更新一次
+  gamma: 0.99
+  gae_lambda: 1.0                    # A2C通常用1.0
+  
+  ent_coef: 0.01
+  vf_coef: 0.25                      # A2C的vf_coef通常较小
+  max_grad_norm: 0.5
+  
+  rms_prop_eps: 1.0e-5               # RMSprop特定参数
+  normalize_advantage: false         # A2C通常不标准化
+
+device: "auto"
+seed: null

@@ -1,0 +1,46 @@
+# ============================================================================
+# PPO 算法配置
+# ============================================================================
+
+algorithm:
+  name: "PPO"
+  class: "stable_baselines3.PPO"
+
+# 超参数
+hyperparameters:
+  # 学习率
+  learning_rate: 3.0e-4
+  
+  # 网络架构
+  policy: "MlpPolicy"
+  policy_kwargs:
+    net_arch:
+      pi: [256, 256]                 # Actor网络
+      vf: [256, 256]                 # Critic网络
+    activation_fn: "torch.nn.ReLU"
+  
+  # 训练参数
+  n_steps: 2048                      # 每次更新收集的步数
+  batch_size: 64                     # 小批量大小
+  n_epochs: 10                       # 每次更新的epoch数
+  gamma: 0.99                        # 折扣因子
+  gae_lambda: 0.95                   # GAE lambda
+  
+  # PPO特定参数
+  clip_range: 0.2                    # PPO裁剪范围
+  clip_range_vf: null                # Value function裁剪（null=不裁剪）
+  
+  # 正则化
+  ent_coef: 0.01                     # 熵系数（鼓励探索）
+  vf_coef: 0.5                       # Value function系数
+  max_grad_norm: 0.5                 # 梯度裁剪
+  
+  # 其他
+  normalize_advantage: true          # 标准化优势函数
+  target_kl: null                    # 目标KL散度（null=不使用）
+  
+# 设备配置
+device: "auto"                       # auto会自动选择cuda/cpu
+
+# 种子（null表示随机）
+seed: null

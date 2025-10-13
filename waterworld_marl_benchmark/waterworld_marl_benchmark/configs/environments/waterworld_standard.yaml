@@ -1,0 +1,52 @@
+# ============================================================================
+# Waterworld 标准环境配置（用于正式实验）
+# ============================================================================
+
+environment:
+  name: "waterworld_v4"
+  
+  # 智能体数量
+  n_predators: 5
+  n_preys: 10
+  n_evaders: 90                      # 食物数量
+  n_poisons: 10
+  n_obstacles: 2
+  
+  # 障碍物位置（固定）
+  obstacle_coord:
+    - [0.2, 0.2]
+    - [0.8, 0.2]
+  
+  # 速度配置
+  predator_speed: 0.06               # Predator速度
+  prey_speed: 0.001                  # Prey速度（更慢，容易被抓）
+  evader_speed: 0.01                 # 食物速度
+  poison_speed: 0.01                 # 毒药速度
+  
+  # 传感器配置
+  sensor_range: 0.8                  # 传感器范围（增大以便智能体感知更多）
+  
+  # 奖励配置
+  thrust_penalty: 0.0                # 移动惩罚（0=无惩罚）
+  local_ratio: 0.5                   # 局部奖励比例
+  
+  # 环境设置
+  max_cycles: 3000                   # 最大步数
+  static_food: true                  # 食物静态（不移动）
+  static_poison: true                # 毒药静态
+  
+  # 渲染设置
+  render_mode: null                  # 训练时不渲染（null），评估时可设为"rgb_array"
+
+# 观察和动作空间（自动从环境获取，这里仅文档用途）
+observation_space:
+  type: "Box"
+  shape: [212]                       # Waterworld默认观察维度
+  dtype: "float32"
+
+action_space:
+  type: "Box"
+  shape: [2]                         # [Δx, Δy]
+  low: -1.0
+  high: 1.0
+  dtype: "float32"

@@ -1,0 +1,119 @@
+config:
+  algo_config:
+    algorithm:
+      class: stable_baselines3.TD3
+      name: TD3
+    device: auto
+    hyperparameters:
+      action_noise: normal
+      action_noise_kwargs:
+        mean: 0.0
+        sigma: 0.1
+      batch_size: 256
+      buffer_size: 1000000
+      gamma: 0.99
+      gradient_steps: 1
+      learning_rate: 0.0003
+      learning_starts: 10000
+      policy: MlpPolicy
+      policy_delay: 2
+      policy_kwargs:
+        activation_fn: torch.nn.ReLU
+        net_arch:
+          pi:
+          - 256
+          - 256
+          qf:
+          - 256
+          - 256
+      target_noise_clip: 0.5
+      target_policy_noise: 0.2
+      tau: 0.005
+      train_freq: 1
+    seed: null
+  device: auto
+  env_config:
+    action_space:
+      dtype: float32
+      high: 1.0
+      low: -1.0
+      shape:
+      - 2
+      type: Box
+    environment:
+      evader_speed: 0.01
+      local_ratio: 0.5
+      max_cycles: 500
+      n_evaders: 90
+      n_obstacles: 2
+      n_poisons: 10
+      n_predators: 5
+      n_preys: 10
+      name: waterworld_v4
+      obstacle_coord:
+      - - 0.2
+        - 0.2
+      - - 0.8
+        - 0.2
+      poison_speed: 0.01
+      predator_speed: 0.06
+      prey_speed: 0.001
+      render_mode: null
+      sensor_range: 0.8
+      static_food: true
+      static_poison: true
+      thrust_penalty: 0.0
+    observation_space:
+      dtype: float32
+      shape:
+      - 212
+      type: Box
+  experiment_name: TD3_predator_coevo
+  generation: 4
+  mode_config:
+    auto_cleanup: false
+    checkpoint_freq: 500
+    clear_on_start: true
+    deterministic_eval: true
+    eval_freq: 500
+    filename_prefix: TEST_
+    log_level: INFO
+    n_envs: 4
+    n_eval_episodes: 2
+    output_base_dir: test_outputs
+    require_confirmation: false
+    save_checkpoints: true
+    save_final_model: true
+    seed: 42
+    tensorboard_enabled: true
+    total_timesteps: 500
+    verbose: 1
+  notes: ''
+  opponent_config:
+    freeze: true
+    mix_strategy:
+      fixed_ratio: 0.7
+      sampling: uniform
+    pool_path: outputs/fixed_pools/prey_pool_v1
+    side: prey
+    type: mixed_pool
+  run_mode: test
+  seed: null
+  stage_name: stage1.3_coevolution/Gen_4
+  train_algo: TD3
+  train_side: predator
+  training_config:
+    check_freeze: false
+    checkpoint_freq: 500
+    deterministic_eval: true
+    eval_freq: 500
+    n_envs: 4
+    n_eval_episodes: 2
+    save_checkpoints: true
+    save_final_model: true
+    show_progress: true
+    tensorboard_enabled: true
+    total_timesteps: 500
+    verbose: 1
+  version: v4
+timestamp: '2025-10-13T22:06:33.007575'

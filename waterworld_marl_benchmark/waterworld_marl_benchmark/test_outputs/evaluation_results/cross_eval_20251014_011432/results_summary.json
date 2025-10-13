@@ -1,0 +1,37 @@
+{
+  "PPO": {
+    "PPO": null,
+    "A2C": null,
+    "SAC": null,
+    "TD3": null,
+    "RANDOM": null
+  },
+  "A2C": {
+    "PPO": null,
+    "A2C": null,
+    "SAC": null,
+    "TD3": null,
+    "RANDOM": null
+  },
+  "SAC": {
+    "PPO": null,
+    "A2C": null,
+    "SAC": null,
+    "TD3": null,
+    "RANDOM": null
+  },
+  "TD3": {
+    "PPO": null,
+    "A2C": null,
+    "SAC": null,
+    "TD3": null,
+    "RANDOM": null
+  },
+  "RANDOM": {
+    "PPO": null,
+    "A2C": null,
+    "SAC": null,
+    "TD3": null,
+    "RANDOM": null
+  }
+}

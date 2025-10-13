@@ -1,0 +1,38 @@
+# ============================================================================
+# SAC 算法配置
+# ============================================================================
+
+algorithm:
+  name: "SAC"
+  class: "stable_baselines3.SAC"
+
+hyperparameters:
+  learning_rate: 3.0e-4
+  
+  policy: "MlpPolicy"
+  policy_kwargs:
+    net_arch:
+      pi: [256, 256]
+      qf: [256, 256]                 # Q网络
+    activation_fn: "torch.nn.ReLU"
+  
+  buffer_size: 1000000               # Replay buffer大小
+  learning_starts: 10000             # 开始学习前的随机步数
+  batch_size: 256                    # 从buffer采样的批量大小
+  tau: 0.005                         # 软更新系数
+  gamma: 0.99
+  
+  # SAC特定参数
+  train_freq: 1                      # 每步都训练
+  gradient_steps: 1                  # 每次训练的梯度步数
+  
+  # 自动调整熵系数
+  ent_coef: "auto"                   # 自动调整alpha
+  target_entropy: "auto"             # 目标熵（auto=-action_dim）
+  
+  # 其他
+  use_sde: false                     # 是否使用状态依赖探索
+  sde_sample_freq: -1
+
+device: "auto"
+seed: null

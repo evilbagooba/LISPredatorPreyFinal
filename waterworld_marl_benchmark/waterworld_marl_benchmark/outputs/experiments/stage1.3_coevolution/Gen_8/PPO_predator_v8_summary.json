@@ -1,0 +1,28 @@
+{
+  "experiment_name": "PPO_predator_coevo",
+  "stage_name": "stage1.3_coevolution/Gen_8",
+  "train_side": "predator",
+  "train_algo": "PPO",
+  "version": "v8",
+  "generation": 8,
+  "run_mode": "test",
+  "opponent": "MIX_prey_pool_v1",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 325.38024377822876,
+  "final_model_path": "outputs/saved_models/stage1.3_coevolution/Gen_8/PPO_predator_v8_vs_MIX_prey_pool_v1_20251013_230526.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T23:05:26.911812"
+}

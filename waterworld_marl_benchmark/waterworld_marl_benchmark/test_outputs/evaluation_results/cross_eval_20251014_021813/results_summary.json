@@ -1,0 +1,212 @@
+{
+  "PPO": {
+    "PPO": {
+      "catch_rate": 0.3,
+      "survival_rate": 0.7,
+      "pred_avg_reward": 0.0048,
+      "prey_avg_reward": 0.0154062636835404,
+      "balance_score": 0.6,
+      "is_ood": false
+    },
+    "A2C": {
+      "catch_rate": 0.3,
+      "survival_rate": 0.7,
+      "pred_avg_reward": 0.0048,
+      "prey_avg_reward": 0.00473372025539616,
+      "balance_score": 0.6,
+      "is_ood": true
+    },
+    "SAC": {
+      "catch_rate": 0.5,
+      "survival_rate": 0.5,
+      "pred_avg_reward": 0.008,
+      "prey_avg_reward": 0.015610909204081076,
+      "balance_score": 1.0,
+      "is_ood": true
+    },
+    "TD3": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.006866538421171491,
+      "balance_score": 0.4,
+      "is_ood": true
+    },
+    "RANDOM": {
+      "catch_rate": 0.7,
+      "survival_rate": 0.30000000000000004,
+      "pred_avg_reward": 0.0112,
+      "prey_avg_reward": 0.02970069991707161,
+      "balance_score": 0.6000000000000001,
+      "is_ood": false
+    }
+  },
+  "A2C": {
+    "PPO": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.02136952377434119,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "A2C": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.004807611662851127,
+      "balance_score": 0.4,
+      "is_ood": false
+    },
+    "SAC": {
+      "catch_rate": 0.1,
+      "survival_rate": 0.9,
+      "pred_avg_reward": 0.0016,
+      "prey_avg_reward": 0.010010886458431584,
+      "balance_score": 0.19999999999999996,
+      "is_ood": true
+    },
+    "TD3": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.008093377857004492,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "RANDOM": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.04307902925490747,
+      "balance_score": 0.0,
+      "is_ood": false
+    }
+  },
+  "SAC": {
+    "PPO": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.013471857703820322,
+      "balance_score": 0.4,
+      "is_ood": true
+    },
+    "A2C": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.007078474262782561,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "SAC": {
+      "catch_rate": 0.5,
+      "survival_rate": 0.5,
+      "pred_avg_reward": 0.008,
+      "prey_avg_reward": 0.008487617222998409,
+      "balance_score": 1.0,
+      "is_ood": false
+    },
+    "TD3": {
+      "catch_rate": 0.1,
+      "survival_rate": 0.9,
+      "pred_avg_reward": 0.0016,
+      "prey_avg_reward": 0.005848399425802683,
+      "balance_score": 0.19999999999999996,
+      "is_ood": true
+    },
+    "RANDOM": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.04247255828196178,
+      "balance_score": 0.4,
+      "is_ood": false
+    }
+  },
+  "TD3": {
+    "PPO": {
+      "catch_rate": 1.0,
+      "survival_rate": 0.0,
+      "pred_avg_reward": 0.0352,
+      "prey_avg_reward": 0.00673089778030059,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "A2C": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.00579984700489184,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "SAC": {
+      "catch_rate": 0.0,
+      "survival_rate": 1.0,
+      "pred_avg_reward": 0.0,
+      "prey_avg_reward": 0.00914741391499879,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "TD3": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.006305711178941976,
+      "balance_score": 0.4,
+      "is_ood": false
+    },
+    "RANDOM": {
+      "catch_rate": 0.3,
+      "survival_rate": 0.7,
+      "pred_avg_reward": 0.0048,
+      "prey_avg_reward": 0.03358090468678383,
+      "balance_score": 0.6,
+      "is_ood": false
+    }
+  },
+  "RANDOM": {
+    "PPO": {
+      "catch_rate": 0.3,
+      "survival_rate": 0.7,
+      "pred_avg_reward": 0.0048,
+      "prey_avg_reward": 0.022489600957531015,
+      "balance_score": 0.6,
+      "is_ood": true
+    },
+    "A2C": {
+      "catch_rate": 0.2,
+      "survival_rate": 0.8,
+      "pred_avg_reward": 0.0032,
+      "prey_avg_reward": 0.004878006005235915,
+      "balance_score": 0.4,
+      "is_ood": true
+    },
+    "SAC": {
+      "catch_rate": 1.0,
+      "survival_rate": 0.0,
+      "pred_avg_reward": 0.016,
+      "prey_avg_reward": 0.004048287542762437,
+      "balance_score": 0.0,
+      "is_ood": true
+    },
+    "TD3": {
+      "catch_rate": 0.1,
+      "survival_rate": 0.9,
+      "pred_avg_reward": 0.0016,
+      "prey_avg_reward": 0.008511672976088607,
+      "balance_score": 0.19999999999999996,
+      "is_ood": true
+    },
+    "RANDOM": {
+      "catch_rate": 0.6,
+      "survival_rate": 0.4,
+      "pred_avg_reward": 0.0096,
+      "prey_avg_reward": 0.03352305470771235,
+      "balance_score": 0.8,
+      "is_ood": false
+    }
+  }
+}

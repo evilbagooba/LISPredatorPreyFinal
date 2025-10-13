@@ -1,0 +1,90 @@
+config:
+  algo_config:
+    algorithm:
+      class: custom
+      name: RANDOM
+    device: cpu
+    hyperparameters: {}
+    seed: null
+  device: cpu
+  env_config:
+    action_space:
+      dtype: float32
+      high: 1.0
+      low: -1.0
+      shape:
+      - 2
+      type: Box
+    environment:
+      evader_speed: 0.01
+      local_ratio: 0.5
+      max_cycles: 3000
+      n_evaders: 90
+      n_obstacles: 2
+      n_poisons: 10
+      n_predators: 5
+      n_preys: 10
+      name: waterworld_v4
+      obstacle_coord:
+      - - 0.2
+        - 0.2
+      - - 0.8
+        - 0.2
+      poison_speed: 0.01
+      predator_speed: 0.06
+      prey_speed: 0.001
+      render_mode: null
+      sensor_range: 0.8
+      static_food: true
+      static_poison: true
+      thrust_penalty: 0.0
+    observation_space:
+      dtype: float32
+      shape:
+      - 212
+      type: Box
+  experiment_name: random_baseline_stage1.1
+  generation: 0
+  mode_config:
+    auto_cleanup: true
+    checkpoint_freq: 20000
+    deterministic_eval: true
+    eval_freq: 10000
+    filename_prefix: DRYRUN_
+    log_level: INFO
+    max_runs: 3
+    n_envs: 4
+    n_eval_episodes: 10
+    output_base_dir: dryrun_outputs
+    save_checkpoints: true
+    save_final_model: true
+    seed: null
+    tensorboard_enabled: true
+    total_timesteps: 50000
+    verbose: 1
+  notes: ''
+  opponent_config:
+    algorithm: RANDOM
+    freeze: true
+    side: predator
+    type: algorithm
+  run_mode: dryrun
+  seed: null
+  stage_name: baseline_stage1.1
+  train_algo: RANDOM
+  train_side: prey
+  training_config:
+    check_freeze: false
+    checkpoint_freq: 20000
+    deterministic_eval: true
+    eval_freq: 10000
+    n_envs: 4
+    n_eval_episodes: 10
+    save_checkpoints: true
+    save_final_model: true
+    show_progress: true
+    tensorboard_enabled: true
+    total_timesteps: 50000
+    verbose: 1
+  version: baseline
+timestamp: '2025-10-13T17:28:31.146911'

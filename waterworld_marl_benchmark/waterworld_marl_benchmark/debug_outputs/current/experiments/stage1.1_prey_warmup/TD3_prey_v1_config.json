@@ -1,0 +1,141 @@
+{
+  "timestamp": "2025-10-13T20:02:21.558108",
+  "config": {
+    "run_mode": "debug",
+    "train_side": "prey",
+    "train_algo": "TD3",
+    "opponent_config": {
+      "type": "algorithm",
+      "side": "predator",
+      "algorithm": "RANDOM",
+      "freeze": true
+    },
+    "experiment_name": "TD3_prey_warmup",
+    "stage_name": "stage1.1_prey_warmup",
+    "generation": 0,
+    "version": "v1",
+    "device": "auto",
+    "seed": null,
+    "notes": "",
+    "env_config": {
+      "environment": {
+        "name": "waterworld_v4",
+        "n_predators": 5,
+        "n_preys": 10,
+        "n_evaders": 90,
+        "n_poisons": 10,
+        "n_obstacles": 2,
+        "obstacle_coord": [
+          [
+            0.2,
+            0.2
+          ],
+          [
+            0.8,
+            0.2
+          ]
+        ],
+        "predator_speed": 0.06,
+        "prey_speed": 0.001,
+        "evader_speed": 0.01,
+        "poison_speed": 0.01,
+        "sensor_range": 0.8,
+        "thrust_penalty": 0.0,
+        "local_ratio": 0.5,
+        "max_cycles": 3000,
+        "static_food": true,
+        "static_poison": true,
+        "render_mode": null
+      },
+      "observation_space": {
+        "type": "Box",
+        "shape": [
+          212
+        ],
+        "dtype": "float32"
+      },
+      "action_space": {
+        "type": "Box",
+        "shape": [
+          2
+        ],
+        "low": -1.0,
+        "high": 1.0,
+        "dtype": "float32"
+      }
+    },
+    "algo_config": {
+      "algorithm": {
+        "name": "TD3",
+        "class": "stable_baselines3.TD3"
+      },
+      "hyperparameters": {
+        "learning_rate": 0.0003,
+        "policy": "MlpPolicy",
+        "policy_kwargs": {
+          "net_arch": {
+            "pi": [
+              256,
+              256
+            ],
+            "qf": [
+              256,
+              256
+            ]
+          },
+          "activation_fn": "torch.nn.ReLU"
+        },
+        "buffer_size": 1000000,
+        "learning_starts": 10000,
+        "batch_size": 256,
+        "tau": 0.005,
+        "gamma": 0.99,
+        "train_freq": 1,
+        "gradient_steps": 1,
+        "policy_delay": 2,
+        "target_policy_noise": 0.2,
+        "target_noise_clip": 0.5,
+        "action_noise": "normal",
+        "action_noise_kwargs": {
+          "mean": 0.0,
+          "sigma": 0.1
+        }
+      },
+      "device": "auto",
+      "seed": null
+    },
+    "training_config": {
+      "total_timesteps": 1000,
+      "n_envs": 1,
+      "eval_freq": -1,
+      "checkpoint_freq": -1,
+      "n_eval_episodes": 3,
+      "save_checkpoints": false,
+      "save_final_model": false,
+      "tensorboard_enabled": false,
+      "verbose": 2,
+      "deterministic_eval": true,
+      "show_progress": true,
+      "check_freeze": false
+    },
+    "mode_config": {
+      "total_timesteps": 1000,
+      "n_envs": 1,
+      "n_eval_episodes": 3,
+      "save_checkpoints": false,
+      "save_final_model": false,
+      "checkpoint_freq": -1,
+      "eval_freq": -1,
+      "tensorboard_enabled": false,
+      "log_level": "DEBUG",
+      "verbose": 2,
+      "output_base_dir": "debug_outputs/current",
+      "clear_on_start": true,
+      "archive_on_exit": true,
+      "max_archives": 5,
+      "filename_prefix": "DEBUG_",
+      "deterministic_eval": true,
+      "seed": 42
+    }
+  }
+}

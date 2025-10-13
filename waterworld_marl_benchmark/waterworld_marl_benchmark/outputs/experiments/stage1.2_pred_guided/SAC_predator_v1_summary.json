@@ -1,0 +1,28 @@
+{
+  "experiment_name": "SAC_predator_guided",
+  "stage_name": "stage1.2_pred_guided",
+  "train_side": "predator",
+  "train_algo": "SAC",
+  "version": "v1",
+  "generation": 1,
+  "run_mode": "test",
+  "opponent": "MIX_prey_pool_v1",
+  "training_config": {
+    "total_timesteps": 500,
+    "n_envs": 4,
+    "eval_freq": 500,
+    "checkpoint_freq": 500,
+    "n_eval_episodes": 2,
+    "save_checkpoints": true,
+    "save_final_model": true,
+    "tensorboard_enabled": true,
+    "verbose": 1,
+    "deterministic_eval": true,
+    "show_progress": true,
+    "check_freeze": false
+  },
+  "training_time_seconds": 79.57371616363525,
+  "final_model_path": "outputs/saved_models/stage1.2_pred_guided/SAC_predator_v1_vs_MIX_prey_pool_v1_20251013_210925.zip",
+  "notes": "",
+  "saved_at": "2025-10-13T21:09:25.023701"
+}

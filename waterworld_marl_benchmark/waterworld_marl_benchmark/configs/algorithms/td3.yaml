@@ -1,0 +1,39 @@
+# ============================================================================
+# TD3 算法配置
+# ============================================================================
+
+algorithm:
+  name: "TD3"
+  class: "stable_baselines3.TD3"
+
+hyperparameters:
+  learning_rate: 3.0e-4
+  
+  policy: "MlpPolicy"
+  policy_kwargs:
+    net_arch:
+      pi: [256, 256]
+      qf: [256, 256]
+    activation_fn: "torch.nn.ReLU"
+  
+  buffer_size: 1000000
+  learning_starts: 10000
+  batch_size: 256                    # TD3推荐256
+  tau: 0.005
+  gamma: 0.99
+  
+  # TD3特定参数
+  train_freq: 1
+  gradient_steps: 1
+  policy_delay: 2                    # 延迟策略更新（TD3核心）
+  target_policy_noise: 0.2           # 目标策略噪声
+  target_noise_clip: 0.5             # 噪声裁剪
+  
+  # 探索噪声
+  action_noise: "normal"             # normal或ornstein-uhlenbeck
+  action_noise_kwargs:
+    mean: 0.0
+    sigma: 0.1
+
+device: "auto"
+seed: null

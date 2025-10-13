@@ -1,0 +1,138 @@
+{
+  "timestamp": "2025-10-13T22:32:52.335549",
+  "config": {
+    "run_mode": "test",
+    "train_side": "predator",
+    "train_algo": "A2C",
+    "opponent_config": {
+      "type": "mixed_pool",
+      "side": "prey",
+      "pool_path": "outputs/fixed_pools/prey_pool_v1",
+      "mix_strategy": {
+        "fixed_ratio": 0.7,
+        "sampling": "uniform"
+      },
+      "freeze": true
+    },
+    "experiment_name": "A2C_predator_coevo",
+    "stage_name": "stage1.3_coevolution/Gen_6",
+    "generation": 6,
+    "version": "v6",
+    "device": "auto",
+    "seed": null,
+    "notes": "",
+    "env_config": {
+      "action_space": {
+        "dtype": "float32",
+        "high": 1.0,
+        "low": -1.0,
+        "shape": [
+          2
+        ],
+        "type": "Box"
+      },
+      "environment": {
+        "evader_speed": 0.01,
+        "local_ratio": 0.5,
+        "max_cycles": 500,
+        "n_evaders": 90,
+        "n_obstacles": 2,
+        "n_poisons": 10,
+        "n_predators": 5,
+        "n_preys": 10,
+        "name": "waterworld_v4",
+        "obstacle_coord": [
+          [
+            0.2,
+            0.2
+          ],
+          [
+            0.8,
+            0.2
+          ]
+        ],
+        "poison_speed": 0.01,
+        "predator_speed": 0.06,
+        "prey_speed": 0.001,
+        "render_mode": null,
+        "sensor_range": 0.8,
+        "static_food": true,
+        "static_poison": true,
+        "thrust_penalty": 0.0
+      },
+      "observation_space": {
+        "dtype": "float32",
+        "shape": [
+          212
+        ],
+        "type": "Box"
+      }
+    },
+    "algo_config": {
+      "algorithm": {
+        "name": "A2C",
+        "class": "stable_baselines3.A2C"
+      },
+      "hyperparameters": {
+        "learning_rate": 0.0007,
+        "policy": "MlpPolicy",
+        "policy_kwargs": {
+          "net_arch": {
+            "pi": [
+              256,
+              256
+            ],
+            "vf": [
+              256,
+              256
+            ]
+          },
+          "activation_fn": "torch.nn.ReLU"
+        },
+        "n_steps": 5,
+        "gamma": 0.99,
+        "gae_lambda": 1.0,
+        "ent_coef": 0.01,
+        "vf_coef": 0.25,
+        "max_grad_norm": 0.5,
+        "rms_prop_eps": 1e-05,
+        "normalize_advantage": false
+      },
+      "device": "auto",
+      "seed": null
+    },
+    "training_config": {
+      "total_timesteps": 500,
+      "n_envs": 4,
+      "eval_freq": 500,
+      "checkpoint_freq": 500,
+      "n_eval_episodes": 2,
+      "save_checkpoints": true,
+      "save_final_model": true,
+      "tensorboard_enabled": true,
+      "verbose": 1,
+      "deterministic_eval": true,
+      "show_progress": true,
+      "check_freeze": false
+    },
+    "mode_config": {
+      "total_timesteps": 500,
+      "n_envs": 4,
+      "n_eval_episodes": 2,
+      "save_checkpoints": true,
+      "save_final_model": true,
+      "checkpoint_freq": 500,
+      "eval_freq": 500,
+      "tensorboard_enabled": true,
+      "log_level": "INFO",
+      "verbose": 1,
+      "output_base_dir": "test_outputs",
+      "clear_on_start": true,
+      "auto_cleanup": false,
+      "filename_prefix": "TEST_",
+      "deterministic_eval": true,
+      "seed": 42,
+      "require_confirmation": false
+    }
+  }
+}

@@ -1,0 +1,60 @@
+# ============================================================================
+# Stage 1.1: Prey 预热训练配置
+# ============================================================================
+
+stage:
+  name: "stage1.1_prey_warmup"
+  description: "训练Prey对抗RANDOM Predator，建立初始Prey池"
+  generation: 0
+
+# 训练方配置
+train_side: "prey"                   # 训练哪一方
+
+# 要训练的算法列表
+algorithms_to_train:
+  - "PPO"
+  - "A2C"
+  - "SAC"
+  - "TD3"
+  # RANDOM不需要训练
+
+# 对手配置
+opponent:
+  side: "predator"
+  type: "algorithm"                  # algorithm / fixed_model / mixed_pool
+  algorithm: "RANDOM"                # 使用RANDOM算法
+  freeze: true                       # 冻结对手参数
+
+# 环境配置（引用）
+environment_config: "configs/environments/waterworld_standard.yaml"
+
+# 训练配置（会覆盖run_mode中的默认值）
+training:
+  # prod模式下的配置
+  prod:
+    total_timesteps: 1000000         # 100万步
+    eval_freq: 50000
+    checkpoint_freq: 100000
+  
+  # dryrun模式下的配置
+  dryrun:
+    total_timesteps: 50000
+    eval_freq: 10000
+    checkpoint_freq: 20000
+  
+  # debug模式使用默认配置（不覆盖）
+
+# 冻结条件（达到此标准则加入fixed_pool）
+freeze_on_success:
+  enabled: true
+  criteria:
+    survival_rate: 0.65
+    avg_reward: 2.0
+    min_eval_episodes: 100
+  save_to_pool: "prey_pool_v1"
+
+# 输出配置
+output:
+  save_models: true
+  save_tensorboard: true
+  save_config_snapshot: true         # 保存此配置的快照
