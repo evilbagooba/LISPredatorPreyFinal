@@ -1,0 +1,16 @@
+{"time":"2025-07-11T14:07:49.138937265+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250711_140748-04cnpzwd/logs/debug-core.log"}
+{"time":"2025-07-11T14:07:49.487465284+09:00","level":"INFO","msg":"stream: created new stream","id":"04cnpzwd"}
+{"time":"2025-07-11T14:07:49.487483009+09:00","level":"INFO","msg":"stream: started","id":"04cnpzwd"}
+{"time":"2025-07-11T14:07:49.487491786+09:00","level":"INFO","msg":"sender: started","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:07:49.487503738+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:07:49.487490355+09:00","level":"INFO","msg":"handler: started","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:07:49.73716959+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-11T14:11:05.161931596+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-11T14:11:05.161956443+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-11T14:11:06.163234119+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/videos/episode_gif_9_4457be56b49fbde16f75.gif","runtime_seconds":0.761174713,"progress":"1.3MB/3.9MB"},{"desc":"uploading output.log","runtime_seconds":0.761168469,"progress":"1.3MB/2.2MB"}],"total_operations":2}}
+{"time":"2025-07-11T14:11:06.766175706+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-11T14:11:07.041645779+09:00","level":"INFO","msg":"stream: closing","id":"04cnpzwd"}
+{"time":"2025-07-11T14:11:07.041656872+09:00","level":"INFO","msg":"handler: closed","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:11:07.041664869+09:00","level":"INFO","msg":"sender: closed","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:11:07.041662357+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"04cnpzwd"}
+{"time":"2025-07-11T14:11:07.041715971+09:00","level":"INFO","msg":"stream: closed","id":"04cnpzwd"}

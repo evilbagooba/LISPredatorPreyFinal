@@ -1,0 +1,1036 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-08-02 17:17:35,943	INFO worker.py:1917 -- Started a local Ray instance.
+2025-08-02 17:17:36,390	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-08-02 17:17:36 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_25c2d_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=324172)[0m 2025-08-02 17:17:38,479	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=324266)[0m 2025-08-02 17:17:40,733	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=324172)[0m Install gputil for GPU system monitoring.
+
+
+== Status ==
+Current time: 2025-08-02 17:17:41 (running for 00:00:05.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |
++---------------------+----------+---------------------+
+[36m(_WandbLoggingActor pid=324444)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=324444)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/wandb/run-20250802_171743-25c2d_00000
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Syncing run PPO_env_25c2d_00000
+[36m(_WandbLoggingActor pid=324444)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=324444)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/25c2d_00000
+
+
+== Status ==
+Current time: 2025-08-02 17:17:46 (running for 00:00:10.21)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |
++---------------------+----------+---------------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000000)
+[36m(PPO pid=324172)[0m 2025-08-02 17:17:40,812	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000000)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:17:51 (running for 00:00:15.26)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      1 |          6.01957 | 4000 |          -3.85405 |            -21.1967 |            -15.7223 |         26.4824 |         6.58254 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000001)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000001)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:17:56 (running for 00:00:20.29)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      2 |          11.4894 | 8000 |          -19.0904 |            -21.1907 |            -12.8995 |         18.5733 |        -3.57358 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000002)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000002)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:01 (running for 00:00:25.39)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      3 |          17.3569 | 12000 |          -25.6656 |             -18.532 |            -12.8568 |         8.85942 |        -3.13625 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000003)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000003)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:06 (running for 00:00:30.49)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      4 |          22.4906 | 16000 |           -28.734 |            -19.5374 |            -14.7207 |         7.26996 |        -1.74589 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000004)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000004)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:11 (running for 00:00:35.51)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      5 |          27.8778 | 20000 |          -22.5489 |            -18.0202 |            -13.0938 |         13.6067 |        -5.04158 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+
+
+== Status ==
+Current time: 2025-08-02 17:18:16 (running for 00:00:40.54)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      5 |          27.8778 | 20000 |          -22.5489 |            -18.0202 |            -13.0938 |         13.6067 |        -5.04158 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000005)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000005)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:22 (running for 00:00:45.62)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      6 |          33.7252 | 24000 |          -19.0842 |            -16.5839 |            -11.3881 |         16.1939 |        -7.30607 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000006)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000006)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:27 (running for 00:00:50.69)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      7 |           39.128 | 28000 |          -22.2831 |            -17.2742 |            -11.8768 |         15.7927 |        -8.92481 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000007)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000007)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:32 (running for 00:00:55.70)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      8 |          44.7098 | 32000 |          -25.5486 |            -17.9351 |            -12.2018 |          14.791 |        -10.2027 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000008)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000008)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:37 (running for 00:01:00.76)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |      9 |          50.2968 | 36000 |           -28.636 |            -18.3935 |            -12.5599 |         15.0223 |        -12.7049 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000009)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000009)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:42 (running for 00:01:05.84)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     10 |          55.6454 | 40000 |          -28.7319 |            -17.1206 |            -11.2238 |         12.5228 |        -12.9102 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000010)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000010)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:47 (running for 00:01:10.93)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     11 |          61.1583 | 44000 |          -27.4331 |            -16.1276 |            -10.7054 |         10.2611 |        -10.8613 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000011)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000011)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:52 (running for 00:01:16.01)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     12 |          66.3094 | 48000 |          -22.9803 |            -15.6375 |             -10.581 |         13.5906 |        -10.3525 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000012)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000012)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:18:57 (running for 00:01:21.04)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     13 |           71.454 | 52000 |          -18.1907 |            -13.9565 |             -9.1796 |         16.3396 |        -11.3942 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000013)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000013)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:02 (running for 00:01:26.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     14 |          76.6045 | 56000 |          -14.1862 |            -12.3762 |            -7.95856 |         17.9933 |        -11.8448 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000014)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000014)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:07 (running for 00:01:31.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     15 |          81.7001 | 60000 |          -8.17057 |            -10.3696 |            -6.07314 |         18.5129 |        -10.2407 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000015)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000015)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:12 (running for 00:01:36.22)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     16 |           86.896 | 64000 |          0.356443 |            -7.37715 |            -3.32084 |         19.2901 |        -8.23565 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000016)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000016)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:17 (running for 00:01:41.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     17 |          92.0382 | 68000 |           6.52281 |            -5.18617 |            -1.35767 |         19.2043 |        -6.13767 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000017)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000017)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:22 (running for 00:01:46.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     18 |          97.1181 | 72000 |           17.3721 |            -0.37287 |             3.24705 |         20.1063 |        -5.60843 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000018)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000018)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:27 (running for 00:01:51.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     19 |          102.743 | 76000 |           26.9962 |             3.91346 |             7.60194 |         20.9216 |         -5.4408 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000019)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000019)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:32 (running for 00:01:56.30)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     20 |          108.341 | 80000 |            33.778 |              7.3527 |             10.6133 |         20.8158 |        -5.00386 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+
+
+== Status ==
+Current time: 2025-08-02 17:19:37 (running for 00:02:01.34)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     20 |          108.341 | 80000 |            33.778 |              7.3527 |             10.6133 |         20.8158 |        -5.00386 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000020)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000020)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:42 (running for 00:02:06.44)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     21 |          114.019 | 84000 |           41.2493 |             10.4721 |             13.6177 |         20.9594 |        -3.80002 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000021)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000021)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:47 (running for 00:02:11.52)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     22 |          119.638 | 88000 |           48.0505 |             13.3265 |             16.4652 |         21.3901 |        -3.13127 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000022)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000022)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:52 (running for 00:02:16.52)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     23 |          124.805 | 92000 |           56.2605 |             16.0257 |             18.9764 |          22.553 |        -1.29466 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000023)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000023)...
+[36m(_WandbLoggingActor pid=324444)[0m Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:19:57 (running for 00:02:21.53)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     24 |          130.057 | 96000 |           63.8527 |             19.4647 |             22.2403 |         22.9706 |       -0.822898 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000024)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000024)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:02 (running for 00:02:26.54)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     25 |          135.242 | 100000 |           71.7586 |             24.1103 |             26.6546 |         22.3099 |        -1.31625 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000025)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000025)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:08 (running for 00:02:31.62)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     26 |          140.344 | 104000 |           75.6792 |             26.2063 |             28.3661 |         22.6117 |         -1.5048 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000026)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000026)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:13 (running for 00:02:36.66)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     27 |          145.982 | 108000 |           87.3643 |             30.6529 |             32.5147 |         25.9383 |        -1.74164 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000027)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000027)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:18 (running for 00:02:41.74)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     28 |          151.387 | 112000 |           100.456 |             36.8071 |             38.3081 |         27.4644 |        -2.12371 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000028)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000028)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:23 (running for 00:02:46.75)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     29 |          156.866 | 116000 |           115.981 |             43.5984 |             44.8244 |         29.4724 |        -1.91413 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000029)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000029)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:28 (running for 00:02:51.82)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     30 |           162.16 | 120000 |           120.567 |             46.5944 |              47.645 |         28.1562 |          -1.829 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000030)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000030)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:33 (running for 00:02:56.84)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     31 |          167.355 | 124000 |            135.02 |             51.7549 |             52.5059 |         30.5502 |        0.209003 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000031)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000031)...
+[36m(_WandbLoggingActor pid=324444)[0m Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:38 (running for 00:03:01.89)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     32 |          173.024 | 128000 |            153.41 |             59.1195 |             59.4583 |           33.36 |         1.47181 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000032)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000032)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:43 (running for 00:03:06.94)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     33 |          178.256 | 132000 |           161.833 |             62.3214 |             62.2506 |         33.6646 |         3.59586 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+
+
+== Status ==
+Current time: 2025-08-02 17:20:48 (running for 00:03:11.99)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     33 |          178.256 | 132000 |           161.833 |             62.3214 |             62.2506 |         33.6646 |         3.59586 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000033)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000033)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:53 (running for 00:03:17.00)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     34 |          183.652 | 136000 |           179.582 |             68.9073 |              68.468 |         37.1765 |         5.03035 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000034)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000034)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-08-02 17:20:58 (running for 00:03:22.01)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | RUNNING  | 192.168.0.25:324172 |     35 |          189.161 | 140000 |           197.706 |             76.2764 |             75.7446 |         40.1817 |         5.50356 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=324172)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000035)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-08-02_17-17-36/PPO_env_25c2d_00000_0_2025-08-02_17-17-36/checkpoint_000035)...
+2025-08-02 17:20:59,581	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-08-02_17-17-36' in 0.0327s.
+
+
+== Status ==
+Current time: 2025-08-02 17:20:59 (running for 00:03:23.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-08-02_17-17-34_172592_322379/artifacts/2025-08-02_17-17-36/PPO_2025-08-02_17-17-36/driver_artifacts
+Number of trials: 1/1 (1 TERMINATED)
++---------------------+------------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status     | loc                 |   iter |   total time (s) |     ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+------------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_25c2d_00000 | TERMINATED | 192.168.0.25:324172 |     36 |          194.505 | 144000 |           206.088 |             80.8903 |             80.1032 |          39.501 |          5.5935 |
++---------------------+------------+---------------------+--------+------------------+--------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(_WandbLoggingActor pid=324444)[0m Done. 0.0s
+[36m(_WandbLoggingActor pid=324444)[0m wandb: uploading artifact checkpoint_PPO_env_25c2d_00000
+2025-08-02 17:21:03,634	INFO tune.py:1041 -- Total run time: 207.26 seconds (203.16 seconds for the tuning loop).
+
+
+训练完成
+[36m(_WandbLoggingActor pid=324444)[0m wandb:
+[36m(_WandbLoggingActor pid=324444)[0m wandb:
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Run history:
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                             env_runner_group/actor_manager_num_outstanding_async_reqs ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_0 ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▆▆▇▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_1 ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▆▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_0 ▅▃▁▁▂▃▃▃▃▂▂▂▃▃▃▄▄▄▄▄▄▄▄▄▄▄▅▅▆▅▆▇▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_1 █▄▅▅▄▃▂▂▁▁▂▂▂▁▂▃▃▄▄▄▄▅▅▅▅▅▅▅▅▅▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    env_runners/agent_steps/predator_0 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    env_runners/agent_steps/predator_1 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/agent_steps/prey_0 ▃▃▁▃▃▄▃▃▃▄▄▄▅▅▅▅▆▆▆▆▆▆▆▆▇▇▇▇▇▇██████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/agent_steps/prey_1 ██████████▇▇▇▇████▅▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  env_runners/connector_pipeline_timer ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/env_reset_timer ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            env_runners/env_step_timer ▂▂▂▂▂▇▇▅▆█▃▁▁▁▁▁▁▁▇▁▆▁▁▁▂▁▇▂▇▂▃▇▂▂▂▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          env_runners/env_to_module_connector/connector_pipeline_timer ▁▁▂▁▂▂▃▂▁▂█▂▂▂▂▂▂▁▁▁▂▁▂▁▂▁▁▂▁▁▄▃▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:         env_runners/env_to_module_connector/timers/connectors/add_observations_from_episodes_to_batch ▂▁▂▂▂▂▄▂▂▃█▂▂▂▂▂▃▂▁▂▁▁▂▁▂▁▁▂▂▂▄▃▃▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:               env_runners/env_to_module_connector/timers/connectors/add_states_from_episodes_to_batch ▁▁▃▂▂▁▅▃▂▃█▃▃▄▄▂▃▃▂▂▁▁▃▃▃▂▂▃▂▃▅▃▃▆▄▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:              env_runners/env_to_module_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad ▂▁▂▂▂▂▃▂▁▂█▂▂▂▁▂▂▂▁▂▁▁▂▂▂▂▂▂▁▁▄▃▂▄▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                         env_runners/env_to_module_connector/timers/connectors/agent_to_module_mapping ▁▁▃▂▂▂▇▃▂▂█▂▃▂▂▂▃▂▁▂▁▁▂▂▃▃▂▃▂▂▄▄▂▄▃▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                          env_runners/env_to_module_connector/timers/connectors/batch_individual_items ▁▂▂▂▂▂▄▂▂▃█▂▂▂▂▂▂▂▁▂▂▂▂▂▃▂▂▂▂▂▄▃▂▄▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/env_to_module_connector/timers/connectors/numpy_to_tensor ▁▁▂▂▂▂▃▂▁▂█▂▁▁▂▁▂▁▁▁▁▁▂▁▂▁▁▂▂▁▄▃▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      env_runners/env_to_module_sum_episodes_length_in ▅▁▃▃▃▄▅▆▇▇████████▅▅▂▃▃▃▃▃▃▄▄▅▅▅▆▆▆▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/env_to_module_sum_episodes_length_out ▅▁▃▃▃▄▅▆▇▇████████▅▅▂▃▃▃▃▃▃▄▄▅▅▅▆▆▆▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 env_runners/episode_duration_sec_mean ▄▃▁▃▄▄▄▄▄▄▄▅▅▅▆▆▆▆▆▆▆▅▆▆▆▆▇▆▆▆▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/episode_len_max ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          env_runners/episode_len_mean ▃▄▁▃▄▄▄▄▄▄▄▅▅▆▆▆▇▇▇▆▆▆▆▆▇▇▇▇▇▇▇█████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/episode_len_min ██████▄▄▄▄▄▄▄▄▄▄▄▄▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/episode_return_max ▁▁▁▁▁▂▂▂▂▂▂▂▃▃▃▃▃▄▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       env_runners/episode_return_mean ▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/episode_return_min █▃▃▃▃▃▃▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_0 ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▆▆▇▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_1 ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▆▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_0 ▅▃▁▁▂▃▃▃▃▂▂▂▃▃▃▄▄▄▄▄▄▄▄▄▄▄▅▅▆▅▆▇▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_1 █▄▅▅▄▃▂▂▁▁▂▂▂▁▂▃▃▄▄▄▄▅▅▅▅▅▅▅▅▅▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          env_runners/module_to_env_connector/connector_pipeline_timer ▁▁▂▂▂▂▃▁▁▂█▁▂▂▂▁▂▁▁▁▂▁▁▁▂▁▁▂▂▁▄▃▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                     env_runners/module_to_env_connector/timers/connectors/get_actions ▁▁▂▂▂▁▃▁▁▂█▁▁▁▁▁▂▁▁▁▁▁▂▁▂▁▁▂▁▁▄▃▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                     env_runners/module_to_env_connector/timers/connectors/listify_data_for_vector_env ▁▂▂▃▂▂▄▃▂▃█▃▃▃▃▃▃▂▂▂▂▃▂▂▂▃▂▃▃▂▄▄▄▄▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                       env_runners/module_to_env_connector/timers/connectors/module_to_agent_unmapping ▃▂▃▃▃▃▃▃▂▃█▃▆▃▄▃▃▃▃▃▁▂▃▂▃▃▃▃▃▃▄▆▃▆▄▄
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                      env_runners/module_to_env_connector/timers/connectors/normalize_and_clip_actions ▁▁▂▂▂▂▄▂▁▂█▁▂▂▂▁▂▁▁▁▂▁▁▁▂▂▂▃▂▁▄▃▃▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:           env_runners/module_to_env_connector/timers/connectors/remove_single_ts_time_rank_from_batch ▂▁▂▃▂▁▃▁▁▂█▂▂▂▁▂▂▂▂▁▃▂▂▂▂▂▂▃▁▂▄▅▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/module_to_env_connector/timers/connectors/tensor_to_numpy ▁▁▂▂▂▂▃▁▁▂█▂▂▁▂▂▂▁▁▁▁▁▁▁▂▁▁▂▂▁▄▃▂▃▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                    env_runners/module_to_env_connector/timers/connectors/un_batch_to_individual_items ▃▂▂▂▂▁▃▁▂▃█▂▃▂▂▂▂▂▁▁▁▂▁▂▃▂▂▂▂▂▅▄▃▄▄▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_0 ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_1 ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_0 ▄▄▁▇▅▂▅▄▄▅▆▇▇▇▇▇▇▇██▇▄▇▇▇▇▃▅▇▇▇▄▇▇▇▇
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_1 ▇▇█▆▆▇▆▇▇▆▅▆▆▆▆▆▆▆▁▁▂▇▆▆▆▆▇▆▃▄▆▇▆▆▆▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_0 ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_1 ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_0 ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_1 ▁▁▁▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/num_env_steps_sampled ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_env_steps_sampled_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 env_runners/num_env_steps_sampled_lifetime_throughput █████▆▄▅▅▃▁▂▃▄▅▅▅▆▆▆▆▇▇▇▇█▇▇▆▆▅▄▄▄▃▄
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                              env_runners/num_episodes ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/num_episodes_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_0 ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_1 ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_0 ▄▄▁▇▅▂▅▄▄▅▆▇▇▇▇▇▇▇██▇▄▇▇▇▇▃▅▇▇▇▄▇▇▇▇
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_1 ▇▇█▆▆▇▆▇▇▆▅▆▆▆▆▆▆▆▁▁▂▇▆▆▆▆▇▆▃▄▆▇▆▆▆▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_0 ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_1 ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_0 ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_1 ▁▁▁▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  env_runners/rlmodule_inference_timer ▂▂▃▂▃▂▄▂▁▃█▂▂▂▂▂▂▂▁▁▁▁▂▂▃▂▁▃▂▂▅▃▃▄▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    env_runners/sample █▇██▇▇▇▇▇▇▇▆▆▅▅▄▄▃▃▃▃▃▃▂▂▁▂▁▂▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/time_between_sampling ███▇▇▇▇▆▆▆▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/timers/connectors/add_observations_from_episodes_to_batch ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                       env_runners/timers/connectors/add_states_from_episodes_to_batch ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      env_runners/timers/connectors/add_time_dim_to_batch_and_zero_pad ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 env_runners/timers/connectors/agent_to_module_mapping ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/timers/connectors/batch_individual_items ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/timers/connectors/numpy_to_tensor ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            env_runners/weights_seq_no ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                   fault_tolerance/num_healthy_workers ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            fault_tolerance/num_remote_worker_restarts ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                              iterations_since_restore ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                   learners/__all_modules__/learner_connector/connector_pipeline_timer ███▇▇▇▇▆▆▆▆▆▅▅▅▅▅▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb: learners/__all_modules__/learner_connector/timers/connectors/add_columns_from_episodes_to_train_batch ███▇▇▇▇▆▆▆▆▆▅▅▅▅▅▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:  learners/__all_modules__/learner_connector/timers/connectors/add_observations_from_episodes_to_batch ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:      learners/__all_modules__/learner_connector/timers/connectors/add_one_ts_to_episodes_and_truncate ███▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:        learners/__all_modules__/learner_connector/timers/connectors/add_states_from_episodes_to_batch ███▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:       learners/__all_modules__/learner_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad ▁▂▁▁▁▂▂▃▂▂▂▂▃▂▃▂▃▂▃▂▂▃▄▄▄▄▃▃▄▄▅▅▆▆▇█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                  learners/__all_modules__/learner_connector/timers/connectors/agent_to_module_mapping ▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▆▆▆▇▇██
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                   learners/__all_modules__/learner_connector/timers/connectors/batch_individual_items ███▇▇▇▇▆▆▆▆▆▅▅▅▅▅▄▄▄▄▃▃▃▃▃▃▃▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:             learners/__all_modules__/learner_connector/timers/connectors/general_advantage_estimation ███▇▇▇▇▆▆▆▆▆▅▅▅▅▄▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                          learners/__all_modules__/learner_connector/timers/connectors/numpy_to_tensor ███▇▇▇▇▇▆▆▆▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                     learners/__all_modules__/learner_connector_sum_episodes_length_in ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                    learners/__all_modules__/learner_connector_sum_episodes_length_out ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        learners/__all_modules__/num_env_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/__all_modules__/num_env_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                    learners/__all_modules__/num_env_steps_trained_lifetime_throughput ▁▁▂▂▂▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇████▇▅▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/__all_modules__/num_module_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                            learners/__all_modules__/num_module_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 learners/__all_modules__/num_module_steps_trained_lifetime_throughput ▇▆▆▆▆▆▆▆▆▆▆▆▇▇▇▇▇▇▇▇█▇██████▇▇██▇▇▂▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/__all_modules__/num_module_steps_trained_throughput ▇▆▆▆▆▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇████▇█▇▇██▇▇▂▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/__all_modules__/num_non_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/__all_modules__/num_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                learners/predator_0/curr_entropy_coeff ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/predator_0/curr_kl_coeff ▁▂▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▅█████████████████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   learners/predator_0/default_optimizer_learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_0/diff_num_grad_updates_vs_sampler_policy ▁▁▁▁▁▁▁▁▁▁▅▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_0/entropy ▆▆▆▆▆▆▆▇▆▆▆▅▅▅▄▅▄▄█▄▃▃▃▄▅█▃▂▄▄▁▅▂▁▂▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_0/gradients_default_optimizer_global_norm ▂▂▂▂▂▃▁▂▂▁▃▃▂▃▃▂▂▄▄▅▂▆▄█▂█▃▄▄▅▃▅▆█▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/predator_0/mean_kl_loss ▆▆█▅▆▃▃▃▁▂▂▄▄▅▄▂▄▄▇▇▃▂▃▄▄▄▄▂▄▃▄▄▅▅▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      learners/predator_0/module_train_batch_size_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_0/num_module_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/predator_0/num_module_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      learners/predator_0/num_module_steps_trained_lifetime_throughput ▁▁▂▂▂▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇████▇▅▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_0/num_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       learners/predator_0/policy_loss ▅▆▆▃▄▃▇▇▂▇▅▄▆▄▃▄▄▇▄▄▃▃▁█▂▅▆▄▇▂▄▅▄▃▄▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/predator_0/total_loss ▄▅▅▂▃▂▆▆▂▇▄▃▆▃▂▄▄▇▄▄▃▃▁█▂▅▆▄▇▂▄▅▄▃▄▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  learners/predator_0/vf_explained_var ▁▆▆▅▆▆▅▆▅▆▅▆▆▇▆▆▅▅█▆▆▆▅▆▆▆▆▅▆▆▅▆▆▅▆▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_0/vf_loss ▄▁▁▁▃▂▁▁▃▂▃▄▄▄▆▆▇▇▅▇▅▆█▆▆▄██▅▇█▇▇█▇█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 learners/predator_0/vf_loss_unclipped ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▃▃▁▃▂▄▃▃▃▃▄▆▃▄▆▅▆▇▇█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/predator_0/weights_seq_no ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                learners/predator_1/curr_entropy_coeff ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/predator_1/curr_kl_coeff ▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▅▅▅▅█████████████████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   learners/predator_1/default_optimizer_learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_1/diff_num_grad_updates_vs_sampler_policy ▁▁▁█▁█▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁█▁█▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_1/entropy ▃▄▃▄▃▃▃▄▃▃▃▃▃▃▂▃▂▂▃▅█▂▂▂▃▃▂▁▇▃▂▂▁▁█▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_1/gradients_default_optimizer_global_norm ▂▂▃▃▄▂▂▁▃▃▃▄▃▃▄▁▅▅▄▂▅▇▆▄█▂▅▅▄▄▅▄▆▅▄▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/predator_1/mean_kl_loss ▇▄▄▅▅▃▅▄▂▇▃▅▄▃▃▆▂▃▂█▂▁▂▁▃▂▅▂▃▃▁▂▂▂▂▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      learners/predator_1/module_train_batch_size_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_1/num_module_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/predator_1/num_module_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      learners/predator_1/num_module_steps_trained_lifetime_throughput ▁▁▂▂▂▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇████▇▅▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_1/num_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       learners/predator_1/policy_loss ▃▄▆▅▁▄▆▅▄▄▅▃▅▆▃▄▅▄▃▆▇▄▄▅▃█▆▅▇▃▅▄▄▅▇▇
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/predator_1/total_loss ▃▄▅▅▁▄▅▄▄▄▄▃▅▆▄▄▅▅▃▆█▄▄▅▄█▇▅▇▄▅▅▄▅▇▇
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  learners/predator_1/vf_explained_var ▁▃▁▁▂▃▁▂▃▄▃▃▆▃▃▅▃▂▃▆█▃▂▃▅▃▃▃▆▃▃▃▃▃▆▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_1/vf_loss ▃▂▁▁▄▂▁▂▃▃▃▄▄▅▇▆▇▇▆▆▅▆▇▇▆▄██▆▇█▆▇█▆█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 learners/predator_1/vf_loss_unclipped ▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▁▃▃▂▃▂▄▃▃▄▂▄▆▃▄▆▅▇▇▆█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/predator_1/weights_seq_no ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/prey_0/curr_entropy_coeff ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                         learners/prey_0/curr_kl_coeff ▁▁▂▂▂▂▂▂▄▄▄▇▇▃▃▃▃▅▅▅▅▅▅▅▅▅██████████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       learners/prey_0/default_optimizer_learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_0/diff_num_grad_updates_vs_sampler_policy ▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁█▁▁▁▁▁▁▁▁▁▁█▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_0/entropy ▅▅▅▅▄▄▄▄▅▄▃▅▅▃▃▇▄▄█▄▂▅▂▁▁▂▂▅▃▁▁▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_0/gradients_default_optimizer_global_norm ▂▂▂▂▂▂▂▁▄▂▃▂▂▁▂▃▃▃▆▂▅▃▄▃▂▃▂▂▅▃▅█▄▁▅▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          learners/prey_0/mean_kl_loss ▅▅▇▃▂▅▅▃█▂▃▅▂▁▂▂▃▆▂▂▄▃▄▂▁▃▅▃▂▃▁▃▁▁▁▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/prey_0/module_train_batch_size_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_0/num_module_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/prey_0/num_module_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/prey_0/num_module_steps_trained_lifetime_throughput ▁▁▂▂▂▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇████▇▅▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_0/num_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/prey_0/policy_loss ▃▅▂▃▅▃▃▆▃▅▃▅▆▆▅▆▅▁▃▆▄▄█▅▅▃▅▅▄▃▃▅▅▄▅▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            learners/prey_0/total_loss ▃▆▂▂▅▄▃▅▃▅▃▆▆▆▅▅▅▁▃▆▄▅█▅▅▃▅▅▄▃▃▅▅▄▅▄
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/prey_0/vf_explained_var ▂▃▅▄▁▃▄▂█▁▁▃▂▂▂▇▄▆▅▂▂▆▃▂▃▂▃▃▃▃▂▃▂▂▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_0/vf_loss ▄▆▁▃▄▅▅▄▃▃▆▅▅▄▄▃▄▄▅▄▅█▄▄▄▅▇▅▄▄▆▃▇▆▅▇
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/prey_0/vf_loss_unclipped ▃▂▁▂▂▅▂▂▁▁▃▃▃▂▁▁▂▃▂▂▂▅▁▂▁▃▆▅▂▄▆▂█▄▃▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/prey_0/weights_seq_no ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/prey_1/curr_entropy_coeff ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                         learners/prey_1/curr_kl_coeff ▁▁▁▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▇▇▇▇▂▂▂▄▄▄▄▄▄▄▄▄▄█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       learners/prey_1/default_optimizer_learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_1/diff_num_grad_updates_vs_sampler_policy ▁▁▁▁▁██▁▁▁▁█▁▁▁▁█▁▁▁▁▁▁▁▁▁█▁▁██▁▁▁█▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_1/entropy ▆▅▅▆█▆█▇███▇▄▆▄▃▄▅▄▃▄▆▇▇▄▅▅▆▄▄▃▇▇▆▄▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_1/gradients_default_optimizer_global_norm ▂▅▃▃▃▄▂▄▃▂▂▇▇▆▄▆▃▄▁▃▄▄▃▆▄▆▂▃▇▇▅▄▆▂▄█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          learners/prey_1/mean_kl_loss ▃▄▂▅▂▄▂▂▂▃▅▃▂▃▃▂▃▃▇▂▂▁▁▄▂▆▂▂▄▂▄▃▁▄▄█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/prey_1/module_train_batch_size_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_1/num_module_steps_trained ▄▄█▁▃▆▃▄▅▃▂▁▁▁▁▁▁▁▆▅▆▅▁▁▁▁▅▄▃▂▁▅▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/prey_1/num_module_steps_trained_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/prey_1/num_module_steps_trained_lifetime_throughput ▁▁▂▂▂▃▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇████▇▅▅
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_1/num_trainable_parameters ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/prey_1/policy_loss ▅▆▂▃▁▆▄▅▄▅▄▃▄█▃▄▄▃▃▅▃▅▆▄▅▄█▇▅▅▆▄▄▂▂▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            learners/prey_1/total_loss ▅▆▂▃▁▆▄▄▄▆▄▃▄█▃▅▄▃▃▅▃▅▆▄▅▄█▇▅▆▇▄▄▂▂▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/prey_1/vf_explained_var ▄▄▂▃▅▇▇▄▅▄▇▁▃▄▂▃▃▃▂▄▃█▄▄▄▃▃▆▅▃▅▁▄▄▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_1/vf_loss ▆▆▄▄▅▁▄▂▄▇▂▄▂▃██▅█▆▇▆▅▆▅▄▇▃▂▃▅▆▇█▆█▆
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/prey_1/vf_loss_unclipped ▂▂▂▂▂▁▂▂▁▄▂▁▁▁▇▇▄▆▃█▃▅▃▄▁▃▁▂▂▃▅▇▆▂▅▂
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/prey_1/weights_seq_no ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        num_env_steps_sampled_lifetime ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 num_training_step_calls_per_iteration ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                 perf/cpu_util_percent ▃▁▂▃▂▂▃▃▁▁▆▁▂▁▂▂▁▂▁▂▁▂▁▂▁▂▅▁▁▂▃▄▃▅▆█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                 perf/ram_util_percent ▁██▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    time_since_restore ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                      time_this_iter_s █▄▇▁▃▇▃▅▅▃▄▂▁▂▁▂▁▁▅▅▅▅▂▂▂▁▅▃▄▃▂▅▂▃▄▃
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                          time_total_s ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      timers/env_runner_sampling_timer ███▇▇▇▇▇▇▇▇▆▆▅▅▄▄▄▄▄▄▄▃▃▃▂▂▂▂▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           timers/learner_update_timer ███▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            timers/restore_env_runners ▇▇███▇█▇▇▆▆▅▇▇▇▇▇▆▆▇▆▆▅▅▅▄▃▃▃▂▂▂▂▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           timers/synch_env_connectors ▂▂▂▂▁▁▁▂▂▂▂▃▃▃▃▃▃▄▄▄▅▅▄▄▄▄▅▄▄▅▅▆▆▆█
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                  timers/synch_weights ███▇▇▇▆▆▆▆▆▅▅▅▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                             timers/training_iteration ███▇▇▇▇▇▇▆▆▆▆▅▅▅▄▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                  timers/training_step ███▇▇▇▇▇▇▆▆▆▆▅▅▅▄▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                             timestamp ▁▁▁▁▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅████████
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    training_iteration ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+[36m(_WandbLoggingActor pid=324444)[0m wandb:
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Run summary:
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                             env_runner_group/actor_manager_num_outstanding_async_reqs 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_0 80.89029
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_1 80.10319
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_0 39.50101
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_1 5.5935
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    env_runners/agent_steps/predator_0 500
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    env_runners/agent_steps/predator_1 500
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/agent_steps/prey_0 467.5
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/agent_steps/prey_1 464.9
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  env_runners/connector_pipeline_timer 0.00037
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/env_reset_timer 0.00421
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            env_runners/env_step_timer 0.00062
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          env_runners/env_to_module_connector/connector_pipeline_timer 0.00012
+[36m(_WandbLoggingActor pid=324444)[0m wandb:         env_runners/env_to_module_connector/timers/connectors/add_observations_from_episodes_to_batch 2e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:               env_runners/env_to_module_connector/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:              env_runners/env_to_module_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                         env_runners/env_to_module_connector/timers/connectors/agent_to_module_mapping 0.0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                          env_runners/env_to_module_connector/timers/connectors/batch_individual_items 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/env_to_module_connector/timers/connectors/numpy_to_tensor 2e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      env_runners/env_to_module_sum_episodes_length_in 1366.53441
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     env_runners/env_to_module_sum_episodes_length_out 1366.53441
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 env_runners/episode_duration_sec_mean 2.4908
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/episode_len_max 2000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          env_runners/episode_len_mean 1932.4
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           env_runners/episode_len_min 1501
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/episode_return_max 540.35089
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       env_runners/episode_return_mean 206.08798
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        env_runners/episode_return_min -84.76728
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_0 80.89029
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_1 80.10319
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_0 39.50101
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_1 5.5935
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          env_runners/module_to_env_connector/connector_pipeline_timer 0.00024
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                     env_runners/module_to_env_connector/timers/connectors/get_actions 9e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                     env_runners/module_to_env_connector/timers/connectors/listify_data_for_vector_env 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                       env_runners/module_to_env_connector/timers/connectors/module_to_agent_unmapping 0.0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                      env_runners/module_to_env_connector/timers/connectors/normalize_and_clip_actions 4e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:           env_runners/module_to_env_connector/timers/connectors/remove_single_ts_time_rank_from_batch 0.0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/module_to_env_connector/timers/connectors/tensor_to_numpy 3e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                    env_runners/module_to_env_connector/timers/connectors/un_batch_to_individual_items 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_0 1000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_1 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_0 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_1 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_0 37732
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_1 37807
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_0 32707
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_1 35976
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/num_env_steps_sampled 4000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            env_runners/num_env_steps_sampled_lifetime 144000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 env_runners/num_env_steps_sampled_lifetime_throughput 1107.40981
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                              env_runners/num_episodes 2
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/num_episodes_lifetime 74
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_0 1000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_1 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_0 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_1 1002
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_0 37732
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_1 37807
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_0 32707
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_1 35976
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  env_runners/rlmodule_inference_timer 0.00011
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    env_runners/sample 2.64005
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     env_runners/time_between_sampling 4.37711
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 env_runners/timers/connectors/add_observations_from_episodes_to_batch 3e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                       env_runners/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      env_runners/timers/connectors/add_time_dim_to_batch_and_zero_pad 2e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 env_runners/timers/connectors/agent_to_module_mapping 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                  env_runners/timers/connectors/batch_individual_items 3e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                         env_runners/timers/connectors/numpy_to_tensor 7e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            env_runners/weights_seq_no 35
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                   fault_tolerance/num_healthy_workers 2
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                            fault_tolerance/num_remote_worker_restarts 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                              iterations_since_restore 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                   learners/__all_modules__/learner_connector/connector_pipeline_timer 0.17893
+[36m(_WandbLoggingActor pid=324444)[0m wandb: learners/__all_modules__/learner_connector/timers/connectors/add_columns_from_episodes_to_train_batch 0.03873
+[36m(_WandbLoggingActor pid=324444)[0m wandb:  learners/__all_modules__/learner_connector/timers/connectors/add_observations_from_episodes_to_batch 9e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:      learners/__all_modules__/learner_connector/timers/connectors/add_one_ts_to_episodes_and_truncate 0.0034
+[36m(_WandbLoggingActor pid=324444)[0m wandb:        learners/__all_modules__/learner_connector/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:       learners/__all_modules__/learner_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad 3e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                  learners/__all_modules__/learner_connector/timers/connectors/agent_to_module_mapping 0.0019
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                   learners/__all_modules__/learner_connector/timers/connectors/batch_individual_items 0.0899
+[36m(_WandbLoggingActor pid=324444)[0m wandb:             learners/__all_modules__/learner_connector/timers/connectors/general_advantage_estimation 0.04309
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                          learners/__all_modules__/learner_connector/timers/connectors/numpy_to_tensor 0.00146
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                     learners/__all_modules__/learner_connector_sum_episodes_length_in 4000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                    learners/__all_modules__/learner_connector_sum_episodes_length_out 4000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                        learners/__all_modules__/num_env_steps_trained 944000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/__all_modules__/num_env_steps_trained_lifetime 35596000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                    learners/__all_modules__/num_env_steps_trained_lifetime_throughput 372933.31845
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/__all_modules__/num_module_steps_trained 120832
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                            learners/__all_modules__/num_module_steps_trained_lifetime 4556288
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                 learners/__all_modules__/num_module_steps_trained_lifetime_throughput 2113768.36272
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/__all_modules__/num_module_steps_trained_throughput 2078922.69959
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/__all_modules__/num_non_trainable_parameters 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/__all_modules__/num_trainable_parameters 578580
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                learners/predator_0/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/predator_0/curr_kl_coeff 1.0125
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   learners/predator_0/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_0/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_0/entropy 1.11373
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_0/gradients_default_optimizer_global_norm 2.78373
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/predator_0/mean_kl_loss 0.01162
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      learners/predator_0/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_0/num_module_steps_trained 30208
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/predator_0/num_module_steps_trained_lifetime 1139072
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      learners/predator_0/num_module_steps_trained_lifetime_throughput 11933.65612
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_0/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       learners/predator_0/policy_loss 0.0563
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/predator_0/total_loss 0.11655
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  learners/predator_0/vf_explained_var -0.00989
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_0/vf_loss 9.69809
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 learners/predator_0/vf_loss_unclipped 774.22192
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/predator_0/weights_seq_no 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                learners/predator_1/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/predator_1/curr_kl_coeff 1.0125
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                   learners/predator_1/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_1/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_1/entropy 1.94828
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                           learners/predator_1/gradients_default_optimizer_global_norm 6.25051
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/predator_1/mean_kl_loss 0.0118
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                      learners/predator_1/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_1/num_module_steps_trained 30208
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                 learners/predator_1/num_module_steps_trained_lifetime 1139072
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                      learners/predator_1/num_module_steps_trained_lifetime_throughput 11933.54013
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/predator_1/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                       learners/predator_1/policy_loss 0.0606
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/predator_1/total_loss 0.12056
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                  learners/predator_1/vf_explained_var 0.02061
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/predator_1/vf_loss 9.60353
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 learners/predator_1/vf_loss_unclipped 811.17572
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/predator_1/weights_seq_no 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/prey_0/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                         learners/prey_0/curr_kl_coeff 0.75938
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       learners/prey_0/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_0/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_0/entropy 1.50404
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_0/gradients_default_optimizer_global_norm 2.95487
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          learners/prey_0/mean_kl_loss 0.00958
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/prey_0/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_0/num_module_steps_trained 30208
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/prey_0/num_module_steps_trained_lifetime 1139072
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/prey_0/num_module_steps_trained_lifetime_throughput 11933.73647
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_0/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/prey_0/policy_loss -0.10881
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            learners/prey_0/total_loss -0.05947
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/prey_0/vf_explained_var -0.00782
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_0/vf_loss 8.41309
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/prey_0/vf_loss_unclipped 68.58441
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/prey_0/weights_seq_no 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                    learners/prey_1/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                         learners/prey_1/curr_kl_coeff 0.50625
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                       learners/prey_1/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_1/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_1/entropy 2.56515
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                               learners/prey_1/gradients_default_optimizer_global_norm 5.92885
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                          learners/prey_1/mean_kl_loss 0.03351
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                          learners/prey_1/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_1/num_module_steps_trained 30208
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                     learners/prey_1/num_module_steps_trained_lifetime 1139072
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                          learners/prey_1/num_module_steps_trained_lifetime_throughput 11933.64146
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                              learners/prey_1/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           learners/prey_1/policy_loss -0.09572
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            learners/prey_1/total_loss -0.05112
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      learners/prey_1/vf_explained_var -0.0185
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                               learners/prey_1/vf_loss 6.65672
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                     learners/prey_1/vf_loss_unclipped 25.2414
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        learners/prey_1/weights_seq_no 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                        num_env_steps_sampled_lifetime 144000
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                 num_training_step_calls_per_iteration 1
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                 perf/cpu_util_percent 13.3125
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                 perf/ram_util_percent 23.9875
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    time_since_restore 194.50462
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                      time_this_iter_s 5.3433
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                          time_total_s 194.50462
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                      timers/env_runner_sampling_timer 2.74302
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           timers/learner_update_timer 3.07854
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                            timers/restore_env_runners 2e-05
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                           timers/synch_env_connectors 0.00149
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                  timers/synch_weights 0.00395
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                             timers/training_iteration 5.82648
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                  timers/training_step 5.82625
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                             timestamp 1754122859
+[36m(_WandbLoggingActor pid=324444)[0m wandb:                                                                                    training_iteration 36
+[36m(_WandbLoggingActor pid=324444)[0m wandb:
+[36m(_WandbLoggingActor pid=324444)[0m wandb: 🚀 View run PPO_env_25c2d_00000 at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/25c2d_00000
+[36m(_WandbLoggingActor pid=324444)[0m wandb: ⭐️ View project at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 279 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=324444)[0m wandb: Find logs at: ./wandb/run-20250802_171743-25c2d_00000/logs
+*** SIGTERM received at time=1755792302 on cpu 10 ***
+PC: @     0x78451912a042  (unknown)  epoll_wait
+    @     0x784519045330  2017293984  (unknown)
+    @     0x784518ccd813  (unknown)  select_epoll_poll
+[2025-08-22 01:05:02,841 E 322379 322379] logging.cc:496: *** SIGTERM received at time=1755792302 on cpu 10 ***
+[2025-08-22 01:05:02,841 E 322379 322379] logging.cc:496: PC: @     0x78451912a042  (unknown)  epoll_wait
+[2025-08-22 01:05:02,841 E 322379 322379] logging.cc:496:     @     0x784519045330  2017293984  (unknown)
+[2025-08-22 01:05:02,841 E 322379 322379] logging.cc:496:     @     0x784518ccd813  (unknown)  select_epoll_poll

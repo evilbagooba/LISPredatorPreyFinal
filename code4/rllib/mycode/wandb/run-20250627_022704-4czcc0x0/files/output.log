@@ -1,0 +1,452 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-06-27 02:27:06,319	INFO worker.py:1917 -- Started a local Ray instance.
+2025-06-27 02:27:06,954	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-06-27 02:27:07 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_c867a_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=916081)[0m 2025-06-27 02:27:09,289	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=916171)[0m 2025-06-27 02:27:11,635	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+
+
+== Status ==
+Current time: 2025-06-27 02:27:12 (running for 00:00:05.15)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_c867a_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=916081)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=916341)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=916341)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts/PPO_env_c867a_00000_0_2025-06-27_02-27-06/wandb/run-20250627_022714-c867a_00000
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Syncing run PPO_env_c867a_00000
+[36m(_WandbLoggingActor pid=916341)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=916341)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/c867a_00000
+[33m(raylet)[0m [2025-06-27 02:27:16,305 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.1878 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-27 02:27:17 (running for 00:00:10.25)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |
++---------------------+----------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000000)
+[36m(PPO pid=916081)[0m 2025-06-27 02:27:11,703	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000000)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:27:22 (running for 00:00:15.30)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      1 |          5.18577 | 4000 |          -460.561 |            -86.8644 |          -54.23 |        -209.877 |            -109.589 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000001)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000001)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:27:26,310 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.1572 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:27:27 (running for 00:00:20.31)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      2 |          10.2161 | 8000 |          -454.606 |            -90.1836 |        -68.6256 |         -197.48 |            -98.3168 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000002)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000002)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:27:32 (running for 00:00:25.33)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      3 |          15.4074 | 12000 |          -460.495 |            -84.8027 |        -77.3829 |         -199.85 |            -98.4598 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000003)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000003)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:27:36,315 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.1348 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:27:37 (running for 00:00:30.41)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      4 |          20.6118 | 16000 |           -438.66 |            -81.4278 |        -75.8077 |        -192.787 |             -88.637 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000004)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000004)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:27:42 (running for 00:00:35.49)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      5 |          25.9512 | 20000 |          -431.686 |            -82.2324 |        -74.7946 |        -188.312 |            -86.3474 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000005)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000005)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:27:46,320 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.1135 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:27:47 (running for 00:00:40.51)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      6 |          31.1907 | 24000 |          -435.564 |             -82.455 |        -75.8998 |        -190.407 |            -86.8026 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000006)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000006)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:27:52 (running for 00:00:45.52)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      7 |          36.4531 | 28000 |          -436.258 |            -82.5422 |        -76.6217 |        -190.312 |            -86.7825 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000007)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000007)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:27:56,326 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.0861 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:27:57 (running for 00:00:50.58)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      8 |          41.6471 | 32000 |          -437.251 |            -82.7103 |        -75.9974 |         -190.86 |            -87.6836 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000008)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000008)...
+[36m(_WandbLoggingActor pid=916341)[0m Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:02 (running for 00:00:55.61)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |      9 |          46.9406 | 36000 |          -440.484 |            -81.6837 |         -77.508 |        -192.798 |            -88.4949 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+[33m(raylet)[0m [2025-06-27 02:28:06,331 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.0675 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000009)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000009)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:07 (running for 00:01:00.62)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     10 |           52.178 | 40000 |          -441.067 |            -83.3408 |        -76.5811 |        -194.004 |            -87.1415 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000010)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000010)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:12 (running for 00:01:05.65)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     11 |          57.3763 | 44000 |          -437.776 |            -82.9875 |        -72.7322 |         -193.14 |            -88.9169 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+[33m(raylet)[0m [2025-06-27 02:28:16,336 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.0428 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000011)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000011)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:17 (running for 00:01:10.74)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     12 |           62.495 | 48000 |          -435.349 |            -80.7751 |         -72.114 |        -194.274 |            -88.1859 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000012)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000012)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:22 (running for 00:01:15.78)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     13 |          67.5891 | 52000 |          -438.215 |            -82.2404 |        -70.8804 |        -196.115 |            -88.9799 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+[33m(raylet)[0m [2025-06-27 02:28:26,341 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 17.0123 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000013)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000013)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:27 (running for 00:01:20.81)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     14 |          72.5412 | 56000 |          -437.522 |            -82.6654 |        -70.7107 |        -196.824 |            -87.3219 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000014)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000014)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:32 (running for 00:01:25.86)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     15 |          77.7543 | 60000 |          -435.209 |            -80.5791 |        -68.8595 |        -199.127 |            -86.6439 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+[33m(raylet)[0m [2025-06-27 02:28:36,346 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 16.9877 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-27 02:28:37 (running for 00:01:30.92)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     16 |          82.8845 | 64000 |          -438.785 |            -79.2082 |        -70.2283 |        -201.474 |            -87.8745 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000015)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000015)...
+[36m(_WandbLoggingActor pid=916341)[0m Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:42 (running for 00:01:35.96)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     16 |          82.8845 | 64000 |          -438.785 |            -79.2082 |        -70.2283 |        -201.474 |            -87.8745 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000016)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000016)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:28:46,351 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 16.9655 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:28:47 (running for 00:01:41.00)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     17 |          88.1474 | 68000 |          -438.768 |            -78.9323 |        -69.3895 |        -202.002 |            -88.4448 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000017)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000017)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:28:52 (running for 00:01:46.05)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     18 |          93.2617 | 72000 |          -435.852 |            -78.0095 |        -69.4392 |        -200.581 |            -87.8214 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000018)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000018)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:28:56,357 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 16.9383 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:28:58 (running for 00:01:51.11)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     19 |          98.6481 | 76000 |          -434.532 |            -77.5888 |        -69.2775 |        -200.039 |            -87.6265 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000019)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000019)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:29:03 (running for 00:01:56.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     20 |              104 | 80000 |          -436.122 |            -76.8018 |        -70.4453 |        -201.498 |            -87.3763 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000020)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000020)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:29:06,363 E 914599 914629] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-27-05_758411_914320 is over 95% full, available space: 16.9133 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:29:08 (running for 00:02:01.22)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-27-05_758411_914320/artifacts/2025-06-27_02-27-06/PPO_2025-06-27_02-27-06/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return predator_1 |   return prey_0 |   return prey_1 |   return predator_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------|
+| PPO_env_c867a_00000 | RUNNING  | 192.168.0.25:916081 |     21 |          109.338 | 84000 |          -438.191 |            -76.7443 |        -71.8087 |        -202.493 |            -87.1448 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+---------------------+-----------------+-----------------+---------------------+
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=916081)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000021)
+[36m(_WandbLoggingActor pid=916341)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-27-06/PPO_env_c867a_00000_0_2025-06-27_02-27-06/checkpoint_000021)... Done. 0.0s

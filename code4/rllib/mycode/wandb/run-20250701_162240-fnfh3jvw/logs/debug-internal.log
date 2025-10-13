@@ -1,0 +1,15 @@
+{"time":"2025-07-01T16:22:40.952292554+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250701_162240-fnfh3jvw/logs/debug-core.log"}
+{"time":"2025-07-01T16:22:41.299782075+09:00","level":"INFO","msg":"stream: created new stream","id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:41.299810618+09:00","level":"INFO","msg":"stream: started","id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:41.299804659+09:00","level":"INFO","msg":"handler: started","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:41.299805692+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:41.299821649+09:00","level":"INFO","msg":"sender: started","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:41.548590966+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-01T16:22:47.869102179+09:00","level":"INFO","msg":"stream: closing","id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:47.869125674+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-01T16:22:47.869170025+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-01T16:22:48.822303179+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T16:22:49.756077133+09:00","level":"INFO","msg":"handler: closed","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:49.756111209+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:49.756116656+09:00","level":"INFO","msg":"sender: closed","stream_id":"fnfh3jvw"}
+{"time":"2025-07-01T16:22:49.756147107+09:00","level":"INFO","msg":"stream: closed","id":"fnfh3jvw"}

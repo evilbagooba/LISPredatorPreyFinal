@@ -1,0 +1,192 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-01 18:18:49,396	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-01 18:18:49,895	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-01 18:18:50 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_661fb_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=2850486)[0m 2025-07-01 18:18:52,116	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+
+
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+[36m(MultiAgentEnvRunner pid=2850814)[0m warning: velocites provided but types or ids not provided, returning only distance and velocity values
+== Status ==
+Current time: 2025-07-01 18:18:55 (running for 00:00:05.14)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_661fb_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(MultiAgentEnvRunner pid=2850815)[0m 2025-07-01 18:18:55,498	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=2850486)[0m Install gputil for GPU system monitoring.
+[36m(MultiAgentEnvRunner pid=2850815)[0m 2025-07-01 18:18:56,765	ERROR actor_manager.py:187 -- Worker exception caught during `apply()`: 'actions'
+[36m(MultiAgentEnvRunner pid=2850815)[0m Traceback (most recent call last):
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/actor_manager.py", line 183, in apply
+[36m(MultiAgentEnvRunner pid=2850815)[0m     return func(self, *args, **kwargs)
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/execution/rollout_ops.py", line 110, in <lambda>
+[36m(MultiAgentEnvRunner pid=2850815)[0m     else (lambda w: (w.sample(**random_action_kwargs), w.get_metrics()))
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py", line 463, in _resume_span
+[36m(MultiAgentEnvRunner pid=2850815)[0m     return method(self, *_args, **_kwargs)
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 222, in sample
+[36m(MultiAgentEnvRunner pid=2850815)[0m     samples = self._sample(
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py", line 463, in _resume_span
+[36m(MultiAgentEnvRunner pid=2850815)[0m     return method(self, *_args, **_kwargs)
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 335, in _sample
+[36m(MultiAgentEnvRunner pid=2850815)[0m     to_env = self._module_to_env(
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/connectors/connector_pipeline_v2.py", line 123, in __call__
+[36m(MultiAgentEnvRunner pid=2850815)[0m     batch = connector(
+[36m(MultiAgentEnvRunner pid=2850815)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/connectors/module_to_env/normalize_and_clip_actions.py", line 139, in __call__
+[36m(MultiAgentEnvRunner pid=2850815)[0m     batch[Columns.ACTIONS_FOR_ENV] = copy.deepcopy(batch[Columns.ACTIONS])
+[36m(MultiAgentEnvRunner pid=2850815)[0m KeyError: 'actions'
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts/PPO_env_661fb_00000_0_2025-07-01_18-18-49/wandb/run-20250701_181859-661fb_00000
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: Syncing run PPO_env_661fb_00000
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=2851150)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/661fb_00000
+
+
+== Status ==
+Current time: 2025-07-01 18:19:00 (running for 00:00:10.17)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-07-01 18:19:05 (running for 00:00:15.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-07-01 18:19:10 (running for 00:00:20.22)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-07-01 18:19:15 (running for 00:00:25.24)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-07-01 18:19:20 (running for 00:00:30.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-07-01 18:19:25 (running for 00:00:35.29)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+
+2025-07-01 18:19:26,082	WARNING tune.py:219 -- Stop signal received (e.g. via SIGINT/Ctrl+C), ending Ray Tune run. This will try to checkpoint the experiment state one last time. Press CTRL+C (or send SIGINT/SIGKILL/SIGTERM) to skip.
+2025-07-01 18:19:26,084	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-07-01_18-18-49' in 0.0018s.
+
+
+== Status ==
+Current time: 2025-07-01 18:19:26 (running for 00:00:36.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_18-18-48_851712_2848509/artifacts/2025-07-01_18-18-49/PPO_2025-07-01_18-18-49/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_661fb_00000 | RUNNING  | 192.168.0.25:2850486 |
++---------------------+----------+----------------------+

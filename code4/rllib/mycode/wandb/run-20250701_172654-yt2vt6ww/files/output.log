@@ -1,0 +1,309 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-01 17:26:56,427	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-01 17:26:56,907	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-01 17:26:57 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_17-26-55_874277_2755271/artifacts/2025-07-01_17-26-56/PPO_2025-07-01_17-26-56/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_26a34_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=2757137)[0m 2025-07-01 17:26:59,168	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+2025-07-01 17:27:01,887	ERROR tune_controller.py:1331 -- Trial task failed for trial PPO_env_26a34_00000
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2849, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 939, in get_objects
+    raise value
+ray.exceptions.ActorDiedError: The actor died because of an error raised in its creation task, [36mray::PPO.__init__()[39m (pid=2757137, ip=192.168.0.25, actor_id=55e2ad0c9f921f19537695d001000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 536, in __init__
+    super().__init__(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 157, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 644, in setup
+    self.env_runner_group = EnvRunnerGroup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 198, in __init__
+    self._setup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 286, in _setup
+    spaces = self.get_spaces()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 314, in get_spaces
+    spaces = self.foreach_env_runner(
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2849, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 939, in get_objects
+    raise value
+ray.exceptions.ActorDiedError: The actor died because of an error raised in its creation task, [36mray::PPO.__init__()[39m (pid=2757137, ip=192.168.0.25, actor_id=55e2ad0c9f921f19537695d001000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 536, in __init__
+    super().__init__(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 157, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 644, in setup
+    self.env_runner_group = EnvRunnerGroup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 198, in __init__
+    self._setup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 286, in _setup
+    spaces = self.get_spaces()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 314, in get_spaces
+    spaces = self.foreach_env_runner(
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 209, in <module>
+    run_rllib_example_script_experiment(base_config, args, keep_ray_up=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/test_utils.py", line 1342, in run_rllib_example_script_experiment
+    ).fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tuner.py", line 345, in fit
+    return self._local_tuner.fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 506, in fit
+    analysis = self._fit_internal(trainable, param_space)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 622, in _fit_internal
+    analysis = run(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tune.py", line 994, in run
+    runner.step()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 685, in step
+    if not self._actor_manager.next(timeout=0.1):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 221, in next
+    self._actor_state_events.resolve_future(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 113, in resolve_future
+    on_error(e)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 385, in on_error
+    self._actor_start_failed(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 258, in _actor_start_failed
+    tracked_actor._on_error(tracked_actor, exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1172, in _actor_failed
+    self._trial_task_failure(trial, exception=exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1332, in _trial_task_failure
+    self._process_trial_failure(trial, exception=exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1358, in _process_trial_failure
+    self._callbacks.on_trial_error(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/callback.py", line 422, in on_trial_error
+    callback.on_trial_error(**info)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/logger/logger.py", line 167, in on_trial_error
+    self.log_trial_end(trial, failed=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 703, in log_trial_end
+    self._signal_logging_actor_stop(trial=trial)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 684, in _signal_logging_actor_stop
+    self._trial_queues[trial].put((_QueueItem.END, None))
+KeyError: PPO_env_26a34_00000
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2849, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 939, in get_objects
+    raise value
+ray.exceptions.ActorDiedError: The actor died because of an error raised in its creation task, [36mray::PPO.__init__()[39m (pid=2757137, ip=192.168.0.25, actor_id=55e2ad0c9f921f19537695d001000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 536, in __init__
+    super().__init__(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 157, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 644, in setup
+    self.env_runner_group = EnvRunnerGroup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 198, in __init__
+    self._setup(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 286, in _setup
+    spaces = self.get_spaces()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 314, in get_spaces
+    spaces = self.foreach_env_runner(
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 209, in <module>
+    run_rllib_example_script_experiment(base_config, args, keep_ray_up=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/test_utils.py", line 1342, in run_rllib_example_script_experiment
+    ).fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tuner.py", line 345, in fit
+    return self._local_tuner.fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 506, in fit
+    analysis = self._fit_internal(trainable, param_space)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 622, in _fit_internal
+    analysis = run(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tune.py", line 994, in run
+    runner.step()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 685, in step
+    if not self._actor_manager.next(timeout=0.1):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 221, in next
+    self._actor_state_events.resolve_future(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 113, in resolve_future
+    on_error(e)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 385, in on_error
+    self._actor_start_failed(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 258, in _actor_start_failed
+    tracked_actor._on_error(tracked_actor, exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1172, in _actor_failed
+    self._trial_task_failure(trial, exception=exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1332, in _trial_task_failure
+    self._process_trial_failure(trial, exception=exception)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1358, in _process_trial_failure
+    self._callbacks.on_trial_error(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/callback.py", line 422, in on_trial_error
+    callback.on_trial_error(**info)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/logger/logger.py", line 167, in on_trial_error
+    self.log_trial_end(trial, failed=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 703, in log_trial_end
+    self._signal_logging_actor_stop(trial=trial)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 684, in _signal_logging_actor_stop
+    self._trial_queues[trial].put((_QueueItem.END, None))
+KeyError: PPO_env_26a34_00000
+
+
+[0m
+[36m(PPO pid=2757137)[0m 2025-07-01 17:27:01,872	ERROR actor_manager.py:873 -- Ray error (The actor died because of an error raised in its creation task, [36mray::MultiAgentEnvRunner.__init__()[39m (pid=2757242, ip=192.168.0.25, actor_id=33b317f152c90eb7afeebd8801000000, repr=<ray.rllib.env.multi_agent_env_runner.MultiAgentEnvRunner object at 0x7a4394c71600>)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 115, in __init__
+[36m(PPO pid=2757137)[0m     self.make_env()
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 815, in make_env
+[36m(PPO pid=2757137)[0m     self.env = make_vec(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 69, in make_vec
+[36m(PPO pid=2757137)[0m     env = SyncVectorMultiAgentEnv(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in __init__
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in <listcomp>
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 62, in create_single_env
+[36m(PPO pid=2757137)[0m     single_env = gym.make(env_spec, **env_spec_kwargs.copy())
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 740, in make
+[36m(PPO pid=2757137)[0m     env = env_creator(**env_spec_kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 160, in <lambda>
+[36m(PPO pid=2757137)[0m     waterworld_v4.env(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 150, in env
+[36m(PPO pid=2757137)[0m     env = raw_env(**kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 170, in __init__
+[36m(PPO pid=2757137)[0m     self.env = _env(*args, **kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld_base.py", line 106, in __init__
+[36m(PPO pid=2757137)[0m     self.agent_algo_ids = [0] * self.num_agents
+[36m(PPO pid=2757137)[0m AttributeError: 'WaterworldBase' object has no attribute 'num_agents'), taking actor 1 out of service.
+[36m(PPO pid=2757137)[0m 2025-07-01 17:27:01,872	ERROR actor_manager.py:873 -- Ray error (The actor died because of an error raised in its creation task, [36mray::MultiAgentEnvRunner.__init__()[39m (pid=2757243, ip=192.168.0.25, actor_id=19c69735235d9d58da51282c01000000, repr=<ray.rllib.env.multi_agent_env_runner.MultiAgentEnvRunner object at 0x72f7baff1750>)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 115, in __init__
+[36m(PPO pid=2757137)[0m     self.make_env()
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 815, in make_env
+[36m(PPO pid=2757137)[0m     self.env = make_vec(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 69, in make_vec
+[36m(PPO pid=2757137)[0m     env = SyncVectorMultiAgentEnv(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in __init__
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in <listcomp>
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 62, in create_single_env
+[36m(PPO pid=2757137)[0m     single_env = gym.make(env_spec, **env_spec_kwargs.copy())
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 740, in make
+[36m(PPO pid=2757137)[0m     env = env_creator(**env_spec_kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 160, in <lambda>
+[36m(PPO pid=2757137)[0m     waterworld_v4.env(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 150, in env
+[36m(PPO pid=2757137)[0m     env = raw_env(**kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 170, in __init__
+[36m(PPO pid=2757137)[0m     self.env = _env(*args, **kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld_base.py", line 106, in __init__
+[36m(PPO pid=2757137)[0m     self.agent_algo_ids = [0] * self.num_agents
+[36m(PPO pid=2757137)[0m AttributeError: 'WaterworldBase' object has no attribute 'num_agents'), taking actor 2 out of service.
+[36m(PPO pid=2757137)[0m 2025-07-01 17:27:01,872	ERROR env_runner_group.py:758 -- Validation of EnvRunner failed! Error=The actor died because of an error raised in its creation task, [36mray::MultiAgentEnvRunner.__init__()[39m (pid=2757242, ip=192.168.0.25, actor_id=33b317f152c90eb7afeebd8801000000, repr=<ray.rllib.env.multi_agent_env_runner.MultiAgentEnvRunner object at 0x7a4394c71600>)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 115, in __init__
+[36m(PPO pid=2757137)[0m     self.make_env()
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 815, in make_env
+[36m(PPO pid=2757137)[0m     self.env = make_vec(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 69, in make_vec
+[36m(PPO pid=2757137)[0m     env = SyncVectorMultiAgentEnv(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in __init__
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in <listcomp>
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 62, in create_single_env
+[36m(PPO pid=2757137)[0m     single_env = gym.make(env_spec, **env_spec_kwargs.copy())
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 740, in make
+[36m(PPO pid=2757137)[0m     env = env_creator(**env_spec_kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 160, in <lambda>
+[36m(PPO pid=2757137)[0m     waterworld_v4.env(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 150, in env
+[36m(PPO pid=2757137)[0m     env = raw_env(**kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 170, in __init__
+[36m(PPO pid=2757137)[0m     self.env = _env(*args, **kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld_base.py", line 106, in __init__
+[36m(PPO pid=2757137)[0m     self.agent_algo_ids = [0] * self.num_agents
+[36m(PPO pid=2757137)[0m AttributeError: 'WaterworldBase' object has no attribute 'num_agents'
+[36m(PPO pid=2757137)[0m 2025-07-01 17:27:01,872	ERROR env_runner_group.py:758 -- Validation of EnvRunner failed! Error=The actor died because of an error raised in its creation task, [36mray::MultiAgentEnvRunner.__init__()[39m (pid=2757243, ip=192.168.0.25, actor_id=19c69735235d9d58da51282c01000000, repr=<ray.rllib.env.multi_agent_env_runner.MultiAgentEnvRunner object at 0x72f7baff1750>)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 115, in __init__
+[36m(PPO pid=2757137)[0m     self.make_env()
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 815, in make_env
+[36m(PPO pid=2757137)[0m     self.env = make_vec(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 69, in make_vec
+[36m(PPO pid=2757137)[0m     env = SyncVectorMultiAgentEnv(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in __init__
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 29, in <listcomp>
+[36m(PPO pid=2757137)[0m     self.envs = [env_fn() for env_fn in self.env_fns]
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/registration.py", line 62, in create_single_env
+[36m(PPO pid=2757137)[0m     single_env = gym.make(env_spec, **env_spec_kwargs.copy())
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 740, in make
+[36m(PPO pid=2757137)[0m     env = env_creator(**env_spec_kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 160, in <lambda>
+[36m(PPO pid=2757137)[0m     waterworld_v4.env(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 150, in env
+[36m(PPO pid=2757137)[0m     env = raw_env(**kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld.py", line 170, in __init__
+[36m(PPO pid=2757137)[0m     self.env = _env(*args, **kwargs)
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/Documents/code4/rllib/env/PettingZoo/pettingzoo/sisl/waterworld/waterworld_base.py", line 106, in __init__
+[36m(PPO pid=2757137)[0m     self.agent_algo_ids = [0] * self.num_agents
+[36m(PPO pid=2757137)[0m AttributeError: 'WaterworldBase' object has no attribute 'num_agents'
+[36m(PPO pid=2757137)[0m Exception raised in creation task: The actor died because of an error raised in its creation task, [36mray::PPO.__init__()[39m (pid=2757137, ip=192.168.0.25, actor_id=55e2ad0c9f921f19537695d001000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 536, in __init__
+[36m(PPO pid=2757137)[0m     super().__init__(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 157, in __init__
+[36m(PPO pid=2757137)[0m     self.setup(copy.deepcopy(self.config))
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 644, in setup
+[36m(PPO pid=2757137)[0m     self.env_runner_group = EnvRunnerGroup(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 198, in __init__
+[36m(PPO pid=2757137)[0m     self._setup(
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 286, in _setup
+[36m(PPO pid=2757137)[0m     spaces = self.get_spaces()
+[36m(PPO pid=2757137)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/env_runner_group.py", line 314, in get_spaces
+[36m(PPO pid=2757137)[0m     spaces = self.foreach_env_runner(
+[36m(PPO pid=2757137)[0m IndexError: list index out of range
+[36m(MultiAgentEnvRunner pid=2757243)[0m Exception raised in creation task: The actor died because of an error raised in its creation task, [36mray::MultiAgentEnvRunner.__init__()[39m (pid=2757243, ip=192.168.0.25, actor_id=19c69735235d9d58da51282c01000000, repr=<ray.rllib.env.multi_agent_env_runner.MultiAgentEnvRunner object at 0x72f7baff1750>)
+[36m(MultiAgentEnvRunner pid=2757243)[0m     waterworld_v4.env(
+[36m(MultiAgentEnvRunner pid=2757243)[0m Exception ignored in: <function VectorMultiAgentEnv.__del__ at 0x72f7baf97d90>
+[36m(MultiAgentEnvRunner pid=2757243)[0m Traceback (most recent call last):
+[36m(MultiAgentEnvRunner pid=2757243)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/vector_multi_agent_env.py", line 80, in __del__
+[36m(MultiAgentEnvRunner pid=2757243)[0m     self.close()
+[36m(MultiAgentEnvRunner pid=2757243)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/vector_multi_agent_env.py", line 66, in close
+[36m(MultiAgentEnvRunner pid=2757243)[0m     self.close_extras(**kwargs)
+[36m(MultiAgentEnvRunner pid=2757243)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/vector/sync_vector_multi_agent_env.py", line 195, in close_extras
+[36m(MultiAgentEnvRunner pid=2757243)[0m     [env.close() for env in self.envs]
+[36m(MultiAgentEnvRunner pid=2757243)[0m TypeError: 'NoneType' object is not iterable
+[36m(MultiAgentEnvRunner pid=2757242)[0m     waterworld_v4.env(

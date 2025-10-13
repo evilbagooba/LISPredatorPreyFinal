@@ -1,0 +1,10 @@
+{"time":"2025-07-04T17:16:43.754543571+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250704_171643-qm6rjosy/logs/debug-core.log"}
+{"time":"2025-07-04T17:16:44.096015705+09:00","level":"INFO","msg":"stream: created new stream","id":"qm6rjosy"}
+{"time":"2025-07-04T17:16:44.096120896+09:00","level":"INFO","msg":"stream: started","id":"qm6rjosy"}
+{"time":"2025-07-04T17:16:44.096184697+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"qm6rjosy"}
+{"time":"2025-07-04T17:16:44.096241957+09:00","level":"INFO","msg":"sender: started","stream_id":"qm6rjosy"}
+{"time":"2025-07-04T17:16:44.096379173+09:00","level":"INFO","msg":"handler: started","stream_id":"qm6rjosy"}
+{"time":"2025-07-04T17:16:44.418068789+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-05T15:45:29.572883873+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/qm6rjosy/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-07-06T03:51:30.531997192+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/qm6rjosy/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-07-08T02:13:59.657085514+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/qm6rjosy/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

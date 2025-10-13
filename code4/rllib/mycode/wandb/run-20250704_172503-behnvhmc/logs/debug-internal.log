@@ -1,0 +1,15 @@
+{"time":"2025-07-04T17:25:03.668514249+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250704_172503-behnvhmc/logs/debug-core.log"}
+{"time":"2025-07-04T17:25:04.003886843+09:00","level":"INFO","msg":"stream: created new stream","id":"behnvhmc"}
+{"time":"2025-07-04T17:25:04.003916524+09:00","level":"INFO","msg":"stream: started","id":"behnvhmc"}
+{"time":"2025-07-04T17:25:04.004006753+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:04.004086773+09:00","level":"INFO","msg":"handler: started","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:04.004159288+09:00","level":"INFO","msg":"sender: started","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:04.313890411+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-04T17:25:27.377909426+09:00","level":"INFO","msg":"stream: closing","id":"behnvhmc"}
+{"time":"2025-07-04T17:25:27.377981431+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-04T17:25:27.378088359+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-04T17:25:28.457270365+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-04T17:25:29.005995252+09:00","level":"INFO","msg":"handler: closed","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:29.006065036+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:29.006080338+09:00","level":"INFO","msg":"sender: closed","stream_id":"behnvhmc"}
+{"time":"2025-07-04T17:25:29.006238277+09:00","level":"INFO","msg":"stream: closed","id":"behnvhmc"}

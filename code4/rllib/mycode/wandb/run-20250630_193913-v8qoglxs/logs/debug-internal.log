@@ -1,0 +1,16 @@
+{"time":"2025-06-30T19:39:13.521769764+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_193913-v8qoglxs/logs/debug-core.log"}
+{"time":"2025-06-30T19:39:13.872863846+09:00","level":"INFO","msg":"stream: created new stream","id":"v8qoglxs"}
+{"time":"2025-06-30T19:39:13.872897289+09:00","level":"INFO","msg":"stream: started","id":"v8qoglxs"}
+{"time":"2025-06-30T19:39:13.872905618+09:00","level":"INFO","msg":"sender: started","stream_id":"v8qoglxs"}
+{"time":"2025-06-30T19:39:13.872909251+09:00","level":"INFO","msg":"handler: started","stream_id":"v8qoglxs"}
+{"time":"2025-06-30T19:39:13.872926216+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"v8qoglxs"}
+{"time":"2025-06-30T19:39:14.125177621+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-30T19:39:15.411820382+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:39:15.452773136+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:39:17.903288527+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:39:17.904322677+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:39:19.754938487+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:39:19.755311979+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:39:21.957968411+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:39:21.976892763+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:39:24.833375223+09:00","level":"INFO","msg":"Pausing system monitor"}

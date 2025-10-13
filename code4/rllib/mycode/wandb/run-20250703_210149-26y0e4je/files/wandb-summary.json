@@ -1,0 +1,1 @@
+{"_timestamp":1.7515445167012875e+09,"_runtime":406.568270674,"_step":10,"episode_index":9,"total_reward_mean":-110.28268149865775,"total_reward_std":54.303898313309965,"gif":{"size":7665622,"path":"media/videos/gif_9_b6ec9d0254bbc159852b.gif","_type":"video-file","sha256":"b6ec9d0254bbc159852b6ab525450b6f60a0ffa307be2b1a6d012158694ee23c"},"_wandb":{"runtime":406}}

@@ -1,0 +1,100 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-11 12:24:30,625	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-11 12:24:31,104	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-11 12:24:31 (running for 00:00:00.12)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-11_12-24-30_067752_2216245/artifacts/2025-07-11_12-24-31/PPO_2025-07-11_12-24-31/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_8f078_00000 | PENDING  |       |
++---------------------+----------+-------+
+2025-07-11 12:24:32,633	WARNING tune.py:219 -- Stop signal received (e.g. via SIGINT/Ctrl+C), ending Ray Tune run. This will try to checkpoint the experiment state one last time. Press CTRL+C (or send SIGINT/SIGKILL/SIGTERM) to skip.
+2025-07-11 12:24:32,634	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-07-11_12-24-31' in 0.0013s.
+
+
+== Status ==
+Current time: 2025-07-11 12:24:32 (running for 00:00:01.53)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-11_12-24-30_067752_2216245/artifacts/2025-07-11_12-24-31/PPO_2025-07-11_12-24-31/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_8f078_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=2218004)[0m 2025-07-11 12:24:33,301	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 223, in <module>
+    results =run_rllib_example_script_experiment(base_config, args, keep_ray_up=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/test_utils.py", line 1342, in run_rllib_example_script_experiment
+    ).fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tuner.py", line 345, in fit
+    return self._local_tuner.fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 506, in fit
+    analysis = self._fit_internal(trainable, param_space)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 622, in _fit_internal
+    analysis = run(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tune.py", line 1026, in run
+    runner.cleanup()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1975, in cleanup
+    self._cleanup_trials()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 803, in _cleanup_trials
+    self._actor_manager.next(timeout=1)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 213, in next
+    ready, _ = ray.wait(all_futures, num_returns=1, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 3080, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python/ray/_raylet.pyx", line 3480, in ray._raylet.CoreWorker.wait
+  File "python/ray/includes/common.pxi", line 83, in ray._raylet.check_status
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 223, in <module>
+    results =run_rllib_example_script_experiment(base_config, args, keep_ray_up=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/test_utils.py", line 1342, in run_rllib_example_script_experiment
+    ).fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tuner.py", line 345, in fit
+    return self._local_tuner.fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 506, in fit
+    analysis = self._fit_internal(trainable, param_space)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 622, in _fit_internal
+    analysis = run(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tune.py", line 1026, in run
+    runner.cleanup()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1975, in cleanup
+    self._cleanup_trials()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 803, in _cleanup_trials
+    self._actor_manager.next(timeout=1)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/actor_manager.py", line 213, in next
+    ready, _ = ray.wait(all_futures, num_returns=1, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 3080, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python/ray/_raylet.pyx", line 3480, in ray._raylet.CoreWorker.wait
+  File "python/ray/includes/common.pxi", line 83, in ray._raylet.check_status
+KeyboardInterrupt
+
+
+[0m

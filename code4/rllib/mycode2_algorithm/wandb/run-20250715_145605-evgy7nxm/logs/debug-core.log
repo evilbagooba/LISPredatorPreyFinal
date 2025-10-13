@@ -1,0 +1,12 @@
+{"time":"2025-07-15T14:56:05.973698848+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpmg5su0l6/port-3021587.txt","pid":3021587,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-15T14:56:05.978788878+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":37041,"Zone":""}}
+{"time":"2025-07-15T14:56:05.978857588+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":3021587}
+{"time":"2025-07-15T14:56:06.163445033+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:58114"}
+{"time":"2025-07-15T14:56:06.176987606+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"evgy7nxm","id":"127.0.0.1:58114"}
+{"time":"2025-07-15T14:56:06.554702984+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"evgy7nxm","id":"127.0.0.1:58114"}
+{"time":"2025-07-15T14:56:15.597950923+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:55240"}
+{"time":"2025-07-15T14:56:15.600136832+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"66f7b_00000","id":"127.0.0.1:55240"}
+{"time":"2025-07-15T14:56:15.841045384+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"66f7b_00000","id":"127.0.0.1:55240"}
+{"time":"2025-07-15T14:56:31.023867275+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"66f7b_00000","id":"127.0.0.1:55240"}
+{"time":"2025-07-15T14:56:31.024067283+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"66f7b_00000","id":"127.0.0.1:55240"}
+{"time":"2025-07-15T14:56:52.800084291+09:00","level":"INFO","msg":"Parent process exited, terminating service process."}

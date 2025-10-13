@@ -1,0 +1,10 @@
+{"time":"2025-07-01T16:32:46.374907161+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpdllpiowz/port-2580054.txt","pid":2580054,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-01T16:32:46.380042229+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2580054}
+{"time":"2025-07-01T16:32:46.380014066+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":39203,"Zone":""}}
+{"time":"2025-07-01T16:32:46.565577933+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:38064"}
+{"time":"2025-07-01T16:32:46.569483973+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"99an9vzu","id":"127.0.0.1:38064"}
+{"time":"2025-07-01T16:32:46.918399999+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"99an9vzu","id":"127.0.0.1:38064"}
+{"time":"2025-07-01T16:32:57.433838883+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:53904"}
+{"time":"2025-07-01T16:32:57.43667736+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"967a4_00000","id":"127.0.0.1:53904"}
+{"time":"2025-07-01T16:32:57.658851347+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"967a4_00000","id":"127.0.0.1:53904"}
+{"time":"2025-07-03T12:22:09.201143664+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

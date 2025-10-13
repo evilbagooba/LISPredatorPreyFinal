@@ -1,0 +1,16 @@
+{"time":"2025-06-27T16:04:17.886727669+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpy8m7711s/port-923942.txt","pid":923942,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-27T16:04:17.891854186+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":923942}
+{"time":"2025-06-27T16:04:17.891857643+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":33205,"Zone":""}}
+{"time":"2025-06-27T16:04:18.076791977+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:58390"}
+{"time":"2025-06-27T16:04:18.078807954+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"kosenfvx","id":"127.0.0.1:58390"}
+{"time":"2025-06-27T16:04:18.401116908+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"kosenfvx","id":"127.0.0.1:58390"}
+{"time":"2025-06-27T16:04:27.958820931+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:52190"}
+{"time":"2025-06-27T16:04:27.962838565+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"f2651_00000","id":"127.0.0.1:52190"}
+{"time":"2025-06-27T16:04:28.183809794+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"f2651_00000","id":"127.0.0.1:52190"}
+{"time":"2025-06-27T16:21:50.281376563+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"f2651_00000","id":"127.0.0.1:52190"}
+{"time":"2025-06-27T16:21:50.281558643+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"f2651_00000","id":"127.0.0.1:52190"}
+{"time":"2025-06-28T15:19:40.934688475+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"kosenfvx","id":"127.0.0.1:58390"}
+{"time":"2025-06-28T15:19:40.939179299+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"kosenfvx","id":"127.0.0.1:58390"}
+{"time":"2025-06-28T15:19:40.975795729+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"xg4rpdhx","id":"127.0.0.1:58390"}
+{"time":"2025-06-28T15:19:41.294141004+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"xg4rpdhx","id":"127.0.0.1:58390"}
+{"time":"2025-06-28T16:18:52.567473273+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

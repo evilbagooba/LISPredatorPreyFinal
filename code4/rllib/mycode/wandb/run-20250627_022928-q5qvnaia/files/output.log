@@ -1,0 +1,119 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-06-27 02:29:29,742	INFO worker.py:1917 -- Started a local Ray instance.
+2025-06-27 02:29:30,326	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-06-27 02:29:30 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_1ddd8_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=919261)[0m 2025-06-27 02:29:32,572	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=919353)[0m 2025-06-27 02:29:34,893	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+
+
+== Status ==
+Current time: 2025-06-27 02:29:35 (running for 00:00:05.14)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_1ddd8_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=919261)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=919522)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=919522)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts/PPO_env_1ddd8_00000_0_2025-06-27_02-29-30/wandb/run-20250627_022938-1ddd8_00000
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Syncing run PPO_env_1ddd8_00000
+[36m(_WandbLoggingActor pid=919522)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=919522)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/1ddd8_00000
+[33m(raylet)[0m [2025-06-27 02:29:39,734 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9028 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-27 02:29:40 (running for 00:00:10.16)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_1ddd8_00000 | RUNNING  | 192.168.0.25:919261 |
++---------------------+----------+---------------------+
+2025-06-27 02:29:40,972	ERROR tune_controller.py:1331 -- Trial task failed for trial PPO_env_1ddd8_00000
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2849, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 937, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::PPO.train()[39m (pid=919261, ip=192.168.0.25, actor_id=88b023b45f22515ba81f395a01000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 385, in train
+    self.log_result(result)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 2955, in log_result
+    make_callback(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/callbacks/utils.py", line 32, in make_callback
+    getattr(callback_obj, callback_name)(*(args or ()), **(kwargs or {}))
+  File "/tmp/ipykernel_917500/262150831.py", line 8, in on_train_result
+AttributeError: 'dict' object has no attribute 'env_runners'
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=919261)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+2025-06-27 02:29:41,554	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-06-27_02-29-30' in 0.0032s.
+== Status ==
+Current time: 2025-06-27 02:29:41 (running for 00:00:11.23)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts
+Number of trials: 1/1 (1 ERROR)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_1ddd8_00000 | ERROR    | 192.168.0.25:919261 |
++---------------------+----------+---------------------+
+Number of errored trials: 1
++---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name          |   # failures | error file                                                                                                                                                                    |
+|---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PPO_env_1ddd8_00000 |            1 | /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-29-30/PPO_2025-06-27_02-29-30/driver_artifacts/PPO_env_1ddd8_00000_0_2025-06-27_02-29-30/error.txt |
++---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+[36m(_WandbLoggingActor pid=919522)[0m wandb: uploading output.log; uploading config.yaml
+[36m(PPO pid=919261)[0m 2025-06-27 02:29:34,975	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+2025-06-27 02:29:42,948	ERROR tune.py:1037 -- Trials did not complete: [PPO_env_1ddd8_00000]
+2025-06-27 02:29:42,950	INFO tune.py:1041 -- Total run time: 12.74 seconds (11.23 seconds for the tuning loop).
+[36m(_WandbLoggingActor pid=919522)[0m wandb:
+[36m(_WandbLoggingActor pid=919522)[0m wandb: 🚀 View run PPO_env_1ddd8_00000 at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/1ddd8_00000
+[36m(_WandbLoggingActor pid=919522)[0m wandb: ⭐️ View project at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=919522)[0m wandb: Find logs at: ./wandb/run-20250627_022938-1ddd8_00000/logs
+[33m(raylet)[0m [2025-06-27 02:29:49,742 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9022 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:29:59,751 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9043 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:30:09,760 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9016 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+参数解析完成: n_predators=2, n_preys=2, total_agents=4, algo=PPO
+[34m[1mwandb[0m: [32m[41mERROR[0m The nbformat package was not found. It is required to save notebook history.

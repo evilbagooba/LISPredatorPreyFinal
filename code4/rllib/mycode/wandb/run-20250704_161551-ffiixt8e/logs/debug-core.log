@@ -1,0 +1,22 @@
+{"time":"2025-07-04T16:15:52.010521424+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpm_oe53kh/port-16371.txt","pid":16371,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-04T16:15:52.011433815+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":16371}
+{"time":"2025-07-04T16:15:52.01141672+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":44407,"Zone":""}}
+{"time":"2025-07-04T16:15:52.19755553+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:15:52.201070112+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ffiixt8e","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:15:52.532970493+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ffiixt8e","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:16:01.187122045+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:16:01.189511669+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"b8f9c_00000","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:16:01.41461061+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"b8f9c_00000","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:16:15.176344303+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"b8f9c_00000","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:16:15.176544835+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"b8f9c_00000","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:22:37.919681461+09:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:37.91972659+09:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-07-04T16:22:37.919728267+09:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:37.919733634+09:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:22:37.919768289+09:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:22:37.919771014+09:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:37814"}
+{"time":"2025-07-04T16:22:37.919770666+09:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:38.147723787+09:00","level":"ERROR","msg":"processOutgoingData: flush error","error":"write tcp 127.0.0.1:44407->127.0.0.1:51948: use of closed network connection","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:41.243103879+09:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:41.2431719+09:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:51948"}
+{"time":"2025-07-04T16:22:41.243193293+09:00","level":"INFO","msg":"server is closed"}

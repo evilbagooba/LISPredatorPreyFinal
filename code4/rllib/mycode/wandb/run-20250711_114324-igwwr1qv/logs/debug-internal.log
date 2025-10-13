@@ -1,0 +1,7 @@
+{"time":"2025-07-11T11:43:26.143738624+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250711_114324-igwwr1qv/logs/debug-core.log"}
+{"time":"2025-07-11T11:43:26.500729008+09:00","level":"INFO","msg":"stream: created new stream","id":"igwwr1qv"}
+{"time":"2025-07-11T11:43:26.500746399+09:00","level":"INFO","msg":"stream: started","id":"igwwr1qv"}
+{"time":"2025-07-11T11:43:26.501060483+09:00","level":"INFO","msg":"handler: started","stream_id":"igwwr1qv"}
+{"time":"2025-07-11T11:43:26.501076561+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"igwwr1qv"}
+{"time":"2025-07-11T11:43:26.501150026+09:00","level":"INFO","msg":"sender: started","stream_id":"igwwr1qv"}
+{"time":"2025-07-11T11:43:26.844926156+09:00","level":"INFO","msg":"Starting system monitor"}

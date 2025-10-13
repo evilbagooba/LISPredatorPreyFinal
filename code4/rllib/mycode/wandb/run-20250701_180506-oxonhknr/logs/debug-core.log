@@ -1,0 +1,13 @@
+{"time":"2025-07-01T18:05:06.727647202+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp28j3zck7/port-2818753.txt","pid":2818753,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-01T18:05:06.733538965+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2818753}
+{"time":"2025-07-01T18:05:06.73346096+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":33067,"Zone":""}}
+{"time":"2025-07-01T18:05:06.894798844+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:06.898306147+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"oxonhknr","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:07.245687768+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"oxonhknr","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:13.881136455+09:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:13.881202971+09:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-07-01T18:05:13.881194599+09:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:13.881273298+09:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:14.863777215+09:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:14.86379578+09:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:37140"}
+{"time":"2025-07-01T18:05:14.863800512+09:00","level":"INFO","msg":"server is closed"}

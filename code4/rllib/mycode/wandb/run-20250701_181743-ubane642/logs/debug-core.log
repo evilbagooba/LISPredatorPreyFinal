@@ -1,0 +1,13 @@
+{"time":"2025-07-01T18:17:43.227938739+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmprkv7yr00/port-2842005.txt","pid":2842005,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-01T18:17:43.237126712+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2842005}
+{"time":"2025-07-01T18:17:43.237108667+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":45099,"Zone":""}}
+{"time":"2025-07-01T18:17:43.414191383+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:43.419938386+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ubane642","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:43.761418621+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ubane642","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:50.450080728+09:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:50.450128408+09:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-07-01T18:17:50.45012441+09:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:50.450213808+09:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:51.301318522+09:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:51.301336713+09:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:50284"}
+{"time":"2025-07-01T18:17:51.301341099+09:00","level":"INFO","msg":"server is closed"}

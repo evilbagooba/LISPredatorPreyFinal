@@ -1,0 +1,104 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+开始训练...
+2025-06-27 02:30:14,543	INFO worker.py:1747 -- Calling ray.init() again after it has already been called.
+== Status ==
+Current time: 2025-06-27 02:30:14 (running for 00:00:00.11)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[36m(PPO pid=919701)[0m 2025-06-27 02:30:16,679	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=919774)[0m 2025-06-27 02:30:19,086	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+
+
+== Status ==
+Current time: 2025-06-27 02:30:19 (running for 00:00:05.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[33m(raylet)[0m [2025-06-27 02:30:19,767 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9017 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[36m(PPO pid=919701)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=919914)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=919914)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts/PPO_env_3849c_00000_0_2025-06-27_02-30-14/wandb/run-20250627_023022-3849c_00000
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Syncing run PPO_env_3849c_00000
+[36m(_WandbLoggingActor pid=919914)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=919914)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/3849c_00000
+
+
+== Status ==
+Current time: 2025-06-27 02:30:24 (running for 00:00:10.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+2025-06-27 02:30:25,234	ERROR tune_controller.py:1331 -- Trial task failed for trial PPO_env_3849c_00000
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2849, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 937, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::PPO.train()[39m (pid=919701, ip=192.168.0.25, actor_id=a6591c5ab526d8c5ade8695801000000, repr=PPO(env=env; env-runners=2; learners=0; multi-agent=True))
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 385, in train
+    self.log_result(result)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 2955, in log_result
+    make_callback(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/callbacks/utils.py", line 32, in make_callback
+    getattr(callback_obj, callback_name)(*(args or ()), **(kwargs or {}))
+  File "/tmp/ipykernel_917500/1238474534.py", line 8, in on_train_result
+AttributeError: 'dict' object has no attribute 'env_runners'
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=919701)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+2025-06-27 02:30:25,833	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-06-27_02-30-14' in 0.0029s.
+== Status ==
+Current time: 2025-06-27 02:30:25 (running for 00:00:11.28)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts
+Number of trials: 1/1 (1 ERROR)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_3849c_00000 | ERROR    | 192.168.0.25:919701 |
++---------------------+----------+---------------------+
+Number of errored trials: 1
++---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Trial name          |   # failures | error file                                                                                                                                                                    |
+|---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PPO_env_3849c_00000 |            1 | /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-30-14/PPO_2025-06-27_02-30-14/driver_artifacts/PPO_env_3849c_00000_0_2025-06-27_02-30-14/error.txt |
++---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+[36m(_WandbLoggingActor pid=919914)[0m wandb: uploading wandb-summary.json
+[36m(PPO pid=919701)[0m 2025-06-27 02:30:19,155	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster][0m
+2025-06-27 02:30:27,133	ERROR tune.py:1037 -- Trials did not complete: [PPO_env_3849c_00000]
+2025-06-27 02:30:27,134	INFO tune.py:1041 -- Total run time: 12.59 seconds (11.28 seconds for the tuning loop).
+[36m(_WandbLoggingActor pid=919914)[0m wandb:
+[36m(_WandbLoggingActor pid=919914)[0m wandb: 🚀 View run PPO_env_3849c_00000 at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/3849c_00000
+[36m(_WandbLoggingActor pid=919914)[0m wandb: ⭐️ View project at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=919914)[0m wandb: Find logs at: ./wandb/run-20250627_023022-3849c_00000/logs
+[33m(raylet)[0m [2025-06-27 02:30:29,774 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8992 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:30:39,782 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8991 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:30:49,792 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8987 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:30:59,802 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8984 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:09,810 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8982 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:19,818 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8982 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:29,827 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8981 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:39,836 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8979 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:49,845 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8976 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:31:59,854 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8975 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:32:09,864 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9129 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:32:19,873 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9129 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-06-27 02:32:29,881 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.9128 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+参数解析完成: n_predators=2, n_preys=2, total_agents=4, algo=PPO

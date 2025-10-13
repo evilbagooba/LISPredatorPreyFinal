@@ -1,0 +1,10 @@
+{"time":"2025-07-08T02:47:23.967144014+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpm9wjkiq8/port-164079.txt","pid":164079,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-08T02:47:23.968979338+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":34021,"Zone":""}}
+{"time":"2025-07-08T02:47:23.969041274+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":164079}
+{"time":"2025-07-08T02:47:24.156821311+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51024"}
+{"time":"2025-07-08T02:47:24.158847171+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"rf890yu5","id":"127.0.0.1:51024"}
+{"time":"2025-07-08T02:47:24.485217899+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"rf890yu5","id":"127.0.0.1:51024"}
+{"time":"2025-07-08T02:47:33.5190564+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:58052"}
+{"time":"2025-07-08T02:47:33.521452449+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"719c3_00000","id":"127.0.0.1:58052"}
+{"time":"2025-07-08T02:47:33.747064367+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"719c3_00000","id":"127.0.0.1:58052"}
+{"time":"2025-07-08T02:50:02.814733532+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

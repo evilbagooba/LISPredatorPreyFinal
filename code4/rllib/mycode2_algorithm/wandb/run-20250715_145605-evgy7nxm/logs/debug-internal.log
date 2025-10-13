@@ -1,0 +1,9 @@
+{"time":"2025-07-15T14:56:06.177101344+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode2_algorithm/wandb/run-20250715_145605-evgy7nxm/logs/debug-core.log"}
+{"time":"2025-07-15T14:56:06.554592551+09:00","level":"INFO","msg":"stream: created new stream","id":"evgy7nxm"}
+{"time":"2025-07-15T14:56:06.554690591+09:00","level":"INFO","msg":"stream: started","id":"evgy7nxm"}
+{"time":"2025-07-15T14:56:06.554761392+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"evgy7nxm"}
+{"time":"2025-07-15T14:56:06.554848918+09:00","level":"INFO","msg":"sender: started","stream_id":"evgy7nxm"}
+{"time":"2025-07-15T14:56:06.554929729+09:00","level":"INFO","msg":"handler: started","stream_id":"evgy7nxm"}
+{"time":"2025-07-15T14:56:06.893360693+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T14:56:52.136057651+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T14:56:52.136175977+09:00","level":"INFO","msg":"Stopped system monitor"}

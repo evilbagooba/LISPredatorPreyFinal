@@ -1,0 +1,206 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-06-30 19:39:25,436	INFO worker.py:1917 -- Started a local Ray instance.
+2025-06-30 19:39:26,073	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-06-30 19:39:26 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_7e3c8_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=1923495)[0m 2025-06-30 19:39:28,432	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+
+
+== Status ==
+Current time: 2025-06-30 19:39:31 (running for 00:00:05.14)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_7e3c8_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(MultiAgentEnvRunner pid=1923591)[0m 2025-06-30 19:39:31,908	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=1923495)[0m Install gputil for GPU system monitoring.
+[36m(MultiAgentEnvRunner pid=1923590)[0m 2025-06-30 19:39:33,064	ERROR actor_manager.py:187 -- Worker exception caught during `apply()`: 'actions'
+[36m(MultiAgentEnvRunner pid=1923590)[0m Traceback (most recent call last):
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/actor_manager.py", line 183, in apply
+[36m(MultiAgentEnvRunner pid=1923590)[0m     return func(self, *args, **kwargs)
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/execution/rollout_ops.py", line 110, in <lambda>
+[36m(MultiAgentEnvRunner pid=1923590)[0m     else (lambda w: (w.sample(**random_action_kwargs), w.get_metrics()))
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py", line 463, in _resume_span
+[36m(MultiAgentEnvRunner pid=1923590)[0m     return method(self, *_args, **_kwargs)
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 222, in sample
+[36m(MultiAgentEnvRunner pid=1923590)[0m     samples = self._sample(
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py", line 463, in _resume_span
+[36m(MultiAgentEnvRunner pid=1923590)[0m     return method(self, *_args, **_kwargs)
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 335, in _sample
+[36m(MultiAgentEnvRunner pid=1923590)[0m     to_env = self._module_to_env(
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/connectors/connector_pipeline_v2.py", line 123, in __call__
+[36m(MultiAgentEnvRunner pid=1923590)[0m     batch = connector(
+[36m(MultiAgentEnvRunner pid=1923590)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/connectors/module_to_env/normalize_and_clip_actions.py", line 139, in __call__
+[36m(MultiAgentEnvRunner pid=1923590)[0m     batch[Columns.ACTIONS_FOR_ENV] = copy.deepcopy(batch[Columns.ACTIONS])
+[36m(MultiAgentEnvRunner pid=1923590)[0m KeyError: 'actions'
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[33m(raylet)[0m [2025-06-30 19:39:35,425 E 1922017 1922046] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727 is over 95% full, available space: 1.92411 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts/PPO_env_7e3c8_00000_0_2025-06-30_19-39-26/wandb/run-20250630_193935-7e3c8_00000
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: Syncing run PPO_env_7e3c8_00000
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=1923805)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/7e3c8_00000
+
+
+== Status ==
+Current time: 2025-06-30 19:39:36 (running for 00:00:10.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:39:41 (running for 00:00:15.21)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+[36m(PPO pid=1923495)[0m 2025-06-30 19:39:32,110	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(MultiAgentEnvRunner pid=1923591)[0m 2025-06-30 19:39:33,061	ERROR actor_manager.py:187 -- Worker exception caught during `apply()`: 'actions'
+[36m(MultiAgentEnvRunner pid=1923591)[0m Traceback (most recent call last):
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/actor_manager.py", line 183, in apply
+[36m(MultiAgentEnvRunner pid=1923591)[0m     return func(self, *args, **kwargs)
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/execution/rollout_ops.py", line 110, in <lambda>
+[36m(MultiAgentEnvRunner pid=1923591)[0m     else (lambda w: (w.sample(**random_action_kwargs), w.get_metrics()))
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/util/tracing/tracing_helper.py", line 463, in _resume_span[32m [repeated 2x across cluster][0m
+[36m(MultiAgentEnvRunner pid=1923591)[0m     return method(self, *_args, **_kwargs)[32m [repeated 2x across cluster][0m
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 222, in sample
+[36m(MultiAgentEnvRunner pid=1923591)[0m     samples = self._sample(
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/env/multi_agent_env_runner.py", line 335, in _sample
+[36m(MultiAgentEnvRunner pid=1923591)[0m     to_env = self._module_to_env(
+[36m(MultiAgentEnvRunner pid=1923591)[0m   File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/connectors/module_to_env/normalize_and_clip_actions.py", line 139, in __call__[32m [repeated 2x across cluster][0m
+[36m(MultiAgentEnvRunner pid=1923591)[0m     batch = connector(
+[36m(MultiAgentEnvRunner pid=1923591)[0m     batch[Columns.ACTIONS_FOR_ENV] = copy.deepcopy(batch[Columns.ACTIONS])
+[36m(MultiAgentEnvRunner pid=1923591)[0m KeyError: 'actions'
+[33m(raylet)[0m [2025-06-30 19:39:45,430 E 1922017 1922046] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727 is over 95% full, available space: 1.92509 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:39:46 (running for 00:00:20.23)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:39:51 (running for 00:00:25.25)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:39:55,435 E 1922017 1922046] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727 is over 95% full, available space: 1.92254 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:39:56 (running for 00:00:30.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:40:01 (running for 00:00:35.29)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:40:05,441 E 1922017 1922046] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727 is over 95% full, available space: 1.92216 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:40:06 (running for 00:00:40.31)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:40:11 (running for 00:00:45.33)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:40:15,447 E 1922017 1922046] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727 is over 95% full, available space: 1.92169 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:40:16 (running for 00:00:50.35)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-39-24_859182_1921727/artifacts/2025-06-30_19-39-25/PPO_2025-06-30_19-39-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_7e3c8_00000 | RUNNING  | 192.168.0.25:1923495 |
++---------------------+----------+----------------------+

@@ -1,0 +1,549 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-08 02:47:25,514	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-08 02:47:26,077	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-08 02:47:26 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_719c3_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=489020)[0m 2025-07-08 02:47:28,215	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+[36m(MultiAgentEnvRunner pid=489121)[0m 2025-07-08 02:47:30,395	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=489020)[0m Install gputil for GPU system monitoring.
+== Status ==
+Current time: 2025-07-08 02:47:31 (running for 00:00:05.15)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+
+| Trial name          | status   | loc                 |
+|---------------------+----------+---------------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |
++---------------------+----------+---------------------+
+[36m(_WandbLoggingActor pid=489306)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=489306)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts/PPO_env_719c3_00000_0_2025-07-08_02-47-26/wandb/run-20250708_024733-719c3_00000
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Syncing run PPO_env_719c3_00000
+[36m(_WandbLoggingActor pid=489306)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=489306)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/719c3_00000
+
+
+== Status ==
+Current time: 2025-07-08 02:47:37 (running for 00:00:11.65)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      1 |          5.02419 | 4000 |          -335.128 |        -171.182 |            -45.3602 |            -11.1795 |        -107.407 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000000)
+[36m(PPO pid=489020)[0m 2025-07-08 02:47:30,464	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 5x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 5x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000000)... Done. 0.0s
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000001)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000001)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:47:42 (running for 00:00:16.67)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |   ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      2 |          9.67487 | 8000 |          -395.512 |        -181.337 |            -61.0392 |            -49.1746 |         -103.96 |
++---------------------+----------+---------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000002)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000002)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:47:47 (running for 00:00:21.71)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      3 |           14.453 | 12000 |          -393.103 |        -180.338 |            -65.5915 |            -57.8311 |        -89.3426 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000003)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000003)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:47:52 (running for 00:00:26.76)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      4 |          19.1586 | 16000 |          -367.262 |        -179.882 |            -45.1192 |            -60.0811 |        -82.1799 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000004)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000004)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:47:57 (running for 00:00:31.84)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      5 |          23.8616 | 20000 |          -351.102 |         -181.22 |            -39.2465 |            -45.7302 |         -84.905 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000005)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000005)...
+[36m(_WandbLoggingActor pid=489306)[0m Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:02 (running for 00:00:36.89)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      6 |          28.5677 | 24000 |          -317.831 |         -179.76 |             -22.264 |            -27.8565 |        -87.9505 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000006)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000006)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:07 (running for 00:00:41.92)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      7 |          33.3215 | 28000 |          -261.951 |        -182.048 |             10.4868 |            -1.24444 |         -89.146 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000007)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000007)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:12 (running for 00:00:46.92)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      8 |          37.9911 | 32000 |           -217.66 |         -184.08 |             33.1142 |             19.4705 |        -86.1647 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000008)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000008)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:18 (running for 00:00:51.99)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |      9 |          42.5801 | 36000 |          -231.875 |        -184.481 |             18.9596 |             18.3157 |        -84.6687 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000009)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000009)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:23 (running for 00:00:57.04)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     10 |          47.1997 | 40000 |           -233.28 |        -183.979 |              10.961 |             19.9365 |        -80.1988 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000010)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000010)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:28 (running for 00:01:02.06)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     11 |          51.7554 | 44000 |          -231.246 |        -184.083 |             17.7939 |             14.1923 |        -79.1495 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000011)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000011)...
+[36m(_WandbLoggingActor pid=489306)[0m Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:33 (running for 00:01:07.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     12 |          56.3045 | 48000 |          -227.795 |        -183.604 |              19.865 |             15.1248 |        -79.1807 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000012)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000012)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:38 (running for 00:01:12.21)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     13 |          60.9191 | 52000 |          -226.101 |        -182.903 |             16.7979 |              16.104 |        -76.0991 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000013)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000013)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:43 (running for 00:01:17.28)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     14 |          65.4712 | 56000 |          -226.839 |        -184.278 |             17.3204 |             15.5674 |        -75.4495 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000014)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000014)...
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m Done. 0.0s
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000015)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000015)...
+[36m(_WandbLoggingActor pid=489306)[0m Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:48 (running for 00:01:22.29)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     16 |          74.7037 | 64000 |          -215.769 |        -184.506 |             24.5467 |             20.5293 |        -76.3388 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000016)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000016)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:48:53 (running for 00:01:27.32)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     17 |          79.2803 | 68000 |          -185.453 |        -184.519 |             40.7691 |             35.2291 |        -76.9326 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000017)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000017)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:48:58 (running for 00:01:32.36)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     18 |          83.8926 | 72000 |          -183.285 |        -185.042 |             44.4581 |             33.6614 |         -76.362 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000018)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000018)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:03 (running for 00:01:37.39)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     19 |          88.5957 | 76000 |          -175.837 |        -185.482 |             46.9323 |             37.4358 |        -74.7231 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000019)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000019)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:49:08 (running for 00:01:42.44)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     20 |          93.1862 | 80000 |          -159.159 |        -184.231 |             59.0568 |             41.5207 |        -75.5051 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000020)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000020)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:13 (running for 00:01:47.47)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     21 |          97.7884 | 84000 |          -156.299 |        -182.876 |             57.6355 |             44.0791 |        -75.1372 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000021)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000021)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:49:18 (running for 00:01:52.50)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     22 |          102.454 | 88000 |          -152.509 |        -181.762 |             60.9968 |             43.5966 |        -75.3398 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000022)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000022)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:23 (running for 00:01:57.51)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     23 |          107.131 | 92000 |          -144.694 |        -181.351 |             67.4355 |             44.5051 |        -75.2832 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000023)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000023)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:49:28 (running for 00:02:02.61)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |    ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     24 |          111.757 | 96000 |          -137.249 |        -180.603 |             71.0722 |             47.3931 |        -75.1117 |
++---------------------+----------+---------------------+--------+------------------+-------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000024)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000024)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:33 (running for 00:02:07.67)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     25 |          116.395 | 100000 |          -137.834 |        -180.711 |             73.7865 |             43.6111 |        -74.5205 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000025)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000025)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:49:38 (running for 00:02:12.76)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     26 |          121.012 | 104000 |          -116.628 |        -180.187 |             84.4791 |              52.263 |        -73.1832 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000026)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000026)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:43 (running for 00:02:17.80)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     27 |          125.707 | 108000 |          -89.9642 |         -180.19 |             98.6445 |             64.0849 |        -72.5041 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000027)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000027)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-08 02:49:48 (running for 00:02:22.88)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     28 |          130.321 | 112000 |          -73.1755 |        -181.689 |             107.853 |             74.7293 |         -74.069 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000028)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000028)... Done. 0.0s
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000029)
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000029)...
+[36m(_WandbLoggingActor pid=489306)[0m Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:54 (running for 00:02:27.94)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     30 |          139.534 | 120000 |          -42.5354 |        -183.317 |             123.563 |             90.8013 |        -73.5827 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=489020)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000030)
+
+
+[36m(MultiAgentEnvRunner pid=489121)[0m Reset complete:[32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   Agents: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(MultiAgentEnvRunner pid=489121)[0m   _cumulative_rewards keys: ['predator_0', 'predator_1', 'prey_0', 'prey_1'][32m [repeated 4x across cluster][0m
+[36m(_WandbLoggingActor pid=489306)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-08_02-47-25/PPO_env_719c3_00000_0_2025-07-08_02-47-26/checkpoint_000030)... Done. 0.0s
+== Status ==
+Current time: 2025-07-08 02:49:59 (running for 00:02:32.96)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-08_02-47-24_971845_164079/artifacts/2025-07-08_02-47-25/PPO_2025-07-08_02-47-25/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                 |   iter |   total time (s) |     ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_719c3_00000 | RUNNING  | 192.168.0.25:489020 |     31 |          144.182 | 124000 |          -33.6044 |        -183.565 |             132.467 |             90.0536 |        -72.5603 |
++---------------------+----------+---------------------+--------+------------------+--------+-------------------+-----------------+---------------------+---------------------+-----------------+

@@ -1,0 +1,6 @@
+{"time":"2025-07-04T16:22:33.654360429+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250704_162233-98sdkoxg/logs/debug-core.log"}
+{"time":"2025-07-04T16:22:34.000615636+09:00","level":"INFO","msg":"stream: created new stream","id":"98sdkoxg"}
+{"time":"2025-07-04T16:22:34.000646464+09:00","level":"INFO","msg":"stream: started","id":"98sdkoxg"}
+{"time":"2025-07-04T16:22:34.000642523+09:00","level":"INFO","msg":"handler: started","stream_id":"98sdkoxg"}
+{"time":"2025-07-04T16:22:34.000668495+09:00","level":"INFO","msg":"sender: started","stream_id":"98sdkoxg"}
+{"time":"2025-07-04T16:22:34.000678356+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"98sdkoxg"}

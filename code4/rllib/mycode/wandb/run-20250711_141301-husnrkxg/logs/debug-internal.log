@@ -1,0 +1,16 @@
+{"time":"2025-07-11T14:13:02.167846585+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250711_141301-husnrkxg/logs/debug-core.log"}
+{"time":"2025-07-11T14:13:02.517369295+09:00","level":"INFO","msg":"stream: created new stream","id":"husnrkxg"}
+{"time":"2025-07-11T14:13:02.517388814+09:00","level":"INFO","msg":"stream: started","id":"husnrkxg"}
+{"time":"2025-07-11T14:13:02.517397619+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:13:02.517398856+09:00","level":"INFO","msg":"handler: started","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:13:02.51740637+09:00","level":"INFO","msg":"sender: started","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:13:02.838460608+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-11T14:19:39.319096588+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-11T14:19:39.319148187+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-11T14:19:40.291804283+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.275015981,"progress":"592.0KB/2.9MB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.274993008,"progress":"1.1KB/1.1KB"},{"desc":"uploading media/videos/episode_gif_9_6dc8480ac43776f101d1.gif","runtime_seconds":0.274984298,"progress":"640.0KB/11.0MB"}],"total_operations":3}}
+{"time":"2025-07-11T14:19:41.766796666+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-11T14:19:42.098405747+09:00","level":"INFO","msg":"stream: closing","id":"husnrkxg"}
+{"time":"2025-07-11T14:19:42.098415385+09:00","level":"INFO","msg":"handler: closed","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:19:42.098419738+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:19:42.098423555+09:00","level":"INFO","msg":"sender: closed","stream_id":"husnrkxg"}
+{"time":"2025-07-11T14:19:42.098462647+09:00","level":"INFO","msg":"stream: closed","id":"husnrkxg"}

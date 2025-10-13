@@ -1,0 +1,10 @@
+{"time":"2025-07-01T21:45:41.579761865+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpcwznxh0b/port-3300374.txt","pid":3300374,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-01T21:45:41.58485206+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":3300374}
+{"time":"2025-07-01T21:45:41.584837825+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":42139,"Zone":""}}
+{"time":"2025-07-01T21:45:41.768032434+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:33776"}
+{"time":"2025-07-01T21:45:41.772180054+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"p2gfiwj2","id":"127.0.0.1:33776"}
+{"time":"2025-07-01T21:45:42.115651397+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"p2gfiwj2","id":"127.0.0.1:33776"}
+{"time":"2025-07-01T21:45:51.549731347+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:50804"}
+{"time":"2025-07-01T21:45:51.552453381+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"4d540_00000","id":"127.0.0.1:50804"}
+{"time":"2025-07-01T21:45:51.78722238+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"4d540_00000","id":"127.0.0.1:50804"}
+{"time":"2025-07-03T12:22:09.258987211+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

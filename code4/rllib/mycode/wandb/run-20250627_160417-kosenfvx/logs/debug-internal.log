@@ -1,0 +1,56 @@
+{"time":"2025-06-27T16:04:18.078896429+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250627_160417-kosenfvx/logs/debug-core.log"}
+{"time":"2025-06-27T16:04:18.401083438+09:00","level":"INFO","msg":"stream: created new stream","id":"kosenfvx"}
+{"time":"2025-06-27T16:04:18.401110872+09:00","level":"INFO","msg":"stream: started","id":"kosenfvx"}
+{"time":"2025-06-27T16:04:18.401110381+09:00","level":"INFO","msg":"handler: started","stream_id":"kosenfvx"}
+{"time":"2025-06-27T16:04:18.401131123+09:00","level":"INFO","msg":"sender: started","stream_id":"kosenfvx"}
+{"time":"2025-06-27T16:04:18.401140845+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"kosenfvx"}
+{"time":"2025-06-27T16:04:18.731362667+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-27T16:04:18.832805505+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:04:18.832830493+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:04:18.83283282+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:04:18.832834718+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:04:18.832836052+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:04:18.832837322+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:04:18.832838498+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:04:18.875766401+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:04:18.875812958+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.351458697+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.356077051+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.356420747+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.366181043+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.367339201+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.376538024+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.377412928+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.382502898+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.406910916+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.412704139+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:21:50.413823294+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:21:50.422243305+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:44:00.236488257+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:44:00.243034817+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:44:00.244027646+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T16:44:00.252073602+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T16:44:00.252624017+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T02:36:49.296021005+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/kosenfvx/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-28T15:19:38.784110445+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.785485674+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.788738762+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.792046552+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.796233653+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.79687953+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.80024963+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.801265276+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.806223018+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.808059983+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.812468104+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.813341069+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-28T15:19:38.817256554+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-28T15:19:38.821558474+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-28T15:19:38.821611633+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-28T15:19:39.823976494+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.76195833,"progress":"1.5MB/4.1MB"}],"total_operations":1}}
+{"time":"2025-06-28T15:19:40.674358899+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-28T15:19:40.939087585+09:00","level":"INFO","msg":"stream: closing","id":"kosenfvx"}
+{"time":"2025-06-28T15:19:40.939114736+09:00","level":"INFO","msg":"handler: closed","stream_id":"kosenfvx"}
+{"time":"2025-06-28T15:19:40.939122741+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kosenfvx"}
+{"time":"2025-06-28T15:19:40.939139951+09:00","level":"INFO","msg":"sender: closed","stream_id":"kosenfvx"}
+{"time":"2025-06-28T15:19:40.939175755+09:00","level":"INFO","msg":"stream: closed","id":"kosenfvx"}

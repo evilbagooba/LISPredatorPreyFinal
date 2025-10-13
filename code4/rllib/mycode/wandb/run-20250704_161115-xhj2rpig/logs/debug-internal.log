@@ -1,0 +1,7 @@
+{"time":"2025-07-04T16:11:15.408041714+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250704_161115-xhj2rpig/logs/debug-core.log"}
+{"time":"2025-07-04T16:11:15.754118977+09:00","level":"INFO","msg":"stream: created new stream","id":"xhj2rpig"}
+{"time":"2025-07-04T16:11:15.754178382+09:00","level":"INFO","msg":"stream: started","id":"xhj2rpig"}
+{"time":"2025-07-04T16:11:15.754242591+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"xhj2rpig"}
+{"time":"2025-07-04T16:11:15.754316058+09:00","level":"INFO","msg":"sender: started","stream_id":"xhj2rpig"}
+{"time":"2025-07-04T16:11:15.754416333+09:00","level":"INFO","msg":"handler: started","stream_id":"xhj2rpig"}
+{"time":"2025-07-04T16:11:16.119012159+09:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,10 @@
+{"time":"2025-06-27T02:27:04.815197973+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpwpwx5m1g/port-914320.txt","pid":914320,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-27T02:27:04.820259684+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":914320}
+{"time":"2025-06-27T02:27:04.820255306+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":37279,"Zone":""}}
+{"time":"2025-06-27T02:27:05.001677623+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:57372"}
+{"time":"2025-06-27T02:27:05.00382078+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"4czcc0x0","id":"127.0.0.1:57372"}
+{"time":"2025-06-27T02:27:05.326999242+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"4czcc0x0","id":"127.0.0.1:57372"}
+{"time":"2025-06-27T02:27:14.909418221+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:49930"}
+{"time":"2025-06-27T02:27:14.912469799+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"c867a_00000","id":"127.0.0.1:49930"}
+{"time":"2025-06-27T02:27:15.132887053+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"c867a_00000","id":"127.0.0.1:49930"}
+{"time":"2025-06-27T02:29:10.567083461+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

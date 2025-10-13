@@ -1,0 +1,15 @@
+{"time":"2025-06-29T18:15:06.771752622+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp9qdr7bb9/port-1868073.txt","pid":1868073,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-29T18:15:06.77688653+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":1868073}
+{"time":"2025-06-29T18:15:06.776892148+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":37975,"Zone":""}}
+{"time":"2025-06-29T18:15:06.962851768+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:52850"}
+{"time":"2025-06-29T18:15:06.96533995+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ih20oyec","id":"127.0.0.1:52850"}
+{"time":"2025-06-29T18:15:07.312615183+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ih20oyec","id":"127.0.0.1:52850"}
+{"time":"2025-06-29T18:15:17.026784633+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:39846"}
+{"time":"2025-06-29T18:15:17.029306176+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"8d904_00000","id":"127.0.0.1:39846"}
+{"time":"2025-06-29T18:15:17.268938582+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"8d904_00000","id":"127.0.0.1:39846"}
+{"time":"2025-06-29T18:31:56.479505354+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"8d904_00000","id":"127.0.0.1:39846"}
+{"time":"2025-06-29T18:31:56.479617312+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"8d904_00000","id":"127.0.0.1:39846"}
+{"time":"2025-06-30T19:35:51.505545251+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:60116"}
+{"time":"2025-06-30T19:35:51.508365267+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"f8d0b_00000","id":"127.0.0.1:60116"}
+{"time":"2025-06-30T19:35:51.747469446+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"f8d0b_00000","id":"127.0.0.1:60116"}
+{"time":"2025-06-30T19:38:28.425970339+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

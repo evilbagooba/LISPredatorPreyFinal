@@ -1,0 +1,39 @@
+{"time":"2025-07-10T02:57:20.477259726+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250710_025720-uo578rny/logs/debug-core.log"}
+{"time":"2025-07-10T02:57:20.820784911+09:00","level":"INFO","msg":"stream: created new stream","id":"uo578rny"}
+{"time":"2025-07-10T02:57:20.820813136+09:00","level":"INFO","msg":"stream: started","id":"uo578rny"}
+{"time":"2025-07-10T02:57:20.82080913+09:00","level":"INFO","msg":"handler: started","stream_id":"uo578rny"}
+{"time":"2025-07-10T02:57:20.820829575+09:00","level":"INFO","msg":"sender: started","stream_id":"uo578rny"}
+{"time":"2025-07-10T02:57:20.820844712+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"uo578rny"}
+{"time":"2025-07-10T02:57:21.29662357+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-10T02:57:21.845520566+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T02:57:21.885633546+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T02:57:23.22163439+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T02:57:23.225162002+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T02:57:24.78585109+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T02:57:24.792604362+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T02:57:26.379256691+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T02:57:26.401519428+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T02:57:27.768558286+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T02:59:35.558868677+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.812296927+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852647632+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.852666418+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852668883+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.852670503+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852671939+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.852673318+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852674689+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.852676041+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852677385+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.852678766+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.852680985+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T04:37:02.85268241+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T04:37:02.85269063+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-10T04:37:02.852778991+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-10T04:37:03.852460488+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.756098039,"progress":"123.5KB/123.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.541591763,"progress":"1.7KB/1.7KB"}],"total_operations":2}}
+{"time":"2025-07-10T04:37:04.249132247+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-10T04:37:04.564376271+09:00","level":"INFO","msg":"stream: closing","id":"uo578rny"}
+{"time":"2025-07-10T04:37:04.564421122+09:00","level":"INFO","msg":"handler: closed","stream_id":"uo578rny"}
+{"time":"2025-07-10T04:37:04.564440168+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uo578rny"}
+{"time":"2025-07-10T04:37:04.564469945+09:00","level":"INFO","msg":"sender: closed","stream_id":"uo578rny"}
+{"time":"2025-07-10T04:37:04.56461832+09:00","level":"INFO","msg":"stream: closed","id":"uo578rny"}

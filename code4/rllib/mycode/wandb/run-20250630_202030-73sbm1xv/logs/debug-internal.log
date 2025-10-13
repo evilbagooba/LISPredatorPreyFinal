@@ -1,0 +1,16 @@
+{"time":"2025-06-30T20:20:30.929660166+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_202030-73sbm1xv/logs/debug-core.log"}
+{"time":"2025-06-30T20:20:31.273923152+09:00","level":"INFO","msg":"stream: created new stream","id":"73sbm1xv"}
+{"time":"2025-06-30T20:20:31.273950939+09:00","level":"INFO","msg":"stream: started","id":"73sbm1xv"}
+{"time":"2025-06-30T20:20:31.273950879+09:00","level":"INFO","msg":"handler: started","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:20:31.273968589+09:00","level":"INFO","msg":"sender: started","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:20:31.27397736+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:20:31.624065537+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-30T20:24:52.435233713+09:00","level":"ERROR","msg":"runconsolelogs: failed to write to file: write /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_202030-73sbm1xv/files/output.log: no space left on device"}
+{"time":"2025-06-30T20:54:44.693927567+09:00","level":"INFO","msg":"stream: closing","id":"73sbm1xv"}
+{"time":"2025-06-30T20:54:44.693976826+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-30T20:54:44.694009502+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-30T20:54:45.990790904+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-30T20:54:46.286026215+09:00","level":"INFO","msg":"handler: closed","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:54:46.286056888+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:54:46.286086905+09:00","level":"INFO","msg":"sender: closed","stream_id":"73sbm1xv"}
+{"time":"2025-06-30T20:54:46.286107602+09:00","level":"INFO","msg":"stream: closed","id":"73sbm1xv"}

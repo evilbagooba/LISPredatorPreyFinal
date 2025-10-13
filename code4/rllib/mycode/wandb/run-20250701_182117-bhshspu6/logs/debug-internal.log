@@ -1,0 +1,15 @@
+{"time":"2025-07-01T18:21:18.167188299+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250701_182117-bhshspu6/logs/debug-core.log"}
+{"time":"2025-07-01T18:21:18.515586834+09:00","level":"INFO","msg":"stream: created new stream","id":"bhshspu6"}
+{"time":"2025-07-01T18:21:18.515626229+09:00","level":"INFO","msg":"stream: started","id":"bhshspu6"}
+{"time":"2025-07-01T18:21:18.515626702+09:00","level":"INFO","msg":"handler: started","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:21:18.515627472+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:21:18.515676871+09:00","level":"INFO","msg":"sender: started","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:21:18.802812329+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-01T18:40:31.873282828+09:00","level":"INFO","msg":"stream: closing","id":"bhshspu6"}
+{"time":"2025-07-01T18:40:31.873311201+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-01T18:40:31.873358437+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-01T18:40:33.757850159+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T18:40:34.329811704+09:00","level":"INFO","msg":"handler: closed","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:40:34.329833597+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:40:34.329835746+09:00","level":"INFO","msg":"sender: closed","stream_id":"bhshspu6"}
+{"time":"2025-07-01T18:40:34.329885318+09:00","level":"INFO","msg":"stream: closed","id":"bhshspu6"}

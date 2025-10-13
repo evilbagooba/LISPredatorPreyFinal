@@ -1,0 +1,28 @@
+{"time":"2025-06-27T02:29:28.17353532+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp7hqx3j0i/port-917500.txt","pid":917500,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-27T02:29:28.174461061+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":917500}
+{"time":"2025-06-27T02:29:28.174457737+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":33487,"Zone":""}}
+{"time":"2025-06-27T02:29:28.364204128+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:29:28.36619956+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"q5qvnaia","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:29:28.693781393+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"q5qvnaia","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:29:38.187082432+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:60582"}
+{"time":"2025-06-27T02:29:38.18958666+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"1ddd8_00000","id":"127.0.0.1:60582"}
+{"time":"2025-06-27T02:29:38.404731367+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"1ddd8_00000","id":"127.0.0.1:60582"}
+{"time":"2025-06-27T02:29:42.946842463+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"1ddd8_00000","id":"127.0.0.1:60582"}
+{"time":"2025-06-27T02:29:42.946979919+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"1ddd8_00000","id":"127.0.0.1:60582"}
+{"time":"2025-06-27T02:30:13.805542348+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"q5qvnaia","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:30:13.805754666+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"q5qvnaia","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:30:13.846797281+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ccgyklwf","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:30:14.174632015+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ccgyklwf","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:30:22.334443348+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51056"}
+{"time":"2025-06-27T02:30:22.337296679+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"3849c_00000","id":"127.0.0.1:51056"}
+{"time":"2025-06-27T02:30:22.557151379+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"3849c_00000","id":"127.0.0.1:51056"}
+{"time":"2025-06-27T02:30:27.133024525+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"3849c_00000","id":"127.0.0.1:51056"}
+{"time":"2025-06-27T02:30:27.133091917+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"3849c_00000","id":"127.0.0.1:51056"}
+{"time":"2025-06-27T02:32:34.422808668+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"ccgyklwf","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:32:34.422904568+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"ccgyklwf","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:32:34.463778249+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"641usd2r","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:32:34.787605224+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"641usd2r","id":"127.0.0.1:40598"}
+{"time":"2025-06-27T02:32:43.122195214+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:44032"}
+{"time":"2025-06-27T02:32:43.124533958+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"8c1fd_00000","id":"127.0.0.1:44032"}
+{"time":"2025-06-27T02:32:43.342317868+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"8c1fd_00000","id":"127.0.0.1:44032"}
+{"time":"2025-06-27T02:33:44.871529091+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

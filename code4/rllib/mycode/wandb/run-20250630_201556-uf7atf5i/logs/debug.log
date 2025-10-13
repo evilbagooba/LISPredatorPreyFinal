@@ -1,0 +1,21 @@
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_setup.py:_flush():81] Configure stats pid to 1934066
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/.config/wandb/settings
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/Documents/code4/rllib/mycode/wandb/settings
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-30 20:15:56,531 INFO    MainThread:1934066 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_201556-uf7atf5i/logs/debug.log
+2025-06-30 20:15:56,532 INFO    MainThread:1934066 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_201556-uf7atf5i/logs/debug-internal.log
+2025-06-30 20:15:56,532 INFO    MainThread:1934066 [wandb_init.py:init():831] calling init triggers
+2025-06-30 20:15:56,532 INFO    MainThread:1934066 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'algo': 'PPO', 'enable_new_api_stack': True, 'framework': 'torch', 'env': None, 'num_env_runners': None, 'num_envs_per_env_runner': None, 'num_agents': 5, 'evaluation_num_env_runners': 0, 'evaluation_interval': 0, 'evaluation_duration': 10, 'evaluation_duration_unit': 'episodes', 'evaluation_parallel_to_training': False, 'output': None, 'log_level': None, 'no_tune': False, 'num_samples': 1, 'max_concurrent_trials': None, 'verbose': 2, 'checkpoint_freq': 1, 'checkpoint_at_end': True, 'wandb_key': 'fdd7656f474bba144dea1887bcdab534bc7df647', 'wandb_project': 'waterworld-v4', 'wandb_run_name': None, 'stop_reward': 200.0, 'stop_iters': 200, 'stop_timesteps': 1000000, 'as_test': False, 'as_release_test': False, 'num_learners': None, 'num_cpus_per_learner': None, 'num_gpus_per_learner': None, 'num_aggregator_actors_per_learner': None, 'num_cpus': 0, 'local_mode': False, 'num_gpus': None, 'n_predators': 2, 'n_preys': 3, 'use_onnx_for_inference': False, 'explore_during_inference': False, 'num_episodes_during_inference': 10, '_wandb': {}}
+2025-06-30 20:15:56,532 INFO    MainThread:1934066 [wandb_init.py:init():872] starting backend
+2025-06-30 20:15:56,748 INFO    MainThread:1934066 [wandb_init.py:init():875] sending inform_init request
+2025-06-30 20:15:56,752 INFO    MainThread:1934066 [wandb_init.py:init():883] backend started and connected
+2025-06-30 20:15:56,754 INFO    MainThread:1934066 [wandb_init.py:init():956] updated telemetry
+2025-06-30 20:15:56,754 INFO    MainThread:1934066 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-30 20:15:57,409 INFO    MainThread:1934066 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-30 20:15:57,457 INFO    MainThread:1934066 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-30 20:15:57,458 INFO    MainThread:1934066 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-30 20:15:57,458 INFO    MainThread:1934066 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-30 20:15:57,458 INFO    MainThread:1934066 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-30 20:15:57,459 INFO    MainThread:1934066 [wandb_init.py:init():1078] run started, returning control to user process

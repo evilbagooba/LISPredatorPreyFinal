@@ -1,0 +1,12 @@
+{"time":"2025-09-23T17:47:48.417190437+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp7cvzu636/port-3714768.txt","pid":3714768,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-09-23T17:47:48.418721343+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":3714768}
+{"time":"2025-09-23T17:47:48.418721591+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":43483,"Zone":""}}
+{"time":"2025-09-23T17:47:48.60106679+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:58300"}
+{"time":"2025-09-23T17:47:48.607423622+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"q4ehqh10","id":"127.0.0.1:58300"}
+{"time":"2025-09-23T17:47:48.956099765+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"q4ehqh10","id":"127.0.0.1:58300"}
+{"time":"2025-09-23T17:47:59.833205032+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:40492"}
+{"time":"2025-09-23T17:47:59.836177518+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"fc9c8_00000","id":"127.0.0.1:40492"}
+{"time":"2025-09-23T17:48:00.084371007+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"fc9c8_00000","id":"127.0.0.1:40492"}
+{"time":"2025-09-23T17:48:22.023815729+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"fc9c8_00000","id":"127.0.0.1:40492"}
+{"time":"2025-09-23T17:48:22.023925225+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"fc9c8_00000","id":"127.0.0.1:40492"}
+{"time":"2025-09-24T00:47:47.353527546+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

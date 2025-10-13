@@ -1,0 +1,15 @@
+{"time":"2025-07-01T22:00:59.249867013+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250701_220059-jsurtwlh/logs/debug-core.log"}
+{"time":"2025-07-01T22:00:59.602140284+09:00","level":"INFO","msg":"stream: created new stream","id":"jsurtwlh"}
+{"time":"2025-07-01T22:00:59.602166046+09:00","level":"INFO","msg":"stream: started","id":"jsurtwlh"}
+{"time":"2025-07-01T22:00:59.60217573+09:00","level":"INFO","msg":"sender: started","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:00:59.602181204+09:00","level":"INFO","msg":"handler: started","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:00:59.602175881+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:00:59.883609408+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-01T22:18:36.222241907+09:00","level":"INFO","msg":"stream: closing","id":"jsurtwlh"}
+{"time":"2025-07-01T22:18:36.222271897+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-01T22:18:36.222296564+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-01T22:18:37.763592866+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T22:18:38.128393177+09:00","level":"INFO","msg":"handler: closed","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:18:38.128477951+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:18:38.12848607+09:00","level":"INFO","msg":"sender: closed","stream_id":"jsurtwlh"}
+{"time":"2025-07-01T22:18:38.128676672+09:00","level":"INFO","msg":"stream: closed","id":"jsurtwlh"}

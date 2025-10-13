@@ -1,0 +1,31 @@
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_setup.py:_flush():81] Configure stats pid to 1919556
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/.config/wandb/settings
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/Documents/code4/rllib/mycode/wandb/settings
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_202239-a4hichb4/logs/debug.log
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_202239-a4hichb4/logs/debug-internal.log
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7bb584293e20>
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:init():831] calling init triggers
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'algo': 'PPO', 'enable_new_api_stack': True, 'framework': 'torch', 'env': None, 'num_env_runners': None, 'num_envs_per_env_runner': None, 'num_agents': 5, 'evaluation_num_env_runners': 0, 'evaluation_interval': 0, 'evaluation_duration': 10, 'evaluation_duration_unit': 'episodes', 'evaluation_parallel_to_training': False, 'output': None, 'log_level': None, 'no_tune': False, 'num_samples': 1, 'max_concurrent_trials': None, 'verbose': 2, 'checkpoint_freq': 1, 'checkpoint_at_end': True, 'wandb_key': 'fdd7656f474bba144dea1887bcdab534bc7df647', 'wandb_project': 'waterworld-v4', 'wandb_run_name': None, 'stop_reward': 200.0, 'stop_iters': 200, 'stop_timesteps': 1000000, 'as_test': False, 'as_release_test': False, 'num_learners': None, 'num_cpus_per_learner': None, 'num_gpus_per_learner': None, 'num_aggregator_actors_per_learner': None, 'num_cpus': 0, 'local_mode': False, 'num_gpus': None, 'n_predators': 2, 'n_preys': 3, 'use_onnx_for_inference': False, 'explore_during_inference': False, 'num_episodes_during_inference': 10, '_wandb': {}}
+2025-06-30 20:22:39,241 INFO    MainThread:1919556 [wandb_init.py:init():872] starting backend
+2025-06-30 20:22:39,382 WARNING MainThread:1919556 [wandb_init.py:init():1613] [no run ID] interrupted
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1609, in init
+    return wi.init(run_settings, run_config, run_printer)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 874, in init
+    service = self._wl.ensure_service()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 336, in ensure_service
+    self._connection = service_connection.connect_to_service(self._settings)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 37, in connect_to_service
+    return _start_and_connect_service(settings)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 72, in _start_and_connect_service
+    proc.start()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 242, in start
+    self._launch_server()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 234, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 110, in _wait_for_ports
+    time.sleep(0.2)
+KeyboardInterrupt

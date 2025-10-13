@@ -1,0 +1,10 @@
+{"time":"2025-06-27T02:35:09.448532711+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpmuk9hfa7/port-920753.txt","pid":920753,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-27T02:35:09.450050416+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":920753}
+{"time":"2025-06-27T02:35:09.450026514+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":40783,"Zone":""}}
+{"time":"2025-06-27T02:35:09.637012164+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:59098"}
+{"time":"2025-06-27T02:35:09.639504758+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"liszupmg","id":"127.0.0.1:59098"}
+{"time":"2025-06-27T02:35:09.965187154+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"liszupmg","id":"127.0.0.1:59098"}
+{"time":"2025-06-27T02:35:37.751937133+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:34756"}
+{"time":"2025-06-27T02:35:37.754377438+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"f440d_00000","id":"127.0.0.1:34756"}
+{"time":"2025-06-27T02:35:37.975007637+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"f440d_00000","id":"127.0.0.1:34756"}
+{"time":"2025-06-27T02:40:07.941160339+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

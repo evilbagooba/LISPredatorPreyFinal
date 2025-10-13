@@ -1,0 +1,200 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+开始训练...
+2025-06-27 02:32:35,197	INFO worker.py:1747 -- Calling ray.init() again after it has already been called.
+== Status ==
+Current time: 2025-06-27 02:32:35 (running for 00:00:00.11)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[36m(PPO pid=920120)[0m 2025-06-27 02:32:37,414	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=920193)[0m 2025-06-27 02:32:39,796	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[33m(raylet)[0m [2025-06-27 02:32:39,891 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.91 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-27 02:32:40 (running for 00:00:05.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[36m(PPO pid=920120)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=920334)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=920334)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/wandb/run-20250627_023243-8c1fd_00000
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Syncing run PPO_env_8c1fd_00000
+[36m(_WandbLoggingActor pid=920334)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=920334)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/8c1fd_00000
+
+
+== Status ==
+Current time: 2025-06-27 02:32:45 (running for 00:00:10.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+2025-06-27 02:32:47,437	WARNING util.py:201 -- The `callbacks.on_trial_result` operation took 1.665 s, which may be a performance bottleneck.
+2025-06-27 02:32:47,439	WARNING util.py:201 -- The `process_trial_result` operation took 1.667 s, which may be a performance bottleneck.
+2025-06-27 02:32:47,440	WARNING util.py:201 -- Processing trial results took 1.668 s, which may be a performance bottleneck. Please consider reporting results less frequently to Ray Tune.
+2025-06-27 02:32:47,440	WARNING util.py:201 -- The `process_trial_result` operation took 1.668 s, which may be a performance bottleneck.
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000000)
+[36m(PPO pid=920120)[0m 2025-06-27 02:32:39,865	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000000)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:32:49,896 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.891 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:32:50 (running for 00:00:15.28)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000001)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000001)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:32:55 (running for 00:00:20.28)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000002)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000002)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:32:59,901 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8658 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:33:00 (running for 00:00:25.31)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000003)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000003)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:33:05 (running for 00:00:30.33)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000004)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000004)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:33:09,906 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8432 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:33:10 (running for 00:00:35.35)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000005)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000005)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:33:15 (running for 00:00:40.36)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000006)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000006)...
+[36m(_WandbLoggingActor pid=920334)[0m Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:33:19,911 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.8165 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:33:20 (running for 00:00:45.46)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000007)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000007)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:33:25 (running for 00:00:50.46)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000008)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000008)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:33:29,917 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.7917 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:33:30 (running for 00:00:55.49)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000009)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000009)... Done. 0.0s
+== Status ==
+Current time: 2025-06-27 02:33:35 (running for 00:01:00.57)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000010)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000010)... Done. 0.0s
+[33m(raylet)[0m [2025-06-27 02:33:39,922 E 917784 917814] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-27_02-29-29_158741_917500 is over 95% full, available space: 16.7669 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+== Status ==
+Current time: 2025-06-27 02:33:40 (running for 00:01:05.60)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-27_02-29-29_158741_917500/artifacts/2025-06-27_02-32-35/PPO_2025-06-27_02-32-35/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['timers', 'env_runners', 'learners', 'num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'fault_tolerance', 'env_runner_group', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'config', 'time_since_restore', 'iterations_since_restore', 'perf']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] result keys: ['env_to_module_sum_episodes_length_out', 'num_module_steps_sampled', 'env_reset_timer', 'num_env_steps_sampled_lifetime', 'num_module_steps_sampled_lifetime', 'episode_len_max', 'module_to_env_connector', 'timers', 'module_episode_returns_mean', 'connector_pipeline_timer', 'env_to_module_connector', 'episode_duration_sec_mean', 'rlmodule_inference_timer', 'weights_seq_no', 'episode_return_max', 'agent_steps', 'env_to_module_sum_episodes_length_in', 'agent_episode_returns_mean', 'sample', 'episode_return_min', 'num_agent_steps_sampled', 'num_agent_steps_sampled_lifetime', 'env_step_timer', 'num_episodes_lifetime', 'episode_len_mean', 'episode_len_min', 'episode_return_mean', 'num_episodes', 'num_env_steps_sampled', 'time_between_sampling', 'num_env_steps_sampled_lifetime_throughput']
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m [DEBUG] on_train_result 被调用
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=920120)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000011)
+[36m(_WandbLoggingActor pid=920334)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-27_02-32-35/PPO_env_8c1fd_00000_0_2025-06-27_02-32-35/checkpoint_000011)... Done. 0.0s

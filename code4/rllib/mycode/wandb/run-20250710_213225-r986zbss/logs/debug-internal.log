@@ -1,0 +1,47 @@
+{"time":"2025-07-10T21:32:25.267399162+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250710_213225-r986zbss/logs/debug-core.log"}
+{"time":"2025-07-10T21:32:25.615725363+09:00","level":"INFO","msg":"stream: created new stream","id":"r986zbss"}
+{"time":"2025-07-10T21:32:25.615747705+09:00","level":"INFO","msg":"stream: started","id":"r986zbss"}
+{"time":"2025-07-10T21:32:25.615760395+09:00","level":"INFO","msg":"handler: started","stream_id":"r986zbss"}
+{"time":"2025-07-10T21:32:25.615758975+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"r986zbss"}
+{"time":"2025-07-10T21:32:25.615792678+09:00","level":"INFO","msg":"sender: started","stream_id":"r986zbss"}
+{"time":"2025-07-10T21:32:25.924533272+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-10T21:32:26.011759667+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:32:26.011779807+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:32:26.01178182+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:32:26.011783838+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:32:26.011785364+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:32:26.011787367+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:32:26.011788626+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:32:26.011790285+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:32:26.015491356+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:47:36.554642322+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:47:36.560164466+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:47:36.560612088+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:47:36.566260174+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-10T21:47:36.68352984+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-10T21:54:41.763838737+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/r986zbss/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-07-11T02:00:51.700279213+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/r986zbss/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-07-11T02:00:58.097670373+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/r986zbss/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-07-11T10:31:56.405012057+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-11T11:43:24.44256788+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.482684396+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.482710012+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.482713579+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.482715817+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.482717871+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.482719477+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.48272103+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.482722554+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.48272409+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.48272545+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.482737204+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-11T11:43:24.48273842+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-11T11:43:24.482746926+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-11T11:43:24.482762802+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-11T11:43:25.477519119+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.738661185,"progress":"484.2KB/484.2KB"}],"total_operations":1}}
+{"time":"2025-07-11T11:43:25.744689703+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-11T11:43:26.103446957+09:00","level":"INFO","msg":"stream: closing","id":"r986zbss"}
+{"time":"2025-07-11T11:43:26.103456591+09:00","level":"INFO","msg":"handler: closed","stream_id":"r986zbss"}
+{"time":"2025-07-11T11:43:26.103461323+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r986zbss"}
+{"time":"2025-07-11T11:43:26.103469204+09:00","level":"INFO","msg":"sender: closed","stream_id":"r986zbss"}
+{"time":"2025-07-11T11:43:26.103506285+09:00","level":"INFO","msg":"stream: closed","id":"r986zbss"}

@@ -1,0 +1,10 @@
+{"time":"2025-06-30T19:44:48.493050767+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp99567ntx/port-1927189.txt","pid":1927189,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-30T19:44:48.494223606+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":1927189}
+{"time":"2025-06-30T19:44:48.494219806+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":41191,"Zone":""}}
+{"time":"2025-06-30T19:44:48.684403871+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:43990"}
+{"time":"2025-06-30T19:44:48.687099708+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"wxhaz4su","id":"127.0.0.1:43990"}
+{"time":"2025-06-30T19:44:49.030594063+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"wxhaz4su","id":"127.0.0.1:43990"}
+{"time":"2025-06-30T19:45:20.716676879+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:46322"}
+{"time":"2025-06-30T19:45:20.718818787+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"4c2a3_00000","id":"127.0.0.1:46322"}
+{"time":"2025-06-30T19:45:20.95938836+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"4c2a3_00000","id":"127.0.0.1:46322"}
+{"time":"2025-06-30T20:06:31.334367675+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

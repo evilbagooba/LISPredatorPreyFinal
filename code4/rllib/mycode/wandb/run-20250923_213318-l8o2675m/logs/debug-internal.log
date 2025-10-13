@@ -1,0 +1,8 @@
+{"time":"2025-09-23T21:33:19.042771419+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250923_213318-l8o2675m/logs/debug-core.log"}
+{"time":"2025-09-23T21:33:19.388555486+09:00","level":"INFO","msg":"stream: created new stream","id":"l8o2675m"}
+{"time":"2025-09-23T21:33:19.38857954+09:00","level":"INFO","msg":"stream: started","id":"l8o2675m"}
+{"time":"2025-09-23T21:33:19.388601236+09:00","level":"INFO","msg":"sender: started","stream_id":"l8o2675m"}
+{"time":"2025-09-23T21:33:19.388603813+09:00","level":"INFO","msg":"handler: started","stream_id":"l8o2675m"}
+{"time":"2025-09-23T21:33:19.388603128+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"l8o2675m"}
+{"time":"2025-09-23T21:33:19.747263143+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-09-24T00:22:20.274737179+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/l8o2675m/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

@@ -1,0 +1,7 @@
+{
+  "agent_id": "pursuer_0",
+  "algorithm": "Random",
+  "config": {
+    "random_seed": 42
+  }
+}

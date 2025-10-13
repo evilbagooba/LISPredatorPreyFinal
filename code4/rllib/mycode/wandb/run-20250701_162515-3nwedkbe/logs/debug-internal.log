@@ -1,0 +1,19 @@
+{"time":"2025-07-01T16:25:15.294958705+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250701_162515-3nwedkbe/logs/debug-core.log"}
+{"time":"2025-07-01T16:25:15.638040462+09:00","level":"INFO","msg":"stream: created new stream","id":"3nwedkbe"}
+{"time":"2025-07-01T16:25:15.638058272+09:00","level":"INFO","msg":"stream: started","id":"3nwedkbe"}
+{"time":"2025-07-01T16:25:15.638068361+09:00","level":"INFO","msg":"handler: started","stream_id":"3nwedkbe"}
+{"time":"2025-07-01T16:25:15.638069973+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"3nwedkbe"}
+{"time":"2025-07-01T16:25:15.638084687+09:00","level":"INFO","msg":"sender: started","stream_id":"3nwedkbe"}
+{"time":"2025-07-01T16:25:15.963343936+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-01T16:25:16.052845275+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.052872676+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T16:25:16.052874499+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.052876688+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T16:25:16.052877762+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.052879089+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T16:25:16.052880099+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.093729825+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T16:25:16.093761613+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.093764916+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T16:25:16.09376685+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T16:25:16.266430044+09:00","level":"INFO","msg":"Resuming system monitor"}

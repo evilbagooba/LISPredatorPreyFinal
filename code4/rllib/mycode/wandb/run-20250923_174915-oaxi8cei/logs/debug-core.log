@@ -1,0 +1,12 @@
+{"time":"2025-09-23T17:49:15.15681485+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpme2wh40v/port-3732076.txt","pid":3732076,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-09-23T17:49:15.160600249+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":3732076}
+{"time":"2025-09-23T17:49:15.160604078+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":37611,"Zone":""}}
+{"time":"2025-09-23T17:49:15.343184519+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:43916"}
+{"time":"2025-09-23T17:49:15.347992079+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"oaxi8cei","id":"127.0.0.1:43916"}
+{"time":"2025-09-23T17:49:15.698466693+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"oaxi8cei","id":"127.0.0.1:43916"}
+{"time":"2025-09-23T17:49:26.765370551+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:43006"}
+{"time":"2025-09-23T17:49:26.768917743+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"30568_00000","id":"127.0.0.1:43006"}
+{"time":"2025-09-23T17:49:27.011720168+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"30568_00000","id":"127.0.0.1:43006"}
+{"time":"2025-09-23T17:49:49.659356207+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"30568_00000","id":"127.0.0.1:43006"}
+{"time":"2025-09-23T17:49:49.659465405+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"30568_00000","id":"127.0.0.1:43006"}
+{"time":"2025-09-24T00:47:47.358510633+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

@@ -1,0 +1,314 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1', 'prey_2']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-06-30 19:42:37,035	INFO worker.py:1917 -- Started a local Ray instance.
+2025-06-30 19:42:37,695	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-06-30 19:42:37 (running for 00:00:00.14)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_f06b9_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=1926197)[0m 2025-06-30 19:42:40,048	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+
+
+== Status ==
+Current time: 2025-06-30 19:42:42 (running for 00:00:05.16)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_f06b9_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(MultiAgentEnvRunner pid=1926286)[0m 2025-06-30 19:42:43,381	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=1926197)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[33m(raylet)[0m [2025-06-30 19:42:47,026 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.91698 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts/PPO_env_f06b9_00000_0_2025-06-30_19-42-37/wandb/run-20250630_194246-f06b9_00000
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Syncing run PPO_env_f06b9_00000
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/f06b9_00000
+
+
+== Status ==
+Current time: 2025-06-30 19:42:47 (running for 00:00:10.17)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:42:52 (running for 00:00:15.19)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[36m(PPO pid=1926197)[0m 2025-06-30 19:42:43,533	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[33m(raylet)[0m [2025-06-30 19:42:57,032 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.91615 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:42:57 (running for 00:00:20.21)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:02 (running for 00:00:25.23)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:43:07,037 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.91568 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:07 (running for 00:00:30.25)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:12 (running for 00:00:35.27)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:43:17,042 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.90004 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:17 (running for 00:00:40.29)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:22 (running for 00:00:45.31)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:43:27,048 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.90701 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:28 (running for 00:00:50.33)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:33 (running for 00:00:55.35)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[33m(raylet)[0m [2025-06-30 19:43:37,054 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.90662 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:38 (running for 00:01:00.37)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:43 (running for 00:01:05.38)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=1926197)[0m 2025-06-30 19:43:44,253	WARNING rollout_ops.py:121 -- No samples returned from remote workers. If you have a slow environment or model, consider increasing the `sample_timeout_s` or decreasing the `rollout_fragment_length` in `AlgorithmConfig.env_runners().
+[33m(raylet)[0m [2025-06-30 19:43:47,059 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.9061 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:48 (running for 00:01:10.40)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+
+
+== Status ==
+Current time: 2025-06-30 19:43:53 (running for 00:01:15.42)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |
++---------------------+----------+----------------------+
+2025-06-30 19:43:54,256	WARNING trial.py:863 -- Stopping criterion 'env_runners/episode_return_mean' not found in result dict! Available keys are ['num_training_step_calls_per_iteration', 'num_env_steps_sampled_lifetime', 'done', 'training_iteration', 'trial_id', 'date', 'timestamp', 'time_this_iter_s', 'time_total_s', 'pid', 'hostname', 'node_ip', 'time_since_restore', 'iterations_since_restore', 'timers/training_iteration', 'timers/restore_env_runners', 'timers/training_step', 'timers/env_runner_sampling_timer', 'fault_tolerance/num_healthy_workers', 'fault_tolerance/num_remote_worker_restarts', 'env_runner_group/actor_manager_num_outstanding_async_reqs', 'config/placement_strategy', 'config/num_gpus', 'config/_fake_gpus', 'config/num_cpus_for_main_process', 'config/eager_tracing', 'config/eager_max_retraces', 'config/torch_compile_learner', 'config/torch_compile_learner_what_to_compile', 'config/torch_compile_learner_dynamo_backend', 'config/torch_compile_learner_dynamo_mode', 'config/torch_compile_worker', 'config/torch_compile_worker_dynamo_backend', 'config/torch_compile_worker_dynamo_mode', 'config/torch_skip_nan_gradients', 'config/env', 'config/observation_space', 'config/action_space', 'config/clip_rewards', 'config/normalize_actions', 'config/clip_actions', 'config/_is_atari', 'config/disable_env_checking', 'config/render_env', 'config/action_mask_key', 'config/env_runner_cls', 'config/num_env_runners', 'config/create_local_env_runner', 'config/num_envs_per_env_runner', 'config/gym_env_vectorize_mode', 'config/num_cpus_per_env_runner', 'config/num_gpus_per_env_runner', 'config/validate_env_runners_after_construction', 'config/episodes_to_numpy', 'config/max_requests_in_flight_per_env_runner', 'config/sample_timeout_s', 'config/_env_to_module_connector', 'config/add_default_connectors_to_env_to_module_pipeline', 'config/_module_to_env_connector', 'config/add_default_connectors_to_module_to_env_pipeline', 'config/merge_env_runner_states', 'config/broadcast_env_runner_states', 'config/episode_lookback_horizon', 'config/rollout_fragment_length', 'config/batch_mode', 'config/compress_observations', 'config/remote_worker_envs', 'config/remote_env_batch_wait_ms', 'config/enable_tf1_exec_eagerly', 'config/sample_collector', 'config/preprocessor_pref', 'config/observation_filter', 'config/update_worker_filter_stats', 'config/use_worker_filter_stats', 'config/sampler_perf_stats_ema_coef', 'config/_is_online', 'config/num_learners', 'config/num_gpus_per_learner', 'config/num_cpus_per_learner', 'config/num_aggregator_actors_per_learner', 'config/max_requests_in_flight_per_aggregator_actor', 'config/local_gpu_idx', 'config/max_requests_in_flight_per_learner', 'config/gamma', 'config/lr', 'config/grad_clip', 'config/grad_clip_by', 'config/_train_batch_size_per_learner', 'config/train_batch_size', 'config/num_epochs', 'config/minibatch_size', 'config/shuffle_batch_per_epoch', 'config/_learner_connector', 'config/add_default_connectors_to_learner_pipeline', 'config/_learner_class', 'config/callbacks_on_algorithm_init', 'config/callbacks_on_env_runners_recreated', 'config/callbacks_on_offline_eval_runners_recreated', 'config/callbacks_on_checkpoint_loaded', 'config/callbacks_on_environment_created', 'config/callbacks_on_episode_created', 'config/callbacks_on_episode_start', 'config/callbacks_on_episode_step', 'config/callbacks_on_episode_end', 'config/callbacks_on_evaluate_start', 'config/callbacks_on_evaluate_end', 'config/callbacks_on_evaluate_offline_start', 'config/callbacks_on_evaluate_offline_end', 'config/callbacks_on_sample_end', 'config/callbacks_on_train_result', 'config/explore', 'config/enable_rl_module_and_learner', 'config/enable_env_runner_and_connector_v2', 'config/count_steps_by', 'config/policy_map_capacity', 'config/policy_mapping_fn', 'config/policies_to_train', 'config/policy_states_are_swappable', 'config/observation_fn', 'config/offline_data_class', 'config/input_read_method', 'config/input_read_episodes', 'config/input_read_sample_batches', 'config/input_read_batch_size', 'config/input_filesystem', 'con
+2025-06-30 19:43:56,079	WARNING util.py:201 -- The `callbacks.on_trial_result` operation took 1.822 s, which may be a performance bottleneck.
+2025-06-30 19:43:56,080	WARNING util.py:201 -- The `process_trial_result` operation took 1.824 s, which may be a performance bottleneck.
+2025-06-30 19:43:56,080	WARNING util.py:201 -- Processing trial results took 1.824 s, which may be a performance bottleneck. Please consider reporting results less frequently to Ray Tune.
+2025-06-30 19:43:56,081	WARNING util.py:201 -- The `process_trial_result` operation took 1.825 s, which may be a performance bottleneck.
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=1926197)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-06-30_19-42-37/PPO_env_f06b9_00000_0_2025-06-30_19-42-37/checkpoint_000000)
+[36m(_WandbLoggingActor pid=1926506)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-06-30_19-42-37/PPO_env_f06b9_00000_0_2025-06-30_19-42-37/checkpoint_000000)... Done. 0.0s
+[33m(raylet)[0m [2025-06-30 19:43:57,065 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.89878 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:43:58 (running for 00:01:20.43)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |
+|---------------------+----------+----------------------+--------+------------------+------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |      1 |          70.0071 |    0 |
++---------------------+----------+----------------------+--------+------------------+------+
+
+
+== Status ==
+Current time: 2025-06-30 19:44:03 (running for 00:01:25.45)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |
+|---------------------+----------+----------------------+--------+------------------+------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |      1 |          70.0071 |    0 |
++---------------------+----------+----------------------+--------+------------------+------+
+[33m(raylet)[0m [2025-06-30 19:44:07,072 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.89799 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:44:08 (running for 00:01:30.47)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |
+|---------------------+----------+----------------------+--------+------------------+------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |      1 |          70.0071 |    0 |
++---------------------+----------+----------------------+--------+------------------+------+
+
+
+== Status ==
+Current time: 2025-06-30 19:44:13 (running for 00:01:35.49)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |
+|---------------------+----------+----------------------+--------+------------------+------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |      1 |          70.0071 |    0 |
++---------------------+----------+----------------------+--------+------------------+------+
+[33m(raylet)[0m [2025-06-30 19:44:17,078 E 1924716 1924746] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098 is over 95% full, available space: 1.89309 GB; capacity: 456.175 GB. Object creation will fail if spilling is required.
+
+
+== Status ==
+Current time: 2025-06-30 19:44:18 (running for 00:01:40.50)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_19-42-36_464396_1924098/artifacts/2025-06-30_19-42-37/PPO_2025-06-30_19-42-37/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |
+|---------------------+----------+----------------------+--------+------------------+------|
+| PPO_env_f06b9_00000 | RUNNING  | 192.168.0.25:1926197 |      1 |          70.0071 |    0 |
++---------------------+----------+----------------------+--------+------------------+------+

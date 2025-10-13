@@ -1,0 +1,8 @@
+{"time":"2025-07-04T16:22:33.459969174+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp8zoz72og/port-31061.txt","pid":31061,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-04T16:22:33.461460399+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":31061}
+{"time":"2025-07-04T16:22:33.461463511+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":42197,"Zone":""}}
+{"time":"2025-07-04T16:22:33.65120726+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:49382"}
+{"time":"2025-07-04T16:22:33.654277663+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"98sdkoxg","id":"127.0.0.1:49382"}
+{"time":"2025-07-04T16:22:34.000650221+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"98sdkoxg","id":"127.0.0.1:49382"}
+{"time":"2025-07-04T16:33:03.430327878+09:00","level":"ERROR","msg":"connection: fatal error reading connection","error":"read tcp 127.0.0.1:42197->127.0.0.1:49382: read: connection reset by peer","id":"127.0.0.1:49382"}
+{"time":"2025-07-04T16:33:03.485842396+09:00","level":"INFO","msg":"Parent process exited, terminating service process."}

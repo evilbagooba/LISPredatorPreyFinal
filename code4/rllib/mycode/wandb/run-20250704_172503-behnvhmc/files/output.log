@@ -1,0 +1,558 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-04 17:25:05,042	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-04 17:25:05,536	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-04 17:25:05 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-04_17-25-04_402527_20128/artifacts/2025-07-04_17-25-05/PPO_2025-07-04_17-25-05/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_637e1_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=21976)[0m 2025-07-04 17:25:07,553	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(PPO pid=21976)[0m 2025-07-04 17:25:09,776	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=21976)[0m Install gputil for GPU system monitoring.
+
+
+== Status ==
+Current time: 2025-07-04 17:25:10 (running for 00:00:05.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-04_17-25-04_402527_20128/artifacts/2025-07-04_17-25-05/PPO_2025-07-04_17-25-05/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+--------------------+
+| Trial name          | status   | loc                |
+|---------------------+----------+--------------------|
+| PPO_env_637e1_00000 | RUNNING  | 192.168.0.25:21976 |
++---------------------+----------+--------------------+
+[36m(_WandbLoggingActor pid=22344)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=22344)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-07-04_17-25-04_402527_20128/artifacts/2025-07-04_17-25-05/PPO_2025-07-04_17-25-05/driver_artifacts/PPO_env_637e1_00000_0_2025-07-04_17-25-05/wandb/run-20250704_172512-637e1_00000
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Syncing run PPO_env_637e1_00000
+[36m(_WandbLoggingActor pid=22344)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=22344)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/637e1_00000
+
+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=21976)[0m [DEBUG] on_train_result 被调用
+Trial PPO_env_637e1_00000 reported env_runners/episode_return_mean=-468.8642769211616,num_env_steps_sampled_lifetime=4000.0,env_runners/episode_len_mean=2000.0 with parameters={'exploration_config': {}, 'extra_python_environs_for_driver': {}, 'extra_python_environs_for_worker': {}, 'placement_strategy': 'PACK', 'num_gpus': 0, '_fake_gpus': False, 'num_cpus_for_main_process': 1, 'eager_tracing': True, 'eager_max_retraces': 20, 'tf_session_args': {'intra_op_parallelism_threads': 2, 'inter_op_parallelism_threads': 2, 'gpu_options': {'allow_growth': True}, 'log_device_placement': False, 'device_count': {'CPU': 1}, 'allow_soft_placement': True}, 'local_tf_session_args': {'intra_op_parallelism_threads': 8, 'inter_op_parallelism_threads': 8}, 'torch_compile_learner': False, 'torch_compile_learner_what_to_compile': <TorchCompileWhatToCompile.FORWARD_TRAIN: 'forward_train'>, 'torch_compile_learner_dynamo_backend': 'inductor', 'torch_compile_learner_dynamo_mode': None, 'torch_compile_worker': False, 'torch_compile_worker_dynamo_backend': 'onnxrt', 'torch_compile_worker_dynamo_mode': None, 'torch_ddp_kwargs': {}, 'torch_skip_nan_gradients': False, 'env': 'env', 'env_config': {}, 'observation_space': None, 'action_space': None, 'clip_rewards': None, 'normalize_actions': True, 'clip_actions': False, '_is_atari': None, 'disable_env_checking': False, 'render_env': False, 'action_mask_key': 'action_mask', 'env_runner_cls': None, 'num_env_runners': 2, 'create_local_env_runner': True, 'num_envs_per_env_runner': 1, 'gym_env_vectorize_mode': 'SYNC', 'num_cpus_per_env_runner': 1, 'num_gpus_per_env_runner': 0, 'custom_resources_per_env_runner': {}, 'validate_env_runners_after_construction': True, 'episodes_to_numpy': True, 'max_requests_in_flight_per_env_runner': 1, 'sample_timeout_s': 60.0, '_env_to_module_connector': None, 'add_default_connectors_to_env_to_module_pipeline': True, '_module_to_env_connector': None, 'add_default_connectors_to_module_to_env_pipeline': True, 'merge_env_runner_states': 'training_only', 'broadcast_env_runner_states': True, 'episode_lookback_horizon': 1, 'rollout_fragment_length': 'auto', 'batch_mode': 'truncate_episodes', 'compress_observations': False, 'remote_worker_envs': False, 'remote_env_batch_wait_ms': 0, 'enable_tf1_exec_eagerly': False, 'sample_collector': <class 'ray.rllib.evaluation.collectors.simple_list_collector.SimpleListCollector'>, 'preprocessor_pref': 'deepmind', 'observation_filter': 'NoFilter', 'update_worker_filter_stats': True, 'use_worker_filter_stats': True, 'sampler_perf_stats_ema_coef': None, '_is_online': True, 'num_learners': 0, 'num_gpus_per_learner': 1, 'num_cpus_per_learner': 'auto', 'num_aggregator_actors_per_learner': 0, 'max_requests_in_flight_per_aggregator_actor': 3, 'local_gpu_idx': 0, 'max_requests_in_flight_per_learner': 3, 'gamma': 0.99, 'lr': 5e-05, 'grad_clip': None, 'grad_clip_by': 'global_norm', '_train_batch_size_per_learner': None, 'train_batch_size': 4000, 'num_epochs': 30, 'minibatch_size': 128, 'shuffle_batch_per_epoch': True, 'model': {'fcnet_hiddens': [256, 256], 'fcnet_activation': 'tanh', 'fcnet_weights_initializer': None, 'fcnet_weights_initializer_config': None, 'fcnet_bias_initializer': None, 'fcnet_bias_initializer_config': None, 'conv_filters': None, 'conv_activation': 'relu', 'conv_kernel_initializer': None, 'conv_kernel_initializer_config': None, 'conv_bias_initializer': None, 'conv_bias_initializer_config': None, 'conv_transpose_kernel_initializer': None, 'conv_transpose_kernel_initializer_config': None, 'conv_transpose_bias_initializer': None, 'conv_transpose_bias_initializer_config': None, 'post_fcnet_hiddens': [], 'post_fcnet_activation': 'relu', 'post_fcnet_weights_initializer': None, 'post_fcnet_weights_initializer_config': None, 'post_fcnet_bias_initializer': None, 'post_fcnet_bias_initializer_config': None, 'free_log_std': False, 'log_std_clip_param': 20.0, 'no_final_linear': False, 'vf_share_layers': False, 'use_lstm': False, 'max_seq_len': 20, 'lstm_cell_size': 256, 'lstm_use_prev_action': False, 'lstm_use_prev_reward': False, 'lstm_weights_init
+== Status ==
+Current time: 2025-07-04 17:25:16 (running for 00:00:11.15)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-04_17-25-04_402527_20128/artifacts/2025-07-04_17-25-05/PPO_2025-07-04_17-25-05/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status   | loc                |   iter |   total time (s) |   ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+----------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_637e1_00000 | RUNNING  | 192.168.0.25:21976 |      1 |          4.71469 | 4000 |          -468.864 |        -208.475 |            -102.129 |            -76.0325 |        -82.2285 |
++---------------------+----------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=21976)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-04_17-25-05/PPO_env_637e1_00000_0_2025-07-04_17-25-05/checkpoint_000000)
+[36m(MultiAgentEnvRunner pid=22110)[0m 2025-07-04 17:25:09,709	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-04_17-25-05/PPO_env_637e1_00000_0_2025-07-04_17-25-05/checkpoint_000000)... Done. 0.0s
+
+
+Trial PPO_env_637e1_00000 reported env_runners/episode_return_mean=-449.0174817671765,num_env_steps_sampled_lifetime=8000.0,env_runners/episode_len_mean=2000.0 with parameters={'exploration_config': {}, 'extra_python_environs_for_driver': {}, 'extra_python_environs_for_worker': {}, 'placement_strategy': 'PACK', 'num_gpus': 0, '_fake_gpus': False, 'num_cpus_for_main_process': 1, 'eager_tracing': True, 'eager_max_retraces': 20, 'tf_session_args': {'intra_op_parallelism_threads': 2, 'inter_op_parallelism_threads': 2, 'gpu_options': {'allow_growth': True}, 'log_device_placement': False, 'device_count': {'CPU': 1}, 'allow_soft_placement': True}, 'local_tf_session_args': {'intra_op_parallelism_threads': 8, 'inter_op_parallelism_threads': 8}, 'torch_compile_learner': False, 'torch_compile_learner_what_to_compile': <TorchCompileWhatToCompile.FORWARD_TRAIN: 'forward_train'>, 'torch_compile_learner_dynamo_backend': 'inductor', 'torch_compile_learner_dynamo_mode': None, 'torch_compile_worker': False, 'torch_compile_worker_dynamo_backend': 'onnxrt', 'torch_compile_worker_dynamo_mode': None, 'torch_ddp_kwargs': {}, 'torch_skip_nan_gradients': False, 'env': 'env', 'env_config': {}, 'observation_space': None, 'action_space': None, 'clip_rewards': None, 'normalize_actions': True, 'clip_actions': False, '_is_atari': None, 'disable_env_checking': False, 'render_env': False, 'action_mask_key': 'action_mask', 'env_runner_cls': None, 'num_env_runners': 2, 'create_local_env_runner': True, 'num_envs_per_env_runner': 1, 'gym_env_vectorize_mode': 'SYNC', 'num_cpus_per_env_runner': 1, 'num_gpus_per_env_runner': 0, 'custom_resources_per_env_runner': {}, 'validate_env_runners_after_construction': True, 'episodes_to_numpy': True, 'max_requests_in_flight_per_env_runner': 1, 'sample_timeout_s': 60.0, '_env_to_module_connector': None, 'add_default_connectors_to_env_to_module_pipeline': True, '_module_to_env_connector': None, 'add_default_connectors_to_module_to_env_pipeline': True, 'merge_env_runner_states': 'training_only', 'broadcast_env_runner_states': True, 'episode_lookback_horizon': 1, 'rollout_fragment_length': 'auto', 'batch_mode': 'truncate_episodes', 'compress_observations': False, 'remote_worker_envs': False, 'remote_env_batch_wait_ms': 0, 'enable_tf1_exec_eagerly': False, 'sample_collector': <class 'ray.rllib.evaluation.collectors.simple_list_collector.SimpleListCollector'>, 'preprocessor_pref': 'deepmind', 'observation_filter': 'NoFilter', 'update_worker_filter_stats': True, 'use_worker_filter_stats': True, 'sampler_perf_stats_ema_coef': None, '_is_online': True, 'num_learners': 0, 'num_gpus_per_learner': 1, 'num_cpus_per_learner': 'auto', 'num_aggregator_actors_per_learner': 0, 'max_requests_in_flight_per_aggregator_actor': 3, 'local_gpu_idx': 0, 'max_requests_in_flight_per_learner': 3, 'gamma': 0.99, 'lr': 5e-05, 'grad_clip': None, 'grad_clip_by': 'global_norm', '_train_batch_size_per_learner': None, 'train_batch_size': 4000, 'num_epochs': 30, 'minibatch_size': 128, 'shuffle_batch_per_epoch': True, 'model': {'fcnet_hiddens': [256, 256], 'fcnet_activation': 'tanh', 'fcnet_weights_initializer': None, 'fcnet_weights_initializer_config': None, 'fcnet_bias_initializer': None, 'fcnet_bias_initializer_config': None, 'conv_filters': None, 'conv_activation': 'relu', 'conv_kernel_initializer': None, 'conv_kernel_initializer_config': None, 'conv_bias_initializer': None, 'conv_bias_initializer_config': None, 'conv_transpose_kernel_initializer': None, 'conv_transpose_kernel_initializer_config': None, 'conv_transpose_bias_initializer': None, 'conv_transpose_bias_initializer_config': None, 'post_fcnet_hiddens': [], 'post_fcnet_activation': 'relu', 'post_fcnet_weights_initializer': None, 'post_fcnet_weights_initializer_config': None, 'post_fcnet_bias_initializer': None, 'post_fcnet_bias_initializer_config': None, 'free_log_std': False, 'log_std_clip_param': 20.0, 'no_final_linear': False, 'vf_share_layers': False, 'use_lstm': False, 'max_seq_len': 20, 'lstm_cell_size': 256, 'lstm_use_prev_action': False, 'lstm_use_prev_reward': False, 'lstm_weights_init
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=21976)[0m [DEBUG] on_train_result 被调用
+2025-07-04 17:25:21,140	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/home/qrbao/ray_results/PPO_2025-07-04_17-25-05' in 0.0152s.
+== Status ==
+Current time: 2025-07-04 17:25:21 (running for 00:00:15.61)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-04_17-25-04_402527_20128/artifacts/2025-07-04_17-25-05/PPO_2025-07-04_17-25-05/driver_artifacts
+Number of trials: 1/1 (1 TERMINATED)
++---------------------+------------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+| Trial name          | status     | loc                |   iter |   total time (s) |   ts |   combined return |   return prey_1 |   return predator_0 |   return predator_1 |   return prey_0 |
+|---------------------+------------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------|
+| PPO_env_637e1_00000 | TERMINATED | 192.168.0.25:21976 |      2 |          9.08724 | 8000 |          -449.017 |        -211.102 |            -94.3526 |            -69.7949 |        -73.7679 |
++---------------------+------------+--------------------+--------+------------------+------+-------------------+-----------------+---------------------+---------------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=21976)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-04_17-25-05/PPO_env_637e1_00000_0_2025-07-04_17-25-05/checkpoint_000001)
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-04_17-25-05/PPO_env_637e1_00000_0_2025-07-04_17-25-05/checkpoint_000001)... Done. 0.0s
+[36m(_WandbLoggingActor pid=22344)[0m wandb: uploading artifact checkpoint_PPO_env_637e1_00000
+2025-07-04 17:25:26,201	INFO tune.py:1041 -- Total run time: 20.69 seconds (15.59 seconds for the tuning loop).
+
+
+训练完成
+获取最佳checkpoint...
+加载所有智能体的RLModule...
+2025-07-04 17:25:26,230	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(_WandbLoggingActor pid=22344)[0m wandb:
+[36m(_WandbLoggingActor pid=22344)[0m wandb:
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Run history:
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                             env_runner_group/actor_manager_num_outstanding_async_reqs ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_1 █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    env_runners/agent_steps/predator_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    env_runners/agent_steps/predator_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/agent_steps/prey_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/agent_steps/prey_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  env_runners/connector_pipeline_timer ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/env_reset_timer ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            env_runners/env_step_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          env_runners/env_to_module_connector/connector_pipeline_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:         env_runners/env_to_module_connector/timers/connectors/add_observations_from_episodes_to_batch █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:               env_runners/env_to_module_connector/timers/connectors/add_states_from_episodes_to_batch █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:              env_runners/env_to_module_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                         env_runners/env_to_module_connector/timers/connectors/agent_to_module_mapping █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                          env_runners/env_to_module_connector/timers/connectors/batch_individual_items █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/env_to_module_connector/timers/connectors/numpy_to_tensor █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      env_runners/env_to_module_sum_episodes_length_in ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/env_to_module_sum_episodes_length_out ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 env_runners/episode_duration_sec_mean █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/episode_len_max ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          env_runners/episode_len_mean ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/episode_len_min ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/episode_return_max ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       env_runners/episode_return_mean ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/episode_return_min ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_1 █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          env_runners/module_to_env_connector/connector_pipeline_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                     env_runners/module_to_env_connector/timers/connectors/get_actions █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                     env_runners/module_to_env_connector/timers/connectors/listify_data_for_vector_env █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                       env_runners/module_to_env_connector/timers/connectors/module_to_agent_unmapping █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                      env_runners/module_to_env_connector/timers/connectors/normalize_and_clip_actions █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:           env_runners/module_to_env_connector/timers/connectors/remove_single_ts_time_rank_from_batch █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/module_to_env_connector/timers/connectors/tensor_to_numpy █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                    env_runners/module_to_env_connector/timers/connectors/un_batch_to_individual_items █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/num_env_steps_sampled ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_env_steps_sampled_lifetime ▁█
+成功加载 predator_0 的模型
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 env_runners/num_env_steps_sampled_lifetime_throughput ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                              env_runners/num_episodes ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/num_episodes_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_0 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_1 ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_0 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_1 ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  env_runners/rlmodule_inference_timer █▁
+成功加载 predator_1 的模型
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    env_runners/sample █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/time_between_sampling ▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/timers/connectors/add_observations_from_episodes_to_batch ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                       env_runners/timers/connectors/add_states_from_episodes_to_batch ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      env_runners/timers/connectors/add_time_dim_to_batch_and_zero_pad ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 env_runners/timers/connectors/agent_to_module_mapping ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/timers/connectors/batch_individual_items ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/timers/connectors/numpy_to_tensor ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            env_runners/weights_seq_no ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                   fault_tolerance/num_healthy_workers ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            fault_tolerance/num_remote_worker_restarts ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                              iterations_since_restore ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                   learners/__all_modules__/learner_connector/connector_pipeline_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb: learners/__all_modules__/learner_connector/timers/connectors/add_columns_from_episodes_to_train_batch █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:  learners/__all_modules__/learner_connector/timers/connectors/add_observations_from_episodes_to_batch ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:      learners/__all_modules__/learner_connector/timers/connectors/add_one_ts_to_episodes_and_truncate █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:        learners/__all_modules__/learner_connector/timers/connectors/add_states_from_episodes_to_batch █▁
+成功加载 prey_0 的模型
+[36m(_WandbLoggingActor pid=22344)[0m wandb:       learners/__all_modules__/learner_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                  learners/__all_modules__/learner_connector/timers/connectors/agent_to_module_mapping ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                   learners/__all_modules__/learner_connector/timers/connectors/batch_individual_items █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:             learners/__all_modules__/learner_connector/timers/connectors/general_advantage_estimation █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                          learners/__all_modules__/learner_connector/timers/connectors/numpy_to_tensor █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                     learners/__all_modules__/learner_connector_sum_episodes_length_in ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                    learners/__all_modules__/learner_connector_sum_episodes_length_out ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        learners/__all_modules__/num_env_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/__all_modules__/num_env_steps_trained_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                    learners/__all_modules__/num_env_steps_trained_lifetime_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/__all_modules__/num_module_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                            learners/__all_modules__/num_module_steps_trained_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 learners/__all_modules__/num_module_steps_trained_lifetime_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/__all_modules__/num_module_steps_trained_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/__all_modules__/num_non_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/__all_modules__/num_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                learners/predator_0/curr_entropy_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/predator_0/curr_kl_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   learners/predator_0/default_optimizer_learning_rate ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_0/diff_num_grad_updates_vs_sampler_policy ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_0/entropy ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_0/gradients_default_optimizer_global_norm ▁█
+成功加载 prey_1 的模型
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/predator_0/mean_kl_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      learners/predator_0/module_train_batch_size_mean ▁▁
+总共加载了 4 个智能体模型
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_0/num_module_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/predator_0/num_module_steps_trained_lifetime ▁█
+开始推理...
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      learners/predator_0/num_module_steps_trained_lifetime_throughput █▁
+
+=== Episode 1 ===
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_0/num_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       learners/predator_0/policy_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/predator_0/total_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  learners/predator_0/vf_explained_var ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_0/vf_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 learners/predator_0/vf_loss_unclipped █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/predator_0/weights_seq_no ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                learners/predator_1/curr_entropy_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/predator_1/curr_kl_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   learners/predator_1/default_optimizer_learning_rate ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_1/diff_num_grad_updates_vs_sampler_policy ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_1/entropy ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_1/gradients_default_optimizer_global_norm ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/predator_1/mean_kl_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      learners/predator_1/module_train_batch_size_mean ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_1/num_module_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/predator_1/num_module_steps_trained_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      learners/predator_1/num_module_steps_trained_lifetime_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_1/num_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       learners/predator_1/policy_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/predator_1/total_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  learners/predator_1/vf_explained_var ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_1/vf_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 learners/predator_1/vf_loss_unclipped █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/predator_1/weights_seq_no ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/prey_0/curr_entropy_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                         learners/prey_0/curr_kl_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       learners/prey_0/default_optimizer_learning_rate ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_0/diff_num_grad_updates_vs_sampler_policy ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_0/entropy █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_0/gradients_default_optimizer_global_norm ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          learners/prey_0/mean_kl_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/prey_0/module_train_batch_size_mean ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_0/num_module_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/prey_0/num_module_steps_trained_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/prey_0/num_module_steps_trained_lifetime_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_0/num_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/prey_0/policy_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            learners/prey_0/total_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/prey_0/vf_explained_var ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_0/vf_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/prey_0/vf_loss_unclipped █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/prey_0/weights_seq_no ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/prey_1/curr_entropy_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                         learners/prey_1/curr_kl_coeff ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       learners/prey_1/default_optimizer_learning_rate ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_1/diff_num_grad_updates_vs_sampler_policy ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_1/entropy █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_1/gradients_default_optimizer_global_norm █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          learners/prey_1/mean_kl_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/prey_1/module_train_batch_size_mean ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_1/num_module_steps_trained ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/prey_1/num_module_steps_trained_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/prey_1/num_module_steps_trained_lifetime_throughput █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_1/num_trainable_parameters ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/prey_1/policy_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            learners/prey_1/total_loss █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/prey_1/vf_explained_var █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_1/vf_loss ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/prey_1/vf_loss_unclipped █▁
+predator_0 执行动作: [ 1.162634   -0.28966045]
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/prey_1/weights_seq_no ▁█
+[WARNING]: Received an action [ 1.162634   -0.28966045] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        num_env_steps_sampled_lifetime ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 num_training_step_calls_per_iteration ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                 perf/cpu_util_percent █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                 perf/ram_util_percent ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    time_since_restore ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                      time_this_iter_s █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                          time_total_s ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      timers/env_runner_sampling_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           timers/learner_update_timer █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            timers/restore_env_runners █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           timers/synch_env_connectors ▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                  timers/synch_weights █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                             timers/training_iteration █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                  timers/training_step █▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                             timestamp ▁▁
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    training_iteration ▁█
+[36m(_WandbLoggingActor pid=22344)[0m wandb:
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Run summary:
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                             env_runner_group/actor_manager_num_outstanding_async_reqs 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_0 -94.35264
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/agent_episode_returns_mean/predator_1 -69.79487
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_0 -73.76795
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/agent_episode_returns_mean/prey_1 -211.10202
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    env_runners/agent_steps/predator_0 500
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    env_runners/agent_steps/predator_1 500
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/agent_steps/prey_0 500
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/agent_steps/prey_1 500
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  env_runners/connector_pipeline_timer 0.00035
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/env_reset_timer 0.004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            env_runners/env_step_timer 0.00042
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          env_runners/env_to_module_connector/connector_pipeline_timer 0.00011
+[36m(_WandbLoggingActor pid=22344)[0m wandb:         env_runners/env_to_module_connector/timers/connectors/add_observations_from_episodes_to_batch 2e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:               env_runners/env_to_module_connector/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:              env_runners/env_to_module_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                         env_runners/env_to_module_connector/timers/connectors/agent_to_module_mapping 0.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                          env_runners/env_to_module_connector/timers/connectors/batch_individual_items 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/env_to_module_connector/timers/connectors/numpy_to_tensor 2e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      env_runners/env_to_module_sum_episodes_length_in 1881.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     env_runners/env_to_module_sum_episodes_length_out 1881.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 env_runners/episode_duration_sec_mean 2.08417
+predator_1 执行动作: [ 0.72703856 -0.26343358]
+prey_0 执行动作: [-0.10666113  0.5812742 ]
+prey_1 执行动作: [2.4089794 0.7740699]
+[WARNING]: Received an action [2.4089794 0.7740699] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/episode_len_max 2000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          env_runners/episode_len_mean 2000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           env_runners/episode_len_min 2000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/episode_return_max -410.30806
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       env_runners/episode_return_mean -449.01748
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        env_runners/episode_return_min -475.69078
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_0 -94.35264
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                    env_runners/module_episode_returns_mean/predator_1 -69.79487
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_0 -73.76795
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/module_episode_returns_mean/prey_1 -211.10202
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          env_runners/module_to_env_connector/connector_pipeline_timer 0.00023
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                     env_runners/module_to_env_connector/timers/connectors/get_actions 8e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                     env_runners/module_to_env_connector/timers/connectors/listify_data_for_vector_env 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                       env_runners/module_to_env_connector/timers/connectors/module_to_agent_unmapping 0.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                      env_runners/module_to_env_connector/timers/connectors/normalize_and_clip_actions 4e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:           env_runners/module_to_env_connector/timers/connectors/remove_single_ts_time_rank_from_batch 0.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/module_to_env_connector/timers/connectors/tensor_to_numpy 3e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                    env_runners/module_to_env_connector/timers/connectors/un_batch_to_individual_items 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_0 1000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        env_runners/num_agent_steps_sampled/predator_1 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_0 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_agent_steps_sampled/prey_1 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_0 2000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               env_runners/num_agent_steps_sampled_lifetime/predator_1 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_0 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   env_runners/num_agent_steps_sampled_lifetime/prey_1 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/num_env_steps_sampled 4000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            env_runners/num_env_steps_sampled_lifetime 8000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 env_runners/num_env_steps_sampled_lifetime_throughput 1178.60733
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                              env_runners/num_episodes 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/num_episodes_lifetime 4
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_0 1000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       env_runners/num_module_steps_sampled/predator_1 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_0 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                           env_runners/num_module_steps_sampled/prey_1 1002
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_0 2000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                              env_runners/num_module_steps_sampled_lifetime/predator_1 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_0 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/num_module_steps_sampled_lifetime/prey_1 2004
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  env_runners/rlmodule_inference_timer 0.0001
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    env_runners/sample 2.12556
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     env_runners/time_between_sampling 4.1471
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 env_runners/timers/connectors/add_observations_from_episodes_to_batch 3e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                       env_runners/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      env_runners/timers/connectors/add_time_dim_to_batch_and_zero_pad 2e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 env_runners/timers/connectors/agent_to_module_mapping 0.0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                  env_runners/timers/connectors/batch_individual_items 3e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                         env_runners/timers/connectors/numpy_to_tensor 7e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            env_runners/weights_seq_no 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                   fault_tolerance/num_healthy_workers 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                            fault_tolerance/num_remote_worker_restarts 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                              iterations_since_restore 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                   learners/__all_modules__/learner_connector/connector_pipeline_timer 0.11518
+[36m(_WandbLoggingActor pid=22344)[0m wandb: learners/__all_modules__/learner_connector/timers/connectors/add_columns_from_episodes_to_train_batch 0.03389
+[36m(_WandbLoggingActor pid=22344)[0m wandb:  learners/__all_modules__/learner_connector/timers/connectors/add_observations_from_episodes_to_batch 6e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:      learners/__all_modules__/learner_connector/timers/connectors/add_one_ts_to_episodes_and_truncate 0.00322
+[36m(_WandbLoggingActor pid=22344)[0m wandb:        learners/__all_modules__/learner_connector/timers/connectors/add_states_from_episodes_to_batch 1e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:       learners/__all_modules__/learner_connector/timers/connectors/add_time_dim_to_batch_and_zero_pad 2e-05
+predator_0 执行动作: [ 1.6788309 -1.3101299]
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                  learners/__all_modules__/learner_connector/timers/connectors/agent_to_module_mapping 0.00176
+[WARNING]: Received an action [ 1.6788309 -1.3101299] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                   learners/__all_modules__/learner_connector/timers/connectors/batch_individual_items 0.02108
+[36m(_WandbLoggingActor pid=22344)[0m wandb:             learners/__all_modules__/learner_connector/timers/connectors/general_advantage_estimation 0.05329
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                          learners/__all_modules__/learner_connector/timers/connectors/numpy_to_tensor 0.00151
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                     learners/__all_modules__/learner_connector_sum_episodes_length_in 4000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                    learners/__all_modules__/learner_connector_sum_episodes_length_out 4000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                        learners/__all_modules__/num_env_steps_trained 940000
+predator_1 执行动作: [0.599053   0.63813424]
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/__all_modules__/num_env_steps_trained_lifetime 1880000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                    learners/__all_modules__/num_env_steps_trained_lifetime_throughput 426700.05254
+prey_0 执行动作: [-2.1169379  -0.89683634]
+[WARNING]: Received an action [-2.1169379  -0.89683634] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/__all_modules__/num_module_steps_trained 120320
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                            learners/__all_modules__/num_module_steps_trained_lifetime 240640
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                 learners/__all_modules__/num_module_steps_trained_lifetime_throughput 2257337.16887
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/__all_modules__/num_module_steps_trained_throughput 2234564.66722
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/__all_modules__/num_non_trainable_parameters 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/__all_modules__/num_trainable_parameters 578580
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                learners/predator_0/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/predator_0/curr_kl_coeff 0.2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   learners/predator_0/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_0/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_0/entropy 2.64027
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_0/gradients_default_optimizer_global_norm 1.88067
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/predator_0/mean_kl_loss 0.0064
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      learners/predator_0/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_0/num_module_steps_trained 30080
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/predator_0/num_module_steps_trained_lifetime 60160
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      learners/predator_0/num_module_steps_trained_lifetime_throughput 13654.16478
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_0/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       learners/predator_0/policy_loss 0.07623
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/predator_0/total_loss 0.12548
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  learners/predator_0/vf_explained_var -0.00065
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_0/vf_loss 9.59427
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 learners/predator_0/vf_loss_unclipped 223.84851
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/predator_0/weights_seq_no 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                learners/predator_1/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/predator_1/curr_kl_coeff 0.2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                   learners/predator_1/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_1/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_1/entropy 2.5395
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                           learners/predator_1/gradients_default_optimizer_global_norm 1.88737
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/predator_1/mean_kl_loss 0.0163
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                      learners/predator_1/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_1/num_module_steps_trained 30080
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                 learners/predator_1/num_module_steps_trained_lifetime 60160
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                      learners/predator_1/num_module_steps_trained_lifetime_throughput 13654.14253
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/predator_1/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                       learners/predator_1/policy_loss 0.08323
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/predator_1/total_loss 0.132
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                  learners/predator_1/vf_explained_var 0.00801
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/predator_1/vf_loss 9.1021
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 learners/predator_1/vf_loss_unclipped 152.19217
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/predator_1/weights_seq_no 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/prey_0/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                         learners/prey_0/curr_kl_coeff 0.2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       learners/prey_0/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_0/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_0/entropy 2.50959
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_0/gradients_default_optimizer_global_norm 2.00886
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          learners/prey_0/mean_kl_loss 0.00634
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/prey_0/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_0/num_module_steps_trained 30080
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/prey_0/num_module_steps_trained_lifetime 60160
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/prey_0/num_module_steps_trained_lifetime_throughput 13654.34297
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_0/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/prey_0/policy_loss -0.09417
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            learners/prey_0/total_loss -0.05123
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/prey_0/vf_explained_var 0.00269
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_0/vf_loss 8.33392
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/prey_0/vf_loss_unclipped 128.4303
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/prey_0/weights_seq_no 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                    learners/prey_1/curr_entropy_coeff 0
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                         learners/prey_1/curr_kl_coeff 0.2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                       learners/prey_1/default_optimizer_learning_rate 5e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_1/diff_num_grad_updates_vs_sampler_policy 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_1/entropy 2.72771
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                               learners/prey_1/gradients_default_optimizer_global_norm 0.72233
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                          learners/prey_1/mean_kl_loss 0.01196
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                          learners/prey_1/module_train_batch_size_mean 128
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_1/num_module_steps_trained 30080
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                     learners/prey_1/num_module_steps_trained_lifetime 60160
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                          learners/prey_1/num_module_steps_trained_lifetime_throughput 13654.27661
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                              learners/prey_1/num_trainable_parameters 144645
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           learners/prey_1/policy_loss -0.13797
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            learners/prey_1/total_loss -0.08614
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      learners/prey_1/vf_explained_var -0.00133
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                               learners/prey_1/vf_loss 9.88646
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                     learners/prey_1/vf_loss_unclipped 1208.82629
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        learners/prey_1/weights_seq_no 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                        num_env_steps_sampled_lifetime 8000
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                 num_training_step_calls_per_iteration 1
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                 perf/cpu_util_percent 7.13333
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                 perf/ram_util_percent 12.28889
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    time_since_restore 9.08724
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                      time_this_iter_s 4.37255
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                          time_total_s 9.08724
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                      timers/env_runner_sampling_timer 2.14323
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           timers/learner_update_timer 2.55943
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                            timers/restore_env_runners 2e-05
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                           timers/synch_env_connectors 0.00137
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                  timers/synch_weights 0.00421
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                             timers/training_iteration 4.70735
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                  timers/training_step 4.70714
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                             timestamp 1751617521
+[36m(_WandbLoggingActor pid=22344)[0m wandb:                                                                                    training_iteration 2
+[36m(_WandbLoggingActor pid=22344)[0m wandb:
+[36m(_WandbLoggingActor pid=22344)[0m wandb: 🚀 View run PPO_env_637e1_00000 at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/637e1_00000
+[36m(_WandbLoggingActor pid=22344)[0m wandb: ⭐️ View project at: https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Synced 5 W&B file(s), 0 media file(s), 41 artifact file(s) and 0 other file(s)
+[36m(_WandbLoggingActor pid=22344)[0m wandb: Find logs at: ./wandb/run-20250704_172512-637e1_00000/logs
+prey_1 执行动作: [0.12586088 0.52219784]
+predator_0 执行动作: [-1.0143719 -1.3547423]
+[WARNING]: Received an action [-1.0143719 -1.3547423] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [0.10411759 0.1330732 ]
+prey_0 执行动作: [-0.41573834 -1.4171885 ]
+[WARNING]: Received an action [-0.41573834 -1.4171885 ] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+prey_1 执行动作: [0.18930228 1.433934  ]
+[WARNING]: Received an action [0.18930228 1.433934  ] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [ 0.21697246 -1.0810983 ]
+[WARNING]: Received an action [ 0.21697246 -1.0810983 ] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [-0.84710747 -0.03685437]
+prey_0 执行动作: [ 0.43652955 -0.87758493]
+prey_1 执行动作: [1.820287   0.80504155]
+[WARNING]: Received an action [1.820287   0.80504155] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [ 1.2387006 -0.5315627]
+[WARNING]: Received an action [ 1.2387006 -0.5315627] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [0.71446645 0.20287423]
+prey_0 执行动作: [-0.34736234  0.23826647]
+prey_1 执行动作: [-0.5342777  1.1560651]
+[WARNING]: Received an action [-0.5342777  1.1560651] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [-0.03182733 -0.07231478]
+predator_1 执行动作: [ 0.92690545 -0.00291611]
+prey_0 执行动作: [-0.37088197 -0.29340416]
+prey_1 执行动作: [ 0.08065461 -1.3182389 ]
+[WARNING]: Received an action [ 0.08065461 -1.3182389 ] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [-0.05129205 -0.43701577]
+predator_1 执行动作: [-0.17672855 -0.52405417]
+prey_0 执行动作: [-0.33939913  0.39159536]
+prey_1 执行动作: [ 0.5949016 -1.4252733]
+[WARNING]: Received an action [ 0.5949016 -1.4252733] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [0.42096198 0.21517392]
+predator_1 执行动作: [-0.14072376  0.60541856]
+prey_0 执行动作: [ 0.06334175 -0.6677149 ]
+prey_1 执行动作: [ 0.1728069  -0.17377105]
+predator_0 执行动作: [ 0.60891086 -1.1218207 ]
+[WARNING]: Received an action [ 0.60891086 -1.1218207 ] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [-0.34347653  0.14121588]
+prey_0 执行动作: [1.4307463  0.30425134]
+[WARNING]: Received an action [1.4307463  0.30425134] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+prey_1 执行动作: [-1.3342435  -0.25835383]
+[WARNING]: Received an action [-1.3342435  -0.25835383] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_0 执行动作: [-2.5266767 -1.5199842]
+[WARNING]: Received an action [-2.5266767 -1.5199842] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [-0.369717  -0.7556625]
+prey_0 执行动作: [-0.35033923  0.37650076]
+prey_1 执行动作: [-0.6272722  -0.77041453]
+predator_0 执行动作: [0.4613669  0.06407668]
+predator_1 执行动作: [0.996036   0.39346763]
+prey_0 执行动作: [0.07125954 0.87179506]
+prey_1 执行动作: [-0.6706556 -0.9883798]
+predator_0 执行动作: [-1.7851893   0.32105428]
+[WARNING]: Received an action [-1.7851893   0.32105428] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [ 0.46515715 -0.1729506 ]
+prey_0 执行动作: [-0.23135701 -0.27337343]
+prey_1 执行动作: [ 0.29344368 -0.20721877]
+predator_0 执行动作: [1.229799   0.21305984]
+[WARNING]: Received an action [1.229799   0.21305984] that was outside action space Box(-1.0, 1.0, (2,), float32). Environment is clipping to space
+predator_1 执行动作: [ 0.29192385 -0.4549802 ]
+Episode 1 出现错误: 'str' object has no attribute 'shape'
+没有捕获到帧，无法生成GIF
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 454, in <module>
+    agent_healths[agent_name] = agent_obj.shape.health
+AttributeError: 'str' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/qrbao/Documents/code4/rllib/mycode/training_code2.py", line 454, in <module>
+    agent_healths[agent_name] = agent_obj.shape.health
+AttributeError: 'str' object has no attribute 'shape'
+[0m

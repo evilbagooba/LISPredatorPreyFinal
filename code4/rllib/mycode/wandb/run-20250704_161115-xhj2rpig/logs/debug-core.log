@@ -1,0 +1,12 @@
+{"time":"2025-07-04T16:11:15.320041951+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmptrguyqfw/port-12932.txt","pid":12932,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-04T16:11:15.322019435+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":12932}
+{"time":"2025-07-04T16:11:15.322544025+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":42925,"Zone":""}}
+{"time":"2025-07-04T16:11:15.397893425+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:35988"}
+{"time":"2025-07-04T16:11:15.406503326+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"xhj2rpig","id":"127.0.0.1:35988"}
+{"time":"2025-07-04T16:11:15.754192726+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"xhj2rpig","id":"127.0.0.1:35988"}
+{"time":"2025-07-04T16:11:25.921299314+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:54298"}
+{"time":"2025-07-04T16:11:25.923492444+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"14abc_00000","id":"127.0.0.1:54298"}
+{"time":"2025-07-04T16:11:26.143660559+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"14abc_00000","id":"127.0.0.1:54298"}
+{"time":"2025-07-04T16:11:40.248306068+09:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"14abc_00000","id":"127.0.0.1:54298"}
+{"time":"2025-07-04T16:11:40.24847645+09:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"14abc_00000","id":"127.0.0.1:54298"}
+{"time":"2025-07-04T16:33:03.478138514+09:00","level":"INFO","msg":"Parent process exited, terminating service process."}

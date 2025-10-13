@@ -1,0 +1,17 @@
+{
+  "agent_id": "pursuer_1",
+  "algorithm": "ConstrainedRandom",
+  "config": {
+    "action_scale": 0.8,
+    "bias": [
+      0.3,
+      0.0
+    ],
+    "random_seed": 123
+  },
+  "action_scale": 0.8,
+  "bias": [
+    0.30000001192092896,
+    0.0
+  ]
+}

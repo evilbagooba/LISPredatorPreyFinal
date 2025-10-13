@@ -1,0 +1,63 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1', 'prey_2']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1', 'prey_2']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1', 'prey_2']
+开始训练...
+2025-07-01 15:26:19,546	INFO worker.py:1747 -- Calling ray.init() again after it has already been called.
+== Status ==
+Current time: 2025-07-01 15:26:19 (running for 00:00:00.11)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[36m(PPO pid=2453728)[0m 2025-07-01 15:26:21,782	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+
+
+== Status ==
+Current time: 2025-07-01 15:26:24 (running for 00:00:05.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
+[36m(MultiAgentEnvRunner pid=2453931)[0m 2025-07-01 15:26:25,132	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+[36m(PPO pid=2453728)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts/PPO_env_4cd88_00000_0_2025-07-01_15-26-19/wandb/run-20250701_152628-4cd88_00000
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: Syncing run PPO_env_4cd88_00000
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=2454337)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/4cd88_00000
+
+
+== Status ==
+Current time: 2025-07-01 15:26:29 (running for 00:00:10.16)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+== Status ==
+Current time: 2025-07-01 15:26:34 (running for 00:00:15.18)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+== Status ==
+Current time: 2025-07-01 15:26:39 (running for 00:00:20.20)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
+
+
+== Status ==
+Current time: 2025-07-01 15:26:44 (running for 00:00:25.22)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-06-30_21-14-28_704841_2033177/artifacts/2025-07-01_15-26-19/PPO_2025-07-01_15-26-19/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)

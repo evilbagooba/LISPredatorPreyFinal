@@ -1,0 +1,73 @@
+{"time":"2025-06-30T21:09:40.62746465+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_210940-2jv3a607/logs/debug-core.log"}
+{"time":"2025-06-30T21:09:40.98645557+09:00","level":"INFO","msg":"stream: created new stream","id":"2jv3a607"}
+{"time":"2025-06-30T21:09:40.986474072+09:00","level":"INFO","msg":"stream: started","id":"2jv3a607"}
+{"time":"2025-06-30T21:09:40.986483564+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"2jv3a607"}
+{"time":"2025-06-30T21:09:40.986491999+09:00","level":"INFO","msg":"sender: started","stream_id":"2jv3a607"}
+{"time":"2025-06-30T21:09:40.986505008+09:00","level":"INFO","msg":"handler: started","stream_id":"2jv3a607"}
+{"time":"2025-06-30T21:09:41.254559036+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-30T21:10:47.614851944+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:10:47.655686026+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:11:34.91872357+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:11:35.105401106+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:11:37.44320587+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:11:37.443898404+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:11:39.54048714+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:11:39.54091807+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:12:35.935030507+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:12:35.975693988+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:12:58.74120181+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:12:58.755915315+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:13:01.362070709+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:13:01.403722+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:13:07.869350197+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:13:07.883453618+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:13:13.661555873+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:13:13.701677582+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:13:14.008038914+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:13:14.009212143+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:13:43.368622968+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T21:13:43.408707679+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T21:14:28.66675308+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T01:08:17.893103055+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T06:19:02.158390706+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:19:09.487716743+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:19:26.577260246+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-01T06:43:11.590865631+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-01T06:43:34.215593358+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:43:43.6708154+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-01T06:48:23.225670386+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:48:30.553237354+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:48:40.265144618+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:50:15.700068034+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:50:23.152937482+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:50:35.204015635+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-07-01T06:50:49.75752064+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:50:57.162643759+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:51:06.415675352+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-07-01T06:51:07.319878047+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-01T07:26:00.409913006+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-07-01T07:26:11.614129793+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-01T10:43:14.731887056+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-07-01T14:02:26.86092604+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jv3a607/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-07-01T15:26:16.698919807+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739743871+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.739772265+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739776249+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.739778775+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739781077+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.73978355+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739785961+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.739788455+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739792342+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.739794687+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.739799574+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-07-01T15:26:16.739801678+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-07-01T15:26:16.73981333+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-01T15:26:16.739875248+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-01T15:26:17.737604786+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.748762123,"progress":"1.5MB/4.0MB"}],"total_operations":1}}
+{"time":"2025-07-01T15:26:18.511803318+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T15:26:18.788798905+09:00","level":"INFO","msg":"stream: closing","id":"2jv3a607"}
+{"time":"2025-07-01T15:26:18.788820143+09:00","level":"INFO","msg":"handler: closed","stream_id":"2jv3a607"}
+{"time":"2025-07-01T15:26:18.788829316+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2jv3a607"}
+{"time":"2025-07-01T15:26:18.78883877+09:00","level":"INFO","msg":"sender: closed","stream_id":"2jv3a607"}
+{"time":"2025-07-01T15:26:18.788883831+09:00","level":"INFO","msg":"stream: closed","id":"2jv3a607"}

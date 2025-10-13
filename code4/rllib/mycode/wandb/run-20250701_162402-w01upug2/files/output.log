@@ -1,0 +1,114 @@
+['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的policies: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+创建的RL module specs: ['predator_0', 'predator_1', 'prey_0', 'prey_1']
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:134: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64[0m
+  logger.warn(
+/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:158: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+开始训练...
+2025-07-01 16:24:31,685	INFO worker.py:1917 -- Started a local Ray instance.
+2025-07-01 16:24:32,210	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+== Status ==
+Current time: 2025-07-01 16:24:32 (running for 00:00:00.13)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_6ea03_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=2552236)[0m 2025-07-01 16:24:34,561	WARNING algorithm_config.py:5014 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+[36m(MultiAgentEnvRunner pid=2552324)[0m 2025-07-01 16:24:37,095	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+
+
+== Status ==
+Current time: 2025-07-01 16:24:37 (running for 00:00:05.15)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 PENDING)
++---------------------+----------+-------+
+| Trial name          | status   | loc   |
+|---------------------+----------+-------|
+| PPO_env_6ea03_00000 | PENDING  |       |
++---------------------+----------+-------+
+[36m(PPO pid=2552236)[0m Install gputil for GPU system monitoring.
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: WARNING `start_method` is deprecated and will be removed in a future version of wandb. This setting is currently non-functional and safely ignored.
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Currently logged in as: bqr010817 (bqr010817-kyushu-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Tracking run with wandb version 0.20.1
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Run data is saved locally in /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/wandb/run-20250701_162440-6ea03_00000
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Syncing run PPO_env_6ea03_00000
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: ⭐️ View project at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: 🚀 View run at https://wandb.ai/bqr010817-kyushu-university/waterworld-v4/runs/6ea03_00000
+
+
+== Status ==
+Current time: 2025-07-01 16:24:42 (running for 00:00:10.15)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+
+| Trial name          | status   | loc                  |
+|---------------------+----------+----------------------|
+| PPO_env_6ea03_00000 | RUNNING  | 192.168.0.25:2552236 |
++---------------------+----------+----------------------+
+2025-07-01 16:24:45,948	WARNING util.py:201 -- The `callbacks.on_trial_result` operation took 1.832 s, which may be a performance bottleneck.
+2025-07-01 16:24:45,950	WARNING util.py:201 -- The `process_trial_result` operation took 1.835 s, which may be a performance bottleneck.
+2025-07-01 16:24:45,951	WARNING util.py:201 -- Processing trial results took 1.835 s, which may be a performance bottleneck. Please consider reporting results less frequently to Ray Tune.
+2025-07-01 16:24:45,952	WARNING util.py:201 -- The `process_trial_result` operation took 1.836 s, which may be a performance bottleneck.
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=2552236)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000000)
+[36m(MultiAgentEnvRunner pid=2552325)[0m 2025-07-01 16:24:37,133	WARNING deprecation.py:50 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future![32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000000)...
+[36m(_WandbLoggingActor pid=2552616)[0m Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-01 16:24:47 (running for 00:00:15.18)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_6ea03_00000 | RUNNING  | 192.168.0.25:2552236 |      1 |          6.07259 | 4000 |           -458.73 |            -101.473 |            -87.7541 |        -84.0076 |        -185.496 |
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=2552236)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000001)
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000001)... Done. 0.0s
+
+
+== Status ==
+Current time: 2025-07-01 16:24:52 (running for 00:00:20.22)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_6ea03_00000 | RUNNING  | 192.168.0.25:2552236 |      2 |          11.8419 | 8000 |          -460.352 |            -91.0053 |            -85.3483 |          -88.65 |        -195.348 |
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+
+
+== Status ==
+Current time: 2025-07-01 16:24:57 (running for 00:00:25.24)
+Using FIFO scheduling algorithm.
+Logical resource usage: 3.0/24 CPUs, 1.0/1 GPUs (0.0/1.0 accelerator_type:G)
+Result logdir: /tmp/ray/session_2025-07-01_16-24-31_006499_2521308/artifacts/2025-07-01_16-24-32/PPO_2025-07-01_16-24-32/driver_artifacts
+Number of trials: 1/1 (1 RUNNING)
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+| Trial name          | status   | loc                  |   iter |   total time (s) |   ts |   combined return |   return predator_0 |   return predator_1 |   return prey_0 |   return prey_1 |
+|---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------|
+| PPO_env_6ea03_00000 | RUNNING  | 192.168.0.25:2552236 |      2 |          11.8419 | 8000 |          -460.352 |            -91.0053 |            -85.3483 |          -88.65 |        -195.348 |
++---------------------+----------+----------------------+--------+------------------+------+-------------------+---------------------+---------------------+-----------------+-----------------+
+[36m(PPO(env=env; env-runners=2; learners=0; multi-agent=True) pid=2552236)[0m Checkpoint successfully created at: Checkpoint(filesystem=local, path=/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000002)
+[36m(_WandbLoggingActor pid=2552616)[0m wandb: Adding directory to artifact (/home/qrbao/ray_results/PPO_2025-07-01_16-24-32/PPO_env_6ea03_00000_0_2025-07-01_16-24-32/checkpoint_000002)... Done. 0.0s

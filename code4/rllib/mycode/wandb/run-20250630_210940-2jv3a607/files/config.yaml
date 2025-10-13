@@ -1,0 +1,102 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.10.13
+        t:
+            "1":
+                - 1
+                - 30
+            "2":
+                - 1
+                - 30
+            "3":
+                - 2
+                - 16
+                - 55
+            "4": 3.10.13
+            "5": 0.20.1
+            "8":
+                - 1
+            "12": 0.20.1
+            "13": linux-x86_64
+algo:
+    value: PPO
+as_release_test:
+    value: false
+as_test:
+    value: false
+checkpoint_at_end:
+    value: true
+checkpoint_freq:
+    value: 1
+enable_new_api_stack:
+    value: true
+env:
+    value: null
+evaluation_duration:
+    value: 10
+evaluation_duration_unit:
+    value: episodes
+evaluation_interval:
+    value: 0
+evaluation_num_env_runners:
+    value: 0
+evaluation_parallel_to_training:
+    value: false
+explore_during_inference:
+    value: false
+framework:
+    value: torch
+local_mode:
+    value: false
+log_level:
+    value: null
+max_concurrent_trials:
+    value: null
+n_predators:
+    value: 2
+n_preys:
+    value: 3
+no_tune:
+    value: false
+num_agents:
+    value: 5
+num_aggregator_actors_per_learner:
+    value: null
+num_cpus:
+    value: 0
+num_cpus_per_learner:
+    value: null
+num_env_runners:
+    value: null
+num_envs_per_env_runner:
+    value: null
+num_episodes_during_inference:
+    value: 10
+num_gpus:
+    value: null
+num_gpus_per_learner:
+    value: null
+num_learners:
+    value: null
+num_samples:
+    value: 1
+output:
+    value: null
+stop_iters:
+    value: 200
+stop_reward:
+    value: 200
+stop_timesteps:
+    value: 1000000
+use_onnx_for_inference:
+    value: false
+verbose:
+    value: 2
+wandb_key:
+    value: fdd7656f474bba144dea1887bcdab534bc7df647
+wandb_project:
+    value: waterworld-v4
+wandb_run_name:
+    value: null

@@ -1,0 +1,7 @@
+{"time":"2025-06-27T02:10:58.075808166+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp996m48am/port-893956.txt","pid":893956,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-06-27T02:10:58.08097745+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":893956}
+{"time":"2025-06-27T02:10:58.080939358+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":35069,"Zone":""}}
+{"time":"2025-06-27T02:10:58.266297636+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:36126"}
+{"time":"2025-06-27T02:10:58.27246394+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"gnxl6jor","id":"127.0.0.1:36126"}
+{"time":"2025-06-27T02:10:58.617507117+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"gnxl6jor","id":"127.0.0.1:36126"}
+{"time":"2025-06-27T02:13:56.689943015+09:00","level":"INFO","msg":"received shutdown signal","signal":2}

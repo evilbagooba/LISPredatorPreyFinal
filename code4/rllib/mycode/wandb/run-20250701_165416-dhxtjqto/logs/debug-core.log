@@ -1,0 +1,10 @@
+{"time":"2025-07-01T16:54:16.440476813+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpa23hwvc3/port-2623839.txt","pid":2623839,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-01T16:54:16.445653409+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2623839}
+{"time":"2025-07-01T16:54:16.445656524+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":44643,"Zone":""}}
+{"time":"2025-07-01T16:54:16.629770533+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51820"}
+{"time":"2025-07-01T16:54:16.632895482+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"dhxtjqto","id":"127.0.0.1:51820"}
+{"time":"2025-07-01T16:54:16.986039183+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"dhxtjqto","id":"127.0.0.1:51820"}
+{"time":"2025-07-01T16:54:26.990197814+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:38482"}
+{"time":"2025-07-01T16:54:26.992881123+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"9751d_00000","id":"127.0.0.1:38482"}
+{"time":"2025-07-01T16:54:27.232255379+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"9751d_00000","id":"127.0.0.1:38482"}
+{"time":"2025-07-03T12:22:09.210514643+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

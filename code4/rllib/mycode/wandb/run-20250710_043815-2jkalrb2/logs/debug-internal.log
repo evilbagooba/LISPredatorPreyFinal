@@ -1,0 +1,21 @@
+{"time":"2025-07-10T04:38:15.527850885+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250710_043815-2jkalrb2/logs/debug-core.log"}
+{"time":"2025-07-10T04:38:15.883590989+09:00","level":"INFO","msg":"stream: created new stream","id":"2jkalrb2"}
+{"time":"2025-07-10T04:38:15.88362726+09:00","level":"INFO","msg":"stream: started","id":"2jkalrb2"}
+{"time":"2025-07-10T04:38:15.883632331+09:00","level":"INFO","msg":"sender: started","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T04:38:15.883631696+09:00","level":"INFO","msg":"handler: started","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T04:38:15.883652901+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T04:38:16.23647729+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-10T07:35:31.942337222+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-07-10T07:35:34.496177174+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-07-10T07:35:39.482977863+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-07-10T07:35:47.752637093+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-07-10T07:36:07.387387005+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-07-10T08:01:31.468001536+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bqr010817-kyushu-university/waterworld-v4/2jkalrb2/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-07-10T13:04:55.200351554+09:00","level":"INFO","msg":"stream: closing","id":"2jkalrb2"}
+{"time":"2025-07-10T13:04:55.200378413+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-10T13:04:55.200407485+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-10T13:04:58.136277632+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-10T13:04:58.59708457+09:00","level":"INFO","msg":"handler: closed","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T13:04:58.597107835+09:00","level":"INFO","msg":"sender: closed","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T13:04:58.59710561+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2jkalrb2"}
+{"time":"2025-07-10T13:04:58.5971453+09:00","level":"INFO","msg":"stream: closed","id":"2jkalrb2"}

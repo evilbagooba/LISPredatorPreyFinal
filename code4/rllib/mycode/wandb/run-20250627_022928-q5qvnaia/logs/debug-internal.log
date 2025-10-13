@@ -1,0 +1,41 @@
+{"time":"2025-06-27T02:29:28.366285201+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250627_022928-q5qvnaia/logs/debug-core.log"}
+{"time":"2025-06-27T02:29:28.693696246+09:00","level":"INFO","msg":"stream: created new stream","id":"q5qvnaia"}
+{"time":"2025-06-27T02:29:28.693770993+09:00","level":"INFO","msg":"stream: started","id":"q5qvnaia"}
+{"time":"2025-06-27T02:29:28.693840065+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:29:28.693855563+09:00","level":"INFO","msg":"handler: started","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:29:28.693921917+09:00","level":"INFO","msg":"sender: started","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:29:29.030423287+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-27T02:29:29.125796358+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:29:29.125817381+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:29:29.125820064+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:29:29.125822036+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:29:29.125823282+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:29:29.1258244+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:29:29.125825846+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:29:29.125827301+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:29:29.128381613+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:29:43.13572778+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:09.532608728+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:09.572760926+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.600673931+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.602027641+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.605846021+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.609113167+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.613555382+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.614023783+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.618054844+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.619111518+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.622831462+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.624422871+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.628753289+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.630273307+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-27T02:30:12.634809363+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-27T02:30:12.640923406+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-27T02:30:12.640989157+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-27T02:30:13.519748708+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-27T02:30:13.643796336+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 114-118","runtime_seconds":0.123901869}],"total_operations":1}}
+{"time":"2025-06-27T02:30:13.805601062+09:00","level":"INFO","msg":"stream: closing","id":"q5qvnaia"}
+{"time":"2025-06-27T02:30:13.805634528+09:00","level":"INFO","msg":"handler: closed","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:30:13.805649737+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:30:13.805664826+09:00","level":"INFO","msg":"sender: closed","stream_id":"q5qvnaia"}
+{"time":"2025-06-27T02:30:13.8057412+09:00","level":"INFO","msg":"stream: closed","id":"q5qvnaia"}

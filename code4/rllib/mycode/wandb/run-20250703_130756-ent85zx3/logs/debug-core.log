@@ -1,0 +1,10 @@
+{"time":"2025-07-03T13:07:56.220307104+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpgv81hptv/port-13210.txt","pid":13210,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-03T13:07:56.225547178+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":13210}
+{"time":"2025-07-03T13:07:56.225899503+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":38743,"Zone":""}}
+{"time":"2025-07-03T13:07:56.29650844+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:42004"}
+{"time":"2025-07-03T13:07:56.301827363+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ent85zx3","id":"127.0.0.1:42004"}
+{"time":"2025-07-03T13:07:56.645040847+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ent85zx3","id":"127.0.0.1:42004"}
+{"time":"2025-07-03T13:08:06.717230526+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:42962"}
+{"time":"2025-07-03T13:08:06.719398213+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"4e4c4_00000","id":"127.0.0.1:42962"}
+{"time":"2025-07-03T13:08:06.953447646+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"4e4c4_00000","id":"127.0.0.1:42962"}
+{"time":"2025-07-03T16:31:54.038529173+09:00","level":"INFO","msg":"Parent process exited, terminating service process."}

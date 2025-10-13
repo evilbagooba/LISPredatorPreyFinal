@@ -1,0 +1,16 @@
+{"time":"2025-06-30T19:44:48.687201264+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_194448-wxhaz4su/logs/debug-core.log"}
+{"time":"2025-06-30T19:44:49.030557703+09:00","level":"INFO","msg":"stream: created new stream","id":"wxhaz4su"}
+{"time":"2025-06-30T19:44:49.030589369+09:00","level":"INFO","msg":"stream: started","id":"wxhaz4su"}
+{"time":"2025-06-30T19:44:49.030603318+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"wxhaz4su"}
+{"time":"2025-06-30T19:44:49.030612017+09:00","level":"INFO","msg":"handler: started","stream_id":"wxhaz4su"}
+{"time":"2025-06-30T19:44:49.030603669+09:00","level":"INFO","msg":"sender: started","stream_id":"wxhaz4su"}
+{"time":"2025-06-30T19:44:49.425801178+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-30T19:44:55.830043594+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:44:55.870743487+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:44:58.450663575+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:44:58.45194211+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:45:00.681087817+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:45:00.721742706+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:45:03.457433769+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-30T19:45:03.476877719+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-30T19:45:09.37420734+09:00","level":"INFO","msg":"Pausing system monitor"}

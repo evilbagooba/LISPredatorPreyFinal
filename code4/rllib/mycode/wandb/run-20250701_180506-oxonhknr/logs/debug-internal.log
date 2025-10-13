@@ -1,0 +1,15 @@
+{"time":"2025-07-01T18:05:06.898464861+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250701_180506-oxonhknr/logs/debug-core.log"}
+{"time":"2025-07-01T18:05:07.245657234+09:00","level":"INFO","msg":"stream: created new stream","id":"oxonhknr"}
+{"time":"2025-07-01T18:05:07.245683713+09:00","level":"INFO","msg":"stream: started","id":"oxonhknr"}
+{"time":"2025-07-01T18:05:07.245702093+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:07.245707278+09:00","level":"INFO","msg":"sender: started","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:07.245718614+09:00","level":"INFO","msg":"handler: started","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:07.524074114+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-01T18:05:13.881245681+09:00","level":"INFO","msg":"stream: closing","id":"oxonhknr"}
+{"time":"2025-07-01T18:05:13.881282155+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-01T18:05:13.881338679+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-01T18:05:14.532711671+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T18:05:14.863626435+09:00","level":"INFO","msg":"handler: closed","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:14.863677112+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:14.86369723+09:00","level":"INFO","msg":"sender: closed","stream_id":"oxonhknr"}
+{"time":"2025-07-01T18:05:14.863720206+09:00","level":"INFO","msg":"stream: closed","id":"oxonhknr"}

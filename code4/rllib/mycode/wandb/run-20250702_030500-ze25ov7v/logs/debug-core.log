@@ -1,0 +1,10 @@
+{"time":"2025-07-02T03:05:00.803072514+09:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpozug4a3l/port-3521880.txt","pid":3521880,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-07-02T03:05:00.808206485+09:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":3521880}
+{"time":"2025-07-02T03:05:00.808201435+09:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":34411,"Zone":""}}
+{"time":"2025-07-02T03:05:00.993591447+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:45056"}
+{"time":"2025-07-02T03:05:00.997191484+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"ze25ov7v","id":"127.0.0.1:45056"}
+{"time":"2025-07-02T03:05:01.358000811+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ze25ov7v","id":"127.0.0.1:45056"}
+{"time":"2025-07-02T03:05:10.936248692+09:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:51824"}
+{"time":"2025-07-02T03:05:10.938218704+09:00","level":"INFO","msg":"handleInformInit: received","streamId":"e9175_00000","id":"127.0.0.1:51824"}
+{"time":"2025-07-02T03:05:11.174060972+09:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"e9175_00000","id":"127.0.0.1:51824"}
+{"time":"2025-07-03T12:22:09.283014181+09:00","level":"INFO","msg":"received shutdown signal","signal":15}

@@ -1,0 +1,1897 @@
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_setup.py:_flush():81] Configure stats pid to 1927189
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/.config/wandb/settings
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_setup.py:_flush():81] Loading settings from /home/qrbao/Documents/code4/rllib/mycode/wandb/settings
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_194448-wxhaz4su/logs/debug.log
+2025-06-30 19:44:48,479 INFO    MainThread:1927189 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250630_194448-wxhaz4su/logs/debug-internal.log
+2025-06-30 19:44:48,480 INFO    MainThread:1927189 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x78ace0e6b880>
+2025-06-30 19:44:48,480 INFO    MainThread:1927189 [wandb_init.py:init():831] calling init triggers
+2025-06-30 19:44:48,480 INFO    MainThread:1927189 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'algo': 'PPO', 'enable_new_api_stack': True, 'framework': 'torch', 'env': None, 'num_env_runners': None, 'num_envs_per_env_runner': None, 'num_agents': 5, 'evaluation_num_env_runners': 0, 'evaluation_interval': 0, 'evaluation_duration': 10, 'evaluation_duration_unit': 'episodes', 'evaluation_parallel_to_training': False, 'output': None, 'log_level': None, 'no_tune': False, 'num_samples': 1, 'max_concurrent_trials': None, 'verbose': 2, 'checkpoint_freq': 1, 'checkpoint_at_end': True, 'wandb_key': 'fdd7656f474bba144dea1887bcdab534bc7df647', 'wandb_project': 'waterworld-v4', 'wandb_run_name': None, 'stop_reward': 200.0, 'stop_iters': 200, 'stop_timesteps': 1000000, 'as_test': False, 'as_release_test': False, 'num_learners': None, 'num_cpus_per_learner': None, 'num_gpus_per_learner': None, 'num_aggregator_actors_per_learner': None, 'num_cpus': 0, 'local_mode': False, 'num_gpus': None, 'n_predators': 2, 'n_preys': 3, 'use_onnx_for_inference': False, 'explore_during_inference': False, 'num_episodes_during_inference': 10, '_wandb': {}}
+2025-06-30 19:44:48,480 INFO    MainThread:1927189 [wandb_init.py:init():872] starting backend
+2025-06-30 19:44:48,684 INFO    MainThread:1927189 [wandb_init.py:init():875] sending inform_init request
+2025-06-30 19:44:48,685 INFO    MainThread:1927189 [wandb_init.py:init():883] backend started and connected
+2025-06-30 19:44:48,686 INFO    MainThread:1927189 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2025-06-30 19:44:48,700 INFO    MainThread:1927189 [wandb_init.py:init():956] updated telemetry
+2025-06-30 19:44:48,700 INFO    MainThread:1927189 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-30 19:44:49,424 INFO    MainThread:1927189 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-30 19:44:49,473 INFO    MainThread:1927189 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-30 19:44:49,473 INFO    MainThread:1927189 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-30 19:44:49,473 INFO    MainThread:1927189 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-30 19:44:49,473 INFO    MainThread:1927189 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-30 19:44:49,474 INFO    MainThread:1927189 [wandb_init.py:init():1078] run started, returning control to user process
+2025-06-30 19:44:49,475 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 19:44:55,829 INFO    MainThread:1927189 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-30 19:44:55,829 INFO    MainThread:1927189 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-30 19:44:55,831 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 19:44:58,450 INFO    MainThread:1927189 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-30 19:44:58,450 INFO    MainThread:1927189 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-30 19:44:58,451 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 19:45:00,680 INFO    MainThread:1927189 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-30 19:45:00,680 INFO    MainThread:1927189 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-30 19:45:00,681 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 19:45:03,457 INFO    MainThread:1927189 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-30 19:45:03,457 INFO    MainThread:1927189 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-30 19:45:03,476 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 19:45:09,373 INFO    MainThread:1927189 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-30 19:45:09,373 INFO    MainThread:1927189 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-30 20:06:31,336 WARNING MsgRouterThr:1927189 [router.py:message_loop():63] [no run ID] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 27, in _read_message
+    return self._sock_client.read_server_response(timeout=1)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 235, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 220, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 56, in message_loop
+    msg = self._read_message()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 29, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-06-30 20:06:31,337 INFO    MsgRouterThr:1927189 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-06-30 20:06:31,383 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:31,384 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2374, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:31,385 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2374, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:40,778 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:40,778 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:50,702 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:06:50,703 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:00,737 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:00,738 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:10,788 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:10,789 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:20,722 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:20,722 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:30,768 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:30,769 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:40,801 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:40,801 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:50,824 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:07:50,825 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:00,756 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:00,756 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:10,778 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:10,778 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:20,818 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:20,819 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:30,837 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:30,838 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:40,856 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:40,857 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:50,791 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:08:50,792 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:00,813 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:00,813 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:10,837 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:10,837 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:20,884 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:20,884 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:30,805 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:30,806 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:40,836 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:40,836 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:50,845 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:09:50,845 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:00,878 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:00,878 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:10,820 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:10,820 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:20,847 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:20,847 ERROR   ray_print_logs:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,148 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,154 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,155 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,159 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,162 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,163 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,164 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,166 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,166 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,167 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,168 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,168 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,169 ERROR   Thread-2 (_watch_pipe_fd):1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,408 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_1927189/171792256.py", line 3, in <module>
+    results = run_rllib_example_script_experiment(base_config, args, keep_ray_up=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/test_utils.py", line 1342, in run_rllib_example_script_experiment
+    ).fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tuner.py", line 345, in fit
+    return self._local_tuner.fit()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 506, in fit
+    analysis = self._fit_internal(trainable, param_space)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/impl/tuner_internal.py", line 622, in _fit_internal
+    analysis = run(
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/tune.py", line 1026, in run
+    runner.cleanup()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 1976, in cleanup
+    self.end_experiment_callbacks()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/execution/tune_controller.py", line 296, in end_experiment_callbacks
+    self._callbacks.on_experiment_end(trials=self._trials)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/callback.py", line 430, in on_experiment_end
+    callback.on_experiment_end(**info)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 739, in on_experiment_end
+    self._cleanup_logging_actors(timeout=self._upload_timeout, kill_on_timeout=True)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/air/integrations/wandb.py", line 726, in _cleanup_logging_actors
+    done, remaining = ray.wait(futures, num_returns=len(futures), timeout=timeout)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 3080, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python/ray/_raylet.pyx", line 3480, in ray._raylet.CoreWorker.wait
+  File "python/ray/includes/common.pxi", line 101, in ray._raylet.check_status
+  File "python/ray/_raylet.pyx", line 854, in ray._raylet.raise_sys_exit_with_custom_error_message
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,412 INFO    MainThread:1927189 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-30 20:10:24,412 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 593, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 788, in publish_resume
+    self._publish_resume(resume)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 293, in _publish_resume
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2374, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-30 20:10:24,413 ERROR   MainThread:1927189 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/IPython/core/events.py", line 82, in trigger
+    func(*args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 593, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 788, in publish_resume
+    self._publish_resume(resume)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 293, in _publish_resume
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2374, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/qrbao/anaconda3/envs/rllib/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,7 @@
+{"time":"2025-07-03T13:07:56.302536645+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/qrbao/Documents/code4/rllib/mycode/wandb/run-20250703_130756-ent85zx3/logs/debug-core.log"}
+{"time":"2025-07-03T13:07:56.644959702+09:00","level":"INFO","msg":"stream: created new stream","id":"ent85zx3"}
+{"time":"2025-07-03T13:07:56.645027222+09:00","level":"INFO","msg":"stream: started","id":"ent85zx3"}
+{"time":"2025-07-03T13:07:56.6451577+09:00","level":"INFO","msg":"handler: started","stream_id":"ent85zx3"}
+{"time":"2025-07-03T13:07:56.645149007+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"ent85zx3"}
+{"time":"2025-07-03T13:07:56.645238004+09:00","level":"INFO","msg":"sender: started","stream_id":"ent85zx3"}
+{"time":"2025-07-03T13:07:56.989032712+09:00","level":"INFO","msg":"Starting system monitor"}
