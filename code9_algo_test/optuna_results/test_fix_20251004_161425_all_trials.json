@@ -1,0 +1,27 @@
+{
+  "study_name": "test_fix",
+  "timestamp": "20251004_161425",
+  "n_trials": 1,
+  "best_value": -1000.0,
+  "best_params": {
+    "lr": 0.0001106612751040215,
+    "eps_clip": 0.24505154481020894,
+    "gae_lambda": 0.943918479733173,
+    "ent_coef": 0.00022955130519454857,
+    "vf_coef": 0.34289297034152716
+  },
+  "all_trials": [
+    {
+      "number": 0,
+      "value": -1000.0,
+      "params": {
+        "lr": 0.0001106612751040215,
+        "eps_clip": 0.24505154481020894,
+        "gae_lambda": 0.943918479733173,
+        "ent_coef": 0.00022955130519454857,
+        "vf_coef": 0.34289297034152716
+      },
+      "state": "TrialState.COMPLETE"
+    }
+  ]
+}

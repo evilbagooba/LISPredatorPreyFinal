@@ -1,0 +1,58 @@
+{
+  "timestamp": "20251004_185250",
+  "total_anomalies": 0,
+  "anomaly_types": {},
+  "critical_anomalies": [],
+  "all_anomalies": [],
+  "stats_summary": {
+    "prey_0/reward_mean": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "prey_0/reward_std": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "prey_0/returns_mean": {
+      "mean": -0.20054058730602264,
+      "std": 0.0,
+      "min": -0.20054058730602264,
+      "max": -0.20054058730602264,
+      "count": 1
+    },
+    "prey_0/critic_output_mean": {
+      "mean": -0.07339127361774445,
+      "std": 0.0,
+      "min": -0.07339127361774445,
+      "max": -0.07339127361774445,
+      "count": 1
+    },
+    "prey_0/critic_output_std": {
+      "mean": 0.06546028703451157,
+      "std": 0.0,
+      "min": 0.06546028703451157,
+      "max": 0.06546028703451157,
+      "count": 1
+    },
+    "prey_0/td_error_mean": {
+      "mean": 1.0796324014663696,
+      "std": 0.0,
+      "min": 1.0796324014663696,
+      "max": 1.0796324014663696,
+      "count": 1
+    },
+    "prey_0/td_error_max": {
+      "mean": 3.141558885574341,
+      "std": 0.0,
+      "min": 3.141558885574341,
+      "max": 3.141558885574341,
+      "count": 1
+    }
+  }
+}

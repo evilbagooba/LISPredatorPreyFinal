@@ -1,0 +1,65 @@
+{
+  "timestamp": "20251004_172628",
+  "total_anomalies": 0,
+  "anomaly_types": {},
+  "critical_anomalies": [],
+  "all_anomalies": [],
+  "stats_summary": {
+    "prey_0/reward_mean": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "prey_0/reward_std": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "prey_0/returns_mean": {
+      "mean": 0.06269150227308273,
+      "std": 0.0,
+      "min": 0.06269150227308273,
+      "max": 0.06269150227308273,
+      "count": 1
+    },
+    "prey_0/critic_output_mean": {
+      "mean": 0.0706937164068222,
+      "std": 0.0,
+      "min": 0.0706937164068222,
+      "max": 0.0706937164068222,
+      "count": 1
+    },
+    "prey_0/critic_output_std": {
+      "mean": 0.01352179516106844,
+      "std": 0.0,
+      "min": 0.01352179516106844,
+      "max": 0.01352179516106844,
+      "count": 1
+    },
+    "prey_0/td_error_mean": {
+      "mean": 0.19763316214084625,
+      "std": 0.0,
+      "min": 0.19763316214084625,
+      "max": 0.19763316214084625,
+      "count": 1
+    },
+    "prey_0/td_error_max": {
+      "mean": 0.5695323944091797,
+      "std": 0.0,
+      "min": 0.5695323944091797,
+      "max": 0.5695323944091797,
+      "count": 1
+    },
+    "prey_0/loss_loss": {
+      "mean": -0.021598486152841993,
+      "std": 0.013584989692869434,
+      "min": -0.052068278193473816,
+      "max": 0.029023118317127228,
+      "count": 1
+    }
+  }
+}

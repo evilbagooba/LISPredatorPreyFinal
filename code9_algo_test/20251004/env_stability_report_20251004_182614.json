@@ -1,0 +1,8 @@
+{
+  "crashes": [],
+  "nan_observations": [],
+  "nan_rewards": [],
+  "inf_values": [],
+  "state_errors": [],
+  "extreme_values": []
+}

@@ -1,0 +1,543 @@
+{
+  "timestamp": "20251004_181324",
+  "total_anomalies": 49,
+  "anomaly_types": {
+    "td_error_high": 27,
+    "loss_loss/vf_high": 22
+  },
+  "critical_anomalies": [],
+  "all_anomalies": [
+    {
+      "step": 140,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 53.22190475463867,
+      "value_at_max": 8.181114196777344,
+      "return_at_max": 61.403018951416016
+    },
+    {
+      "step": 156,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -86.80259704589844,
+      "value_at_max": 17.387895584106445,
+      "return_at_max": -69.41470336914062
+    },
+    {
+      "step": 158,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -59.30437469482422,
+      "value_at_max": 16.660423278808594,
+      "return_at_max": -42.643951416015625
+    },
+    {
+      "step": 160,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 67.90805053710938,
+      "value_at_max": 13.058174133300781,
+      "return_at_max": 80.96622467041016
+    },
+    {
+      "step": 162,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 80.15862274169922,
+      "value_at_max": 12.66205883026123,
+      "return_at_max": 92.8206787109375
+    },
+    {
+      "step": 162,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 1606.8211774553572
+    },
+    {
+      "step": 164,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 76.28679656982422,
+      "value_at_max": 13.291830062866211,
+      "return_at_max": 89.57862854003906
+    },
+    {
+      "step": 164,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 2155.2512834821428
+    },
+    {
+      "step": 166,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 75.88716888427734,
+      "value_at_max": 13.550345420837402,
+      "return_at_max": 89.43751525878906
+    },
+    {
+      "step": 166,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 3030.2720145089284
+    },
+    {
+      "step": 168,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 66.12133026123047,
+      "value_at_max": 14.786483764648438,
+      "return_at_max": 80.9078140258789
+    },
+    {
+      "step": 168,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 1149.1538177490233
+    },
+    {
+      "step": 170,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 85.87283325195312,
+      "value_at_max": 14.328180313110352,
+      "return_at_max": 100.20101165771484
+    },
+    {
+      "step": 170,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 2849.045556640625
+    },
+    {
+      "step": 172,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 83.55290222167969,
+      "value_at_max": 17.498605728149414,
+      "return_at_max": 101.05150604248047
+    },
+    {
+      "step": 172,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 2633.9103062220984
+    },
+    {
+      "step": 174,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 102.40432739257812,
+      "value_at_max": 21.35100555419922,
+      "return_at_max": 123.75533294677734
+    },
+    {
+      "step": 174,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 4154.768230329241
+    },
+    {
+      "step": 176,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 158.99853515625,
+      "value_at_max": 22.68034553527832,
+      "return_at_max": 181.6788787841797
+    },
+    {
+      "step": 176,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 4261.353887939453
+    },
+    {
+      "step": 178,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 193.69956970214844,
+      "value_at_max": 24.509647369384766,
+      "return_at_max": 218.20921325683594
+    },
+    {
+      "step": 178,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 13785.857854352678
+    },
+    {
+      "step": 180,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 266.3870544433594,
+      "value_at_max": 26.42331314086914,
+      "return_at_max": 292.81036376953125
+    },
+    {
+      "step": 180,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 23256.785072544644
+    },
+    {
+      "step": 182,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 328.423583984375,
+      "value_at_max": 28.473876953125,
+      "return_at_max": 356.8974609375
+    },
+    {
+      "step": 182,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 37108.1521484375
+    },
+    {
+      "step": 184,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 399.28814697265625,
+      "value_at_max": 30.6490421295166,
+      "return_at_max": 429.93719482421875
+    },
+    {
+      "step": 184,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 23420.399816894533
+    },
+    {
+      "step": 186,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 462.45458984375,
+      "value_at_max": 32.74855041503906,
+      "return_at_max": 495.2031555175781
+    },
+    {
+      "step": 186,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 56723.59229910714
+    },
+    {
+      "step": 188,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 278.9991455078125,
+      "value_at_max": 54.053558349609375,
+      "return_at_max": 333.0527038574219
+    },
+    {
+      "step": 188,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 10568.776478794643
+    },
+    {
+      "step": 190,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -200.8408660888672,
+      "value_at_max": 60.25795364379883,
+      "return_at_max": -140.58291625976562
+    },
+    {
+      "step": 190,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 10480.118338448661
+    },
+    {
+      "step": 192,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -304.4055480957031,
+      "value_at_max": 60.498817443847656,
+      "return_at_max": -243.90672302246094
+    },
+    {
+      "step": 192,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 15271.308630371093
+    },
+    {
+      "step": 194,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -337.13653564453125,
+      "value_at_max": 59.08500671386719,
+      "return_at_max": -278.051513671875
+    },
+    {
+      "step": 194,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 27271.310518973216
+    },
+    {
+      "step": 196,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -326.2555236816406,
+      "value_at_max": 59.240657806396484,
+      "return_at_max": -267.0148620605469
+    },
+    {
+      "step": 196,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 25149.185574776784
+    },
+    {
+      "step": 198,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -316.0451354980469,
+      "value_at_max": 57.87788009643555,
+      "return_at_max": -258.1672668457031
+    },
+    {
+      "step": 198,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 17308.386635044644
+    },
+    {
+      "step": 200,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -359.4188537597656,
+      "value_at_max": 58.40056610107422,
+      "return_at_max": -301.0182800292969
+    },
+    {
+      "step": 200,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 10646.418011474609
+    },
+    {
+      "step": 202,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -328.62408447265625,
+      "value_at_max": 59.27418518066406,
+      "return_at_max": -269.34991455078125
+    },
+    {
+      "step": 202,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 13361.816378348214
+    },
+    {
+      "step": 204,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": -344.6890869140625,
+      "value_at_max": 58.91593933105469,
+      "return_at_max": -285.7731628417969
+    },
+    {
+      "step": 204,
+      "agent": "prey_0",
+      "type": "loss_loss/vf_high",
+      "value": 15331.63681640625
+    },
+    {
+      "step": 206,
+      "agent": "prey_0",
+      "type": "td_error_high",
+      "max_td": 365.7906799316406,
+      "value_at_max": 35.266761779785156,
+      "return_at_max": 401.05743408203125
+    }
+  ],
+  "stats_summary": {
+    "prey_0/reward_mean": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 104
+    },
+    "prey_0/reward_std": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 104
+    },
+    "prey_0/returns_mean": {
+      "mean": 19.330930709838867,
+      "std": 45.91238784790039,
+      "min": -48.94760513305664,
+      "max": 268.2308349609375,
+      "count": 104
+    },
+    "prey_0/critic_output_mean": {
+      "mean": 10.963778751436621,
+      "std": 18.32681355038239,
+      "min": -0.23900003731250763,
+      "max": 59.59804153442383,
+      "count": 104
+    },
+    "prey_0/critic_output_std": {
+      "mean": 0.8573512798981168,
+      "std": 1.665361847814135,
+      "min": 0.011497126892209053,
+      "max": 7.8901238441467285,
+      "count": 104
+    },
+    "prey_0/td_error_mean": {
+      "mean": 25.934386891384538,
+      "std": 44.30148624464076,
+      "min": 0.11897553503513336,
+      "max": 219.33763122558594,
+      "count": 104
+    },
+    "prey_0/td_error_max": {
+      "mean": 64.20194090243716,
+      "std": 111.74143152766814,
+      "min": 0.34929174184799194,
+      "max": 462.45458984375,
+      "count": 104
+    },
+    "prey_0/loss_loss": {
+      "mean": 32.20594644645028,
+      "std": 85.53385175343085,
+      "min": -0.04046588712371886,
+      "max": 567.2073961530413,
+      "count": 103
+    },
+    "prey_0/loss_loss/clip": {
+      "mean": -0.0066465170988533225,
+      "std": 0.003966637858802498,
+      "min": -0.016200385641838823,
+      "max": 0.0,
+      "count": 103
+    },
+    "prey_0/loss_loss/vf": {
+      "mean": 3224.105036792078,
+      "std": 8553.160873926887,
+      "min": 0.021535743506891386,
+      "max": 56723.59229910714,
+      "count": 103
+    },
+    "prey_0/loss_loss/ent": {
+      "mean": 2.8456770673921667,
+      "std": 0.009551829468660114,
+      "min": 2.831462737492153,
+      "max": 2.8699259451457433,
+      "count": 103
+    },
+    "prey_0/actor/grad_norm": {
+      "mean": 0.2201494109970341,
+      "std": 0.11840354229573853,
+      "min": 1.6159885490196757e-05,
+      "max": 0.29999973320384776,
+      "count": 103
+    },
+    "prey_0/critic/grad_norm": {
+      "mean": 0.07721718217880406,
+      "std": 0.121885982405299,
+      "min": 0.0,
+      "max": 0.30000003813792203,
+      "count": 103
+    },
+    "prey_1/reward_mean": {
+      "mean": -0.054768750561993484,
+      "std": 0.05115863778695008,
+      "min": -0.1278578396937103,
+      "max": 0.07609340779020159,
+      "count": 103
+    },
+    "prey_1/reward_std": {
+      "mean": 0.5473234309120735,
+      "std": 0.3533422760800423,
+      "min": 0.02933449046664008,
+      "max": 1.3523190587645841,
+      "count": 103
+    },
+    "prey_1/returns_mean": {
+      "mean": 0.016221055760979652,
+      "std": 1.2552210092544556,
+      "min": -7.6257500648498535,
+      "max": 2.9900336265563965,
+      "count": 103
+    },
+    "prey_1/critic_output_mean": {
+      "mean": -0.0027321062482513706,
+      "std": 0.40308383657066915,
+      "min": -1.7160176038742065,
+      "max": 0.9463104605674744,
+      "count": 103
+    },
+    "prey_1/critic_output_std": {
+      "mean": 0.058605401105930106,
+      "std": 0.06113296075528095,
+      "min": 0.0007983295945450664,
+      "max": 0.4020111858844757,
+      "count": 103
+    },
+    "prey_1/td_error_mean": {
+      "mean": 1.075751270013816,
+      "std": 1.1755344122268239,
+      "min": 0.05017898231744766,
+      "max": 7.511758327484131,
+      "count": 103
+    },
+    "prey_1/td_error_max": {
+      "mean": 3.057536730343856,
+      "std": 3.5302939401217324,
+      "min": 0.1770244836807251,
+      "max": 26.63917350769043,
+      "count": 103
+    },
+    "prey_1/loss_loss": {
+      "mean": -0.0019179557175009623,
+      "std": 0.07379467229228565,
+      "min": -0.04007381738296577,
+      "max": 0.574052517754691,
+      "count": 103
+    },
+    "prey_1/loss_loss/clip": {
+      "mean": -0.006328359118689516,
+      "std": 0.00334761047989041,
+      "min": -0.01648024788550434,
+      "max": 0.000620468461420387,
+      "count": 103
+    },
+    "prey_1/loss_loss/vf": {
+      "mean": 3.2505979033796146,
+      "std": 7.383806498144735,
+      "min": 0.0044970866234507415,
+      "max": 60.797897175380164,
+      "count": 103
+    },
+    "prey_1/loss_loss/ent": {
+      "mean": 2.8095575435451794,
+      "std": 0.010119620116564384,
+      "min": 2.790125833238874,
+      "max": 2.8316363062177388,
+      "count": 103
+    },
+    "prey_1/actor/grad_norm": {
+      "mean": 0.29689167357826146,
+      "std": 0.01694024115742838,
+      "min": 0.15689248649198428,
+      "max": 0.2999999301026733,
+      "count": 103
+    },
+    "prey_1/critic/grad_norm": {
+      "mean": 0.0023490249292468586,
+      "std": 0.004165978726219418,
+      "min": 0.0,
+      "max": 0.02882514611823129,
+      "count": 103
+    }
+  }
+}

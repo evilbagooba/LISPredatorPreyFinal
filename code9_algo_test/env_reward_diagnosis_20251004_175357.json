@@ -1,0 +1,51 @@
+{
+  "timestamp": "20251004_175357",
+  "n_episodes": 100,
+  "results": {
+    "predator_0": {
+      "reward_mean": -0.008479913764697958,
+      "reward_std": 0.2644211381807878,
+      "reward_min": -0.06000000715255695,
+      "reward_max": 9.9712078904583,
+      "return_mean": -1.0599892205872425,
+      "return_std": 11.650064789876405,
+      "return_min": -5.885477878073705,
+      "return_max": 65.40815082175848,
+      "issues": []
+    },
+    "predator_1": {
+      "reward_mean": -0.003105078486277655,
+      "reward_std": 0.32746217323203586,
+      "reward_min": -0.06000000715255695,
+      "reward_max": 9.991434245300892,
+      "return_mean": -0.3881348107847051,
+      "return_std": 13.391116501257782,
+      "return_min": -5.704797462974813,
+      "return_max": 61.187346250210766,
+      "issues": []
+    },
+    "prey_0": {
+      "reward_mean": 0.031229163894531495,
+      "reward_std": 0.8863390839655527,
+      "reward_min": -5.089999994635582,
+      "reward_max": 9.986738497324303,
+      "return_mean": 3.9036454868164374,
+      "return_std": 12.85471999477659,
+      "return_min": -10.926336588496156,
+      "return_max": 48.12767505822022,
+      "issues": []
+    },
+    "prey_1": {
+      "reward_mean": 0.005128171735937692,
+      "reward_std": 0.9219936814726514,
+      "reward_min": -5.14,
+      "reward_max": 9.928953974886412,
+      "return_mean": 0.6410214669922106,
+      "return_std": 15.473097554113012,
+      "return_min": -13.915345760882236,
+      "return_max": 51.837312142329544,
+      "issues": []
+    }
+  },
+  "extreme_rewards": []
+}
